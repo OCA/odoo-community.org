@@ -2,9 +2,11 @@
 layout: page
 title: "Projects"
 description: ""
+group: navigation
 ---
 {% include JB/setup %}
 
+We are in the process of bringing all devs together, currently the current community organization is the most representative work achieved.
 
 ## Find our work
 
