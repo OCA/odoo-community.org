@@ -15,8 +15,8 @@ author :
   name : Name Lastname
   email : blah@email.test
   github : username
-  twitter : username
-  feedburner : feedname
+  twitter : OERPCommunity
+  feedburner : OpenERP-Community-Foundation
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
