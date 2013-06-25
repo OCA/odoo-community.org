@@ -13,6 +13,6 @@ We are in the process of bringing all devs together, currently the current commu
 You'll meet our devs on [Launchpad](https://launchpad.net) :
 
 + [Our community reviewer team](https://launchpad.net/~openerp-community-reviewer)
-+ [All our participation](https://launchpad.net/~openerp-community-reviewer/+participation)
++ [Our participation in Community Project](https://launchpad.net/~openerp-community-reviewer/+participation) (the list of all available work)
 + [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
     
