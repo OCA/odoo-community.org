@@ -28,16 +28,16 @@ Establish and support an Open Source and collaborative community for the develop
 The following more detailed goals support the overall mission:
 
 + To ensure a high degree of quality in OCA's projects in order to build and preserve the association "brand".
-+ Ensure the long term support and maintenance of the OCA's projects and developpements
++ To ensure the long term support and maintenance of the OCA's projects and developpements
 + To provide resources for OCA's projects - eg. infrastructure, CLA, funding, legal.
 + To encourage the implementation of open standards and standards-based interoperability in OCA's projects.
 + To support use and contribution to OCA's projects from the worldwide community through internationalization of software and community outreach.
 + To promote the use of open source software in the industry (not just association software) - eg. training, outreach.
-+ Organize meeting of membres to improve the collaboration and the knowledge of the OCA'sprojects
++ To organize meeting of membres to improve the collaboration and the knowledge of the OCA'sprojects
 
 ## Founding members
 
-The OpenERP Community Association has been launched in 2013 on the initiative of Camptocamp, and have the following founding members:
+The OpenERP Community Association has been launched in 2013 by the following founding members:
 
 + [Camptocamp](https://www.camptocamp.com/)
 + [Therp](http://therp.nl/)

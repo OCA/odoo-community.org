@@ -1,20 +1,15 @@
 ---
 layout: page
-title: OpenERP Community Association
+title: The OpenERP Community Association
 tagline: 
 ---
 {% include JB/setup %}
 
-The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. The association provides financial, organizational and legal support to the broader OpenERP open source community. It also serves as an independent legal entity to which community members can contribute code, funding and other resources, secure in the knowledge that their contributions will be maintained for public benefit.
+The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. Join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](faq.html) page to become more involved.
 
-The association's projects are all freely available and useable under an OSI-certified open source license
+## News from Twitter
 
-Our goals :
-
-+ Establish an Open Source Community to stimulate the developement and the promotion of OpenERP
-+ Support this Community by protecting his interest and developpement
-+ Ease the synergy and collaboration in the OCA's projects
-
-
-
-
+<a class="twitter-timeline" width="300" height="600" data-chrome="nofooter transparent" href="https://twitter.com/search?q=%23openerp"  data-widget-id="349620343364796416">Tweets about "#openerp"</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a class="twitter-timeline" width="300" height="600" data-chrome="nofooter transparent" href="https://twitter.com/OERPCommunity"  data-widget-id="349624289248559104">Tweets by @OERPCommunity</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

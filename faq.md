@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Bylaws"
+title: "FAQ"
 description: ""
 group: navigation
 ---
