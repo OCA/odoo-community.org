@@ -7,7 +7,9 @@ group: navigation
 {% include JB/setup %}
 
 
-We do have several membership level which implies various level of participation in the association. You'll find here how to become a member and the list already existing ones.
+We do have several membership level which implies various level of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Send your membership request [by mail](mailto:oca-board@lists.launchpad.net).
+
+Have a look [here](member_list.html) to have the actual list of member.
 
 ## Categories
 

@@ -5,20 +5,12 @@ description: ""
 ---
 {% include JB/setup %}
 
-We do have several membership level which implies various level of participation in the association. You'll find here how to become a member and the list already existing ones.
-
-## Become a participant
-
-
-
-### Become a Member
-
-Members are listed on 
-
-## Board
+Work in progress.
 
 ## Charter Members
 
 ## Members
 
 ## Participant
+
+Participant list can be found on Launchpad [here](https://launchpad.net/~openerp-community/+members) and represents all people subscribed to the openerp-community team.
