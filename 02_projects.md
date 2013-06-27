@@ -14,22 +14,25 @@ We are in the process of bringing all devs together, today the current community
 
 We are organized in [community team by topic](https://launchpad.net/~openerp-community-reviewer/+participation) and each of them handle various projects. The team is responsible to review and commit the work of the community in the related branches of their related projects. Anyone can contribute to any projects by submiting bug reports, merge proposal, patches,..
 
-A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) has been setup to be part of all community teams and help them in the review process. This team is composed by OpenERP Developers and Experts that have a very good knowledge on OpenERP. They are elected here based on Meritocracy.
+A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) has been setup to be part of all community teams and help them in the review process. This team is composed by OpenERP Developers and Experts that have a very good knowledge on OpenERP. They are elected here based on Meritocracy. 
+
+To be accepted in one of the team, starts suggesting merge proposal and review others work. When significativ work has been achieved, you can ask to join a team by requesting your membership on the [community reviewer mailing list](mailto:openerp-community-reviewer@lists.launchpad.net ).
 
 ## Find our work
 
 + [Our community reviewer team](https://launchpad.net/~openerp-community-reviewer)
 + [Our participation in Community Project](https://launchpad.net/~openerp-community-reviewer/+participation) (the list of all available community teams)
 + [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
++ [The Community backport](https://launchpad.net/~openerp-community/+related-projects)
 
 ## Rules to join our projects
 
-To be defined, currently based on the vote of the charter memeber and the community reviewer team. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
+To be defined, currently based on the vote of the charter memeber and the community reviewer team. You can also read the FAQ for more details. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
 
-## Rules to add a module on existingg project
+## Rules to add a module on existing project
 
 Currently, make a merge proposal on the proper branch, during the review process, it'll be decide wether to include or reject your proposition. You can also ask on the community mailling list to have a first opinion : openerp-community@lists.launchpad.net.
 
 ## Contributor License Agreement
 
-A CLA must be seigne to contribute to OCA's projects. See the specific section [here](cla/cla.html) !
+A CLA must be signed to contribute to OCA's projects. See the specific section [here](cla/cla.html) !
