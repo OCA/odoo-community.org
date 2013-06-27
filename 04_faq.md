@@ -71,17 +71,14 @@ The association only accepts projects that use OSI-certified licenses for their 
 
 ## Participation
 
+### What can I do to get involved?
+Visit the OCA web site. Join the main [communtiy lists](https://launchpad.net/~openerp-community). You don't need to be a programmer. 
 
-To be part and start contributing to our organization, you can easily sign up to our [mailing lists](https://launchpad.net/~openerp-community) on Launchpad. This is the first step to starts discussion with others, exchanging ideas, keep you inform, etc.. This i completely free and no need to sign any agreement.
+### How can I contribute code?
+The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Curently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. The copyright must be granted to the OCA.
 
-What can I do to get involved?
-Visit the OCA web site. Join the main association discuss list. Check out the Volunteers Needed wiki. You don't need to be a programmer. 
+### Does the association need money?
+The association is soliciting organizational sponsorships now. However, contributions of time for committee work, development, documentation, testing, user support, and advocacy are the preferred form of contribution from individuals. 
 
-How can I contribute code?
-The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Individual Project Steering Committees will determine the criteria for accepting contributions within this broader legal framework. In the meantime, you are encouraged to participate on the mailing lists for the association projects. 
-
-Does the association need money?
-The association is soliciting organizational sponsorships now. Once some organizational and financial details are worked out it will also be possible for individuals to make tax deductible (if in the USA) donations. However, contributions of time for committee work, development, documentation, testing, user support, and advocacy are the preferred form of contribution from individuals. Some countries have tax exempt organizations with similar goals to OCA that may be candidates for donations or that are willing to receive donations for OCA. 
-
-May I used the OCA logo and name freely?
-Yes, but the association considers the OCA name, and logo to be trademarks, so please review the trademark guidelines and FAQ. The logos page has logos in a variety of styles and formats. 
+### May I used the OCA logo and name freely?
+Yes, but the association considers the OCA name, and logo to be trademarks.
