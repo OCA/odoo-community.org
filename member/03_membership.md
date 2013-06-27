@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 
 
-We do have several membership level which implies various level of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
+We do have several membership levels which imply various levels of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 Have a look [here](member_list.html) to have the actual list of member.
 
@@ -22,7 +22,7 @@ The broadest category, that of Participant, is for those who are not formally re
 ### Member
 
 The second category is called Member. Individuals in this category have the same level of rights to work on OCA activities as the Participant category, but with the important distinction that these individuals are member of the OCA, they pay their contributions. 
-By being a member, an individual is "opting in" and publicly acknowleging their connection to the OCA. This membership process also provides the OCA with a known, countable membership base. For example, the Board or various Committees may, from time to time, wish to poll the all Members on some important issue.
+By being a member, an individual is "opting in" and publicly acknowledging their connection to the OCA. This membership process also provides the OCA with a known, countable membership base. For example, the Board or various Committees may, from time to time, wish to poll the all Members on some important issue.
 
 ### Charter Member
 
