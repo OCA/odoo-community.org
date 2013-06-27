@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 
 
-We do have several membership level which implies various level of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Send your membership request [by mail](mailto:oca-board@lists.launchpad.net).
+We do have several membership level which implies various level of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 Have a look [here](member_list.html) to have the actual list of member.
 
