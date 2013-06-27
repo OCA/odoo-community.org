@@ -7,8 +7,6 @@ group: navigation
 
 {% include JB/setup %}
 
-Work in progress
-
 ## Structure and Governance
 
 ### What is the OpenERP Community Association ?
@@ -75,7 +73,7 @@ The association only accepts projects that use OSI-certified licenses for their 
 Visit the OCA web site. Join the main [communtiy lists](https://launchpad.net/~openerp-community). You don't need to be a programmer. 
 
 ### How can I contribute code?
-The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Curently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. The copyright must be granted to the OCA.
+The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Curently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. The copyright must be granted to the OCA, more details [here](cla/cla.html).
 
 ### Does the association need money?
 The association is soliciting organizational sponsorships now. However, contributions of time for committee work, development, documentation, testing, user support, and advocacy are the preferred form of contribution from individuals. 
