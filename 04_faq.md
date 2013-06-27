@@ -70,7 +70,7 @@ The association only accepts projects that use OSI-certified licenses for their 
 ## Participation
 
 ### What can I do to get involved?
-Visit the OCA web site. Join the main [communtiy lists](https://launchpad.net/~openerp-community). You don't need to be a programmer. 
+Visit the OCA web site. Join the main [communtiy lists](https://launchpad.net/~openerp-community). You don't need to be a programmer. You can also request your membership by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 ### How can I contribute code?
 The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Curently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. The copyright must be granted to the OCA, more details [here](cla/cla.html).
