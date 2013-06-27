@@ -12,7 +12,7 @@ OCA's Projects are all the developments that have been produced and maintained b
 
 We are in the process of bringing all the developments together, today the current community organization on the [Launchpad](https://launchpad.net) platform is the most representative work achieved.
 
-We are organized in [community teams by topic](https://launchpad.net/~openerp-community-reviewer/+participation) and each of them handles various projects. The team is responsible to review and commit the work of the community in the related branches of their related projects. Anyone can contribute to any projects by submitting bug reports, merge proposals, patches, translations or peer reviews.
+We are organized in [community teams by topic](https://launchpad.net/~openerp-community-reviewer/+participation) and each of them handles various projects. The team is responsible to review and commit the work of the community in the related branches of their related projects. Anyone can contribute to any project by submitting bug reports, merge proposals, patches, translations or peer reviews.
 
 A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) has been setup to be part of all community teams and help them in the review process. This team is composed by OpenERP Developers and Experts that have a very good knowledge on OpenERP. They are elected here based on Meritocracy. 
 
