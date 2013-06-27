@@ -27,7 +27,7 @@ To be accepted in one of the team, starts suggesting merge proposal and review o
 
 ## Rules to join our projects
 
-To be defined, currently based on the vote of the charter memeber and the community reviewer team. You can also read the FAQ for more details. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
+To be defined, currently based on the vote of the charter memeber and the community reviewer team. You can also read the [FAQ](04_faq.html) for more details. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
 
 ## Rules to add a module on existing project
 
