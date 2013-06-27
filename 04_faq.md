@@ -55,24 +55,19 @@ Only a limited number of projects (and modules) can be effectively handled be th
 Yes. The individual contributions in OCA's projects are expected to grant the Copyright to the association. At the creation of the association, all projects were not in that case and followed a review process.
 
 ### Do project developers need to sign a legal agreement?
-No. Generally speaking this is not required, but all committer (as part of the [communtiy reviewer team](https://launchpad.net/~openerp-community-reviewer) and their [related teams](https://launchpad.net/~openerp-community-reviewer/+participation)) 
+No. Generally speaking this is not required, but all committers (as part of the [communtiy reviewer team](https://launchpad.net/~openerp-community-reviewer) and their [related teams](https://launchpad.net/~openerp-community-reviewer/+participation)) must have signed one. For more details, please reade the [CLA](cla/cla.html) page.
 
- some specific projects may require developers or their employers to sign a contributor agreement.
-
-Do association projects need to turn over project control to the association?
+### Do association projects need to turn over project control to the association?
 No. The association is not interested in controlling association projects. However, association projects are expected to follow some association rules, mostly around the need to ensure that project code is not legally encumbered (e.g., not stolen, or improperly contributed), and that appropriate controls are in place to ensure code is properly contributed. Some additional expectations may exist around projects operating in an open and accountable fashion, handling association-provided funding appropriately and not taking actions that will cause legal problems or negative goodwill for the association. The association also encourages, but does not require, projects to support association goals, such as implementing standards-based interoperability. 
 
-Can my project operate as a benevolent dictatorship?
+### Can my project operate as a benevolent dictatorship?
 OCA projects are typically governed by a Project Steering Committee (PSC). The PSC should operate openly and with a consensus based approach. While the PSC may delegate specific responsibilities to particular project members it is ultimately intended to be the governing body for the project. A benevolent dictatorship is not considered a suitable open and consensus based approach to governance. 
 
-Do I have to use mandated source control / web system / bug system / mailing list from the association?
-No. Projects joining the association can continue to use their traditional source control system, web site system, bug tracker and mailing list software. However, the association does offer these infrastructural components, and encourages their use to provide a more consistent way for users and developers to interact with the different association projects. 
+### Do I have to use mandated source control / web system / bug system / mailing list from the association?
+No. Projects joining the association can continue to use their traditional source control system, web site system, bug tracker and mailing list software. However, the association does recommand to use Launchpad to provide a more consistent way for users and developers to interact with the different association projects. 
 
-Does the association mandate a particular license for software?
-The association only accepts projects that use OSI-certified licenses for their software, and requires that projects stick to OSI-certified licenses. This includes common licenses such as MIT/X, BSD, GPL, and LGPL. The association encourages library projects to use the LGPL or a more permissive license (such as MIT/X or BSD) rather than the GPL so that the libraries can be reused by non-GPL projects, but does not require it. The association also discourages a proliferation of new and incompatible licenses. 
-
-Does the association mandate a particular license for content other than software, such as geodata, educational materials, documentation, etc.?
-The association accepts non-software projects that use Creative Commons or similar licenses for their public geodata, educational material, or promotional material. The association also discourages a proliferation of new and incompatible licenses. 
+### Does the association mandate a particular license for software?
+The association only accepts projects that use OSI-certified licenses for their software, and requires that projects stick to OSI-certified licenses. This includes common licenses such as MIT/X, BSD, GPL, and LGPL. The association encourages library projects to use the AGPL rather than the GPL, but does not require it. The association also discourages a proliferation of new and incompatible licenses. 
 
 ## Participation
 

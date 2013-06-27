@@ -21,7 +21,7 @@ A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) h
 + [Our community reviewer team](https://launchpad.net/~openerp-community-reviewer)
 + [Our participation in Community Project](https://launchpad.net/~openerp-community-reviewer/+participation) (the list of all available community teams)
 + [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
-    
+
 ## Rules to join our projects
 
 To be defined, currently based on the vote of the charter memeber and the community reviewer team. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
