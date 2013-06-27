@@ -43,10 +43,10 @@ Projects are operated by Project Steering Committees which select a chair or boa
 ## Project and Module Joining the Association
 
 ### What software projects are currently part of the association?
-On its formation, tthe most representativ work has been achieved by the former community organization. See the [OCA's Projects](projects.html) for an official list. 
+On its formation, tthe most representativ work has been achieved by the former community organization. See the [OCA's Projects](02_projects.html) for an official list. 
 
 ### What does a project or Module need to join?
-Projects (or module) need to go through the vote of charted member to join the association. Details on how to apply, and how the process works are available on the [OCA's Projects](projects.html) page. 
+Projects (or module) need to go through the vote of charted member to join the association. Details on how to apply, and how the process works are available on the [OCA's Projects](02_projects.html) page. 
 
 ### So when can my project join?
 Only a limited number of projects (and modules) can be effectively handled be the OCA at a time, so please be patient. 

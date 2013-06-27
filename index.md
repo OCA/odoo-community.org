@@ -9,9 +9,9 @@ The OpenERP Community Association, or OCA, is a not-for-profit organization whos
 
 ## Discover and Get involved
 
-Read [about us](about.html) and join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](faq.html) page to become more involved. 
+Read [about us](about.html) and join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](04_faq.html) page to become more involved. 
 
-Have a look on [our work](project.html) through our various projects and start using / contributing to them.
+Have a look on [our work](02_projects.html) through our various projects and start using / contributing to them.
 
 ## Last news from Twitter
 

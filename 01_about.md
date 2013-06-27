@@ -37,16 +37,16 @@ The following more detailed goals support the overall mission:
 
 ## Association details
 
-Read the [FAQ](faq.html)
+Read the [FAQ](04_faq.html)
 
 **Governance**
 
-+ [Bylaws](bylaws.html)
++ [Bylaws](05_bylaws.html)
 
 **Bodies**
 
 + [Board of Directors and Officers](member/board.html)
-+ [Membership Categories](member/membership.html)
++ [Membership Categories](member/03_membership.html)
 + [List of Member and Charter member](member/member_list.html)
 
 **Contact**
