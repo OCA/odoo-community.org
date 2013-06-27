@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : OpenERP Community Association
-tagline: Collaborative Work
+tagline: Collaborative Devs
 author :
   name : Name Lastname
   email : blah@email.test

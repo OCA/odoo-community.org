@@ -22,3 +22,14 @@ A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) h
 + [Our participation in Community Project](https://launchpad.net/~openerp-community-reviewer/+participation) (the list of all available community teams)
 + [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
     
+## Rules to join our projects
+
+To be defined, currently based on the vote of the charter memeber and the community reviewer team. Your project will be added to the community reviewer team if it has been decide so. Ask to the community mailling list : openerp-community@lists.launchpad.net.
+
+## Rules to add a module on existingg project
+
+Currently, make a merge proposal on the proper branch, during the review process, it'll be decide wether to include or reject your proposition. You can also ask on the community mailling list to have a first opinion : openerp-community@lists.launchpad.net.
+
+## Contributor License Agreement
+
+A CLA must be seigne to contribute to OCA's projects. See the specific section [here](cla/cla.html) !

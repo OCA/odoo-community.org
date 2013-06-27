@@ -35,6 +35,24 @@ The following more detailed goals support the overall mission:
 + To promote the use of open source software in the industry (not just association software) - eg. training, outreach.
 + To organize meeting of membres to improve the collaboration and the knowledge of the OCA'sprojects
 
+## Association details
+
+Read the [FAQ](faq.html)
+
+**Governance**
+
++ [Bylaws](bylaws.html)
+
+**Bodies**
+
++ [Board of Directors and Officers](member/board.html)
++ [Membership Categories](member/membership.html)
++ [List of Member and Charter member](member/member_list.html)
+
+**Contact**
+
+Curent contact is made through the board mailing list [here](mailto:oca-board@lists.launchpad.net)
+
 ## Founding members
 
 The OpenERP Community Association has been launched in 2013 by the following founding members:
@@ -44,3 +62,5 @@ The OpenERP Community Association has been launched in 2013 by the following fou
 + [Savoir Faire Linux](http://www.savoirfairelinux.com/en/)
 + [Vauxoo](http://vauxoo.com/)
 + [Akretion](http://www.akretion.com/)
+
+All of them were strongly involved in the community and shared a same vision about [Collaborative software development](http://en.wikipedia.org/wiki/Collaborative_software_development_model).

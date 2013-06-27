@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="author" content="{{ site.author.name }}" />
-    <title>{{ page.title }}</title>
+    <title>{{ site.title }}</title>
 
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
@@ -20,9 +20,9 @@
     <div class="wrapper">
       <header>
         <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
-        <p class="header">{{ site.tagline }}</p>
+        <p class="header"><a href="http://en.wikipedia.org/wiki/Collaborative_software_development_model">{{ site.tagline }}</a></p>
         <ul>
-          {% assign pages_list = site.pages %}
+          {% assign pages_list = site.pages | sort:"name" %}
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
         </ul>

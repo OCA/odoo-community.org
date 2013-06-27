@@ -1,10 +1,6 @@
 ---
 layout: page
-title: "FAQ"
+title: "Board"
 description: ""
-group: navigation
 ---
-
 {% include JB/setup %}
-
-Work in progress

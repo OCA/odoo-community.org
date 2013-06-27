@@ -5,11 +5,17 @@ tagline:
 ---
 {% include JB/setup %}
 
-The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. Join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](faq.html) page to become more involved.
+The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. 
 
-## News from Twitter
+## Discover and Get involved
 
-<a class="twitter-timeline" width="300" height="600" data-chrome="nofooter transparent" href="https://twitter.com/search?q=%23openerp"  data-widget-id="349620343364796416">Tweets about "#openerp"</a>
+Read [about us](about.html) and join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](faq.html) page to become more involved. 
+
+Have a look on [our work](project.html) through our various projects and start using / contributing to them.
+
+## Last news from Twitter
+
+<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/search?q=%23openerp"  data-widget-id="349620343364796416">Tweets about "#openerp"</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<a class="twitter-timeline" width="300" height="600" data-chrome="nofooter transparent" href="https://twitter.com/OERPCommunity"  data-widget-id="349624289248559104">Tweets by @OERPCommunity</a>
+<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/OERPCommunity"  data-widget-id="349624289248559104">Tweets by @OERPCommunity</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
