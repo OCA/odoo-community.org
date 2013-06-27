@@ -19,7 +19,7 @@ Our goals :
 + Ease the synergy and collaboration in the OCA's projects
 
 
-## Misison Statement
+## Mission Statement
 
 Establish and support an Open Source and collaborative community for the developpment and promotion of OpenERP features and modules.
 
