@@ -73,10 +73,10 @@ The association only accepts projects that use OSI-certified licenses for their 
 Visit the OCA web site. Join the main [community list](https://launchpad.net/~openerp-community). You don't need to be a programmer. You can also request your membership by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 ### How can I contribute code?
-The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Currently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. The copyright must be granted to the OCA, more details [here](cla/cla.html).
+The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Currently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. Find more details on the contributors agreement [here](cla/cla.html).
 
 ### How can I be part of the reviewer team?
-To be accepted in one of the team, start by suggesting merge proposals and reviewing others' work. When significant work has been achieved, you can apply for the team by requesting your membership on the [community reviewer mailing list](mailto:openerp-community-reviewer@lists.launchpad.net ).
+To be accepted in one of the team, start by suggesting merge proposals and reviewing others' work. When significant work has been achieved, you can apply for the team by requesting your membership on the [community reviewer mailing list](mailto:openerp-community-reviewer@lists.launchpad.net ). Note that reviewers, in their committers role, would have to sign the [CLA](cla/cla.html).
 
 ### Does the association need money?
 The association is soliciting organizational sponsorships now. However, contributions of time for committee work, development, documentation, testing, user support, and advocacy are the preferred form of contribution from individuals. 
