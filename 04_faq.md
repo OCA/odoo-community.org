@@ -83,3 +83,8 @@ The association is soliciting organizational sponsorships now. However, contribu
 
 ### May I used the OCA logo and name freely?
 Yes, but the association considers the OCA name, and logo to be trademarks.
+
+### How can I contribut to improve OCA website ?
+You can easily fork this [github repository](https://github.com/openerp-community-association/website) and make a pull request that'll be reviewed. The website was built with Jekyll-Bootstrap.
+
+

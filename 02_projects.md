@@ -22,8 +22,8 @@ To be accepted in one of the team, start by suggesting merge proposals and revie
 
 + [Our community reviewers team](https://launchpad.net/~openerp-community-reviewer)
 + [Our participation in Community Projects](https://launchpad.net/~openerp-community-reviewer/+participation) (the list of all the available community teams)
-+ [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
 + [The Community backport](https://launchpad.net/~openerp-community/+related-projects)
++ [Official Community Documentation](https://doc.openerp.com/contribute/02_working_in_teams/)
 
 ## Rules to join our projects
 
