@@ -14,10 +14,12 @@ The association's projects are all freely available and useable under an OSI-cer
 
 Our goals :
 
-+ Establish an Open Source Community to stimulate the developement and the promotion of OpenERP
-+ Support this Community by protecting his interest and developpement
-+ Ease the synergy and collaboration in the OCA's projects
-
++ Help and promote the collaborative software development of OpenERP;
++ Encourage the development of OpenERP and its features while coordinating and organizing the collaborative work on the software;
++ Assist the community while defending its interests and the sustainability of its developments;
++ promote the use of the OpenERP solution;
++ Facilitate synergies, collaborations and fund raising efforts;
++ Actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 
 ## Mission Statement
 
@@ -32,6 +34,7 @@ The following more detailed goals support the overall mission:
 + To provide resources for OCA's projects - eg. infrastructure, CLA, funding, legal.
 + To encourage the implementation of open standards and standards-based interoperability in OCA's projects.
 + To support use and contribution to OCA's projects from the worldwide community through internationalization of software and community outreach.
++ To Represent the Community opinion regarding OpenERP SA's roadmap, marketing and development strategies
 + To promote the use of open source software in the industry (not just association software) - eg. training, outreach.
 + To organize meeting of membres to improve the collaboration and the knowledge of the OCA'sprojects
 
