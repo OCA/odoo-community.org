@@ -17,7 +17,7 @@ Our goals :
 + Help and promote the collaborative software development of OpenERP;
 + Encourage the development of OpenERP and its features while coordinating and organizing the collaborative work on the software;
 + Assist the community while defending its interests and the sustainability of its developments;
-+ promote the use of the OpenERP solution;
++ Promote the use of the OpenERP solution;
 + Facilitate synergies, collaborations and fund raising efforts;
 + Actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 
