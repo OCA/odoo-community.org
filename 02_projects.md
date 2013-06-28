@@ -35,4 +35,4 @@ Currently, make a merge proposal on the proper branch, during the review process
 
 ## Contributor License Agreement
 
-A CLA must be signed to contribute to OCA's projects. See the specific section [here](cla/cla.html) !
+The OCA desires contributors to submit a CLA, but requires committers and charter member to do so. See the specific section [here](cla/cla.html).
