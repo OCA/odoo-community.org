@@ -7,4 +7,5 @@ group: navigation
 
 {% include JB/setup %}
 
-Work in progress
+
+[Download](Publishedstatusonwebsite.pdf) the bylaws [EN]
