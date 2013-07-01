@@ -8,9 +8,9 @@ group: navigation
 
 ## The OpenERP Community Association
 
-The OpenERP Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the OpenERP features, and promote its widespread use. The association provides financial, organizational and legal support to the broader OpenERP Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
+The OpenERP Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the OpenERP features, and to promote the widespread use of OpenERP. The association provides financial, organizational and legal support to the broader OpenERP Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
 
-The association's projects are all freely available and useable under an OSI-certified open source license
+The association's projects are all freely available and useable under an OSI-certified Open Source license.
 
 Our goals :
 
