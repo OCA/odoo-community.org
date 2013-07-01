@@ -8,4 +8,4 @@ group: navigation
 {% include JB/setup %}
 
 
-[Download](Publishedstatusonwebsite.pdf) the bylaws [EN]
+[Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [EN]
