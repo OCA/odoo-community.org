@@ -34,7 +34,7 @@ Specific goals support the overall mission:
 + To provide resources for the OCA's projects - eg. infrastructure, CLA, funding, legal.
 + To encourage the implementation of open standards and standards-based interoperability in the OCA's projects.
 + To support the worldwide use and contribution to the OCA's projects from the community via the internationalization of the software and community outreach.
-+ To Represent the Community's opinion regarding the OpenERP SA roadmap, marketing and development strategies.
++ To represent the Community's opinion regarding the OpenERP SA roadmap, marketing and development strategies.
 + To promote the use of Open Source software in the industry (not just association software) - eg. training, outreach.
 + To organize members meetings to improve the collaboration and the knowledge of the OCA's projects.
 
