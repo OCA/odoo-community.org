@@ -8,9 +8,9 @@ group: navigation
 
 ## The OpenERP Community Association
 
-The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. The association provides financial, organizational and legal support to the broader OpenERP open source community. It also serves as an independent legal entity to which community members can contribute code, funding and other resources, secure in the knowledge that their contributions will be maintained for public benefit.
+The OpenERP Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the OpenERP features, and to promote the widespread use of OpenERP. The association provides financial, organizational and legal support to the broader OpenERP Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
 
-The association's projects are all freely available and useable under an OSI-certified open source license
+The association's projects are all freely available and useable under an OSI-certified Open Source license.
 
 Our goals :
 
@@ -23,22 +23,22 @@ Our goals :
 
 ## Mission Statement
 
-Establish and support an Open Source and collaborative community for the developpment and promotion of OpenERP features and modules.
+Establish and support an Open Source and collaborative community for the developpment and promotion of the OpenERP features and modules.
 
 ## Objectives
 
-The following more detailed goals support the overall mission:
+Specific goals support the overall mission:
 
-+ To ensure a high degree of quality in OCA's projects in order to build and preserve the association "brand".
-+ To ensure the long term support and maintenance of the OCA's projects and developpements
-+ To provide resources for OCA's projects - eg. infrastructure, CLA, funding, legal.
-+ To encourage the implementation of open standards and standards-based interoperability in OCA's projects.
-+ To support use and contribution to OCA's projects from the worldwide community through internationalization of software and community outreach.
-+ To Represent the Community opinion regarding OpenERP SA's roadmap, marketing and development strategies
-+ To promote the use of open source software in the industry (not just association software) - eg. training, outreach.
-+ To organize meeting of membres to improve the collaboration and the knowledge of the OCA'sprojects
++ To ensure a high degree of quality in the OCA's projects in order to build and preserve the association "brand".
++ To ensure the long term support and maintenance of the OCA's projects and developments.
++ To provide resources for the OCA's projects - eg. infrastructure, CLA, funding, legal.
++ To encourage the implementation of open standards and standards-based interoperability in the OCA's projects.
++ To support the worldwide use and contribution to the OCA's projects from the community via the internationalization of the software and community outreach.
++ To Represent the Community's opinion regarding the OpenERP SA roadmap, marketing and development strategies.
++ To promote the use of Open Source software in the industry (not just association software) - eg. training, outreach.
++ To organize members meetings to improve the collaboration and the knowledge of the OCA's projects.
 
-## Association details
+## The Association
 
 Read the [FAQ](04_faq.html)
 
@@ -66,4 +66,4 @@ The OpenERP Community Association has been launched in 2013 by the following fou
 + [Vauxoo](http://vauxoo.com/)
 + [Akretion](http://www.akretion.com/)
 
-All of them were strongly involved in the community and shared a same vision about [Collaborative software development](http://en.wikipedia.org/wiki/Collaborative_software_development_model).
+All of the fouding members are strongly involved in the community and shared the same vision about [Collaborative software development](http://en.wikipedia.org/wiki/Collaborative_software_development_model).
