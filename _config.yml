@@ -12,9 +12,9 @@ pygments: true
 title : OpenERP Community Association
 tagline: Collaborative Devs
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
+  name : Grand-Guillaume Joël
+  email : joel.grandguillame@camptocamp.com
+  github : jgrandguillaume
   twitter : OERPCommunity
   feedburner : OpenERP-Community-Association
 
