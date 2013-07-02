@@ -8,6 +8,8 @@ group: navigation
 {% include JB/setup %}
 
 
+**!! Warning, those bylaws are currently under a lawyer validation !!**
+
 [Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [EN]
 
 
