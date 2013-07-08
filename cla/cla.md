@@ -24,5 +24,5 @@ Your Full name will be published. The email address and other contact details ar
 
 ### Find our Individual and Entity CLA's
 
-+ [Download](OpenERP_Community_Association-Entity.pdf) the individual CLA
-+ [Download](OpenERP_Community_Association-Individual.pdf) the entity CLA
++ [Download](OpenERP_Community_Association-Individual.pdf) the individual CLA
++ [Download](OpenERP_Community_Association-Entity.pdf) the entity CLA
