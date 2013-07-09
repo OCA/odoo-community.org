@@ -156,7 +156,7 @@ The Board is composed of at least 5 members and at the outside 9 members elected
 + A president
 + A vice-president
 + A secretary
-+ Un treasurer
++ A treasurer
 
 
 Each member's term of office shall last for 1 year and is renewable.
@@ -188,7 +188,8 @@ The Association shall be validly bound by the joint signature of the President o
 The Board can set up one or several Project Steering Committees. A Project Steering Commitee is composed of at least one Charter member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
 
 Unless elected as member in accordance to these articles, a member of a  Project Steering Committee shall not be considered as a member of the Association. The Board can end a Project Steering Committee at any time. A Project Steering Committee shall not be considered as the Board of the Association. A Project Steering Committee can not exercise the powers and the authority confered to the Board.
-Article 20
+
+###  Article 20
 
 Each Project Steering Committee is responsible of the diligent management of one or more projects identified by the Board. These projects can include, but are not limited to, the creation or the maintenance of Open Source projects.
 
@@ -210,6 +211,7 @@ For a corporation that has assigned employees to work on an OCA project, a Entit
 Note that an Entity CLA does not remove the need for every contributor to sign their own CLA as an individual, to cover any of their contributions which are not owned by the corporation signing the ECLA.
 
 CLAs may be submitted by traditional postal mail, fax, or by emailing a scan of the signed copy.
+
 ## VII Various Provisions
 ### Article 23
 
@@ -220,9 +222,11 @@ The auditor appointed by the General Assembly shall audit the Association's acco
 ### Article 24
 
 The rules of procedures, established by Board, and approved by the majority of the two-thirds of its Charter members, complete these articles.
+
 ### Article 25
 
 In the case of the Association being dissolved, the assets should be allotted to a non-profit organisation pursuing goals of public interest similar to those of the organisation. The goods cannot be returned to the founders or members, nor be used to their own profit.
+
 ### Article 26
 
 Should divergences exist between the translations of these articles, the French version shall prevail.
