@@ -21,7 +21,10 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+
+        <!-- <h2 class="header"><a href="https://www.odoo.com">{{ site.title1 }}</a></h2> -->
+        <img src="/odoo_logo_color_on_black.png" width="180" >
+        <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title2 }}</a></h1>
         <p class="header"><a href="http://en.wikipedia.org/wiki/Collaborative_software_development_model">{{ site.tagline }}</a></p>
         <ul>
           {% assign pages_list = site.pages | sort:"name" %}

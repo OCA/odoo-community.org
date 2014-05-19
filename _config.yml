@@ -13,6 +13,8 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : Odoo Community Association
+title1 : odoo
+title2 : Community Association
 tagline: Collaborative Devs
 author :
   name : Grand-Guillaume Joël
