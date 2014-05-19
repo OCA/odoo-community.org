@@ -8,13 +8,13 @@ group: navigation
 
 ## Organization
 
-OCA's Projects are all the developments that have been produced and maintained by the community around [OpenERP](https://www.openerp.com/).
+OCA's Projects are all the developments that have been produced and maintained by the community around [Odoo](https://www.openerp.com/).
 
 We are in the process of bringing all the developments together, today the current community organization on the [Launchpad](https://launchpad.net) platform is the most representative work achieved.
 
 We are organized in [community teams by topic](https://launchpad.net/~openerp-community-reviewer/+participation) and each of them handles various projects. The team is responsible to review and commit the work of the community in the related branches of their related projects. Anyone can contribute to any project by submitting bug reports, merge proposals, patches, translations or peer reviews.
 
-A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) has been setup to be part of all community teams and help them in the review process. This team is composed by Developers having a strong experience in OpenERP and Experts that have a very good knowledge on OpenERP. They are elected here based on Meritocracy. 
+A [community reviewer team](https://launchpad.net/~openerp-community-reviewer) has been setup to be part of all community teams and help them in the review process. This team is composed by Developers having a strong experience in Odoo and Experts that have a very good knowledge on Odoo. They are elected here based on Meritocracy. 
 
 To be accepted in one of the team, start by suggesting merge proposals and reviewing others' work. When significant work has been achieved, you can apply for a team by requesting your membership on the [community reviewers mailing list](mailto:openerp-community-reviewer@lists.launchpad.net ).
 

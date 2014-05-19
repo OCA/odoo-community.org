@@ -17,7 +17,7 @@ group: navigation
 ## I Name and headquarters
 ### Article 1
 
-"OpenERP Community Association" hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational.
+"Odoo Community Association" hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational.
 ### Article 2
 
 The Association headquarters are located in Lausanne (Switzerland).
@@ -28,10 +28,10 @@ The Association shall be of unlimited duration.
 
 The Association shall pursue the following purpose(s):
 
-+ help and promote the collaborative software development of OpenERP;
-+ encourage the development of OpenERP and its features while coordinating and organizing the collaborative work on the software;
++ help and promote the collaborative software development of Odoo;
++ encourage the development of Odoo and its features while coordinating and organizing the collaborative work on the software;
 + assist the community while defending its interests and the sustainability of its developments;
-+ promote the use of the OpenERP solution;
++ promote the use of the Odoo solution;
 + facilitate synergies, collaborations and fund raising efforts;
 + actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 

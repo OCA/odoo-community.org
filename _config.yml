@@ -12,14 +12,14 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : OpenERP Community Association
+title : Odoo Community Association
 tagline: Collaborative Devs
 author :
   name : Grand-Guillaume Joël
   email : joel.grandguillame@camptocamp.com
   github : jgrandguillaume
   twitter : OERPCommunity
-  feedburner : OpenERP-Community-Association
+  feedburner : Odoo-Community-Association
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

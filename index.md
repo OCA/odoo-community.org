@@ -1,11 +1,11 @@
 ---
 layout: page
-title: The OpenERP Community Association
+title: The Odoo Community Association
 tagline: 
 ---
 {% include JB/setup %}
 
-The OpenERP Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of OpenERP features, and promote its widespread use. 
+The Odoo Community Association, or OCA, is a not-for-profit organization whose mission is to support the collaborative development of Odoo features, and promote its widespread use. 
 
 ## Discover and Get involved
 

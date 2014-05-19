@@ -9,8 +9,8 @@ group: navigation
 
 ## Structure and Governance
 
-### What is the OpenERP Community Association? 
-The association, or "OCA" for short, is an independent nonprofit legal entity established to support the needs of the Open Source OpenERP community. The association will serve as an organizing body, a public technology commons, a development community manager, and anevent sponsor. Once fully established, the association will provide a legal and administrative framework to better support the ongoing developments and promotion of the OCA's projects. 
+### What is the Odoo Community Association? 
+The association, or "OCA" for short, is an independent nonprofit legal entity established to support the needs of the Open Source Odoo community. The association will serve as an organizing body, a public technology commons, a development community manager, and anevent sponsor. Once fully established, the association will provide a legal and administrative framework to better support the ongoing developments and promotion of the OCA's projects. 
 
 ### What is the legal form of the association?
 The association is a membership-based organization incorporated under the laws of association, Switzerland. The association was expressly incorporated as a not-for-profit organization.
@@ -19,7 +19,7 @@ The association is a membership-based organization incorporated under the laws o
 The association is a nonprofit entity and has no shareholders. Thus, nobody "owns" the association. However, the association does have charter members who, like the shareholders in a for-profit company, elect the association's board of directors. The board of directors, acting together, manages the affairs of the association. 
 
 ### Who are the members ?
-The membership is composed of users, supporters, promoters, and developers of the Open Source OpenERP software. Becoming a member is as easy as joining the site and contributing to the association's goals. Beyond members, there are various charter members. 
+The membership is composed of users, supporters, promoters, and developers of the Open Source Odoo software. Becoming a member is as easy as joining the site and contributing to the association's goals. Beyond members, there are various charter members. 
 
 ### Can I become a charter member?
 New charter members are nominated and elected by existing charter members during the annual charter member election. 
@@ -30,8 +30,8 @@ Yes! First, a regular member can do everything a charter member can do, except v
 ### Who are the Board of directors?
 The Board of Directors were voted in an initial round by the initial association membership and then by the elected association members.
 
-### Is the association controlled by OpenERP SA?
-No. OpenERP SA has provided generous support to help establish the association, and some of their people may be part of the association in the future as anybody else.
+### Is the association controlled by Odoo SA?
+No. Odoo SA has provided generous support to help establish the association, and some of their people may be part of the association in the future as anybody else.
 
 ### What are the detailed rules of governance of OCA?
 OCA is governed by a board of directors elected by the charter members. The board selects a President, Treasurer and Secretary as officers with particular areas of responsibility. 

@@ -6,24 +6,24 @@ group: navigation
 ---
 {% include JB/setup %}
 
-## The OpenERP Community Association
+## The Odoo Community Association
 
-The OpenERP Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the OpenERP features, and to promote the widespread use of OpenERP. The association provides financial, organizational and legal support to the broader OpenERP Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
+The Odoo Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the Odoo features, and to promote the widespread use of Odoo. The association provides financial, organizational and legal support to the broader Odoo Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
 
 The association's projects are all freely available and useable under an OSI-certified Open Source license.
 
 Our goals :
 
-+ Help and promote the collaborative software development of OpenERP;
-+ Encourage the development of OpenERP and its features while coordinating and organizing the collaborative work on the software;
++ Help and promote the collaborative software development of Odoo;
++ Encourage the development of Odoo and its features while coordinating and organizing the collaborative work on the software;
 + Assist the community while defending its interests and the sustainability of its developments;
-+ Promote the use of the OpenERP solution;
++ Promote the use of the Odoo solution;
 + Facilitate synergies, collaborations and fund raising efforts;
 + Actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 
 ## Mission Statement
 
-Establish and support an Open Source and collaborative community for the developpment and promotion of the OpenERP features and modules.
+Establish and support an Open Source and collaborative community for the developpment and promotion of the Odoo features and modules.
 
 ## Objectives
 
@@ -34,7 +34,7 @@ Specific goals support the overall mission:
 + To provide resources for the OCA's projects - eg. infrastructure, CLA, funding, legal.
 + To encourage the implementation of open standards and standards-based interoperability in the OCA's projects.
 + To support the worldwide use and contribution to the OCA's projects from the community via the internationalization of the software and community outreach.
-+ To represent the Community's opinion regarding the OpenERP SA roadmap, marketing and development strategies.
++ To represent the Community's opinion regarding the Odoo SA roadmap, marketing and development strategies.
 + To promote the use of Open Source software in the industry (not just association software) - eg. training, outreach.
 + To organize members meetings to improve the collaboration and the knowledge of the OCA's projects.
 
@@ -58,7 +58,7 @@ Curent contact is made through the board mailing list [here](mailto:oca-board@li
 
 ## Founding members
 
-The OpenERP Community Association has been launched in 2013 by the following founding members:
+The Odoo Community Association has been launched in 2013 by the following founding members:
 
 + [Camptocamp](https://www.camptocamp.com/)
 + [Therp](http://therp.nl/)
