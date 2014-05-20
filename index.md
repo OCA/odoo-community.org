@@ -11,7 +11,7 @@ The Odoo Community Association, or OCA, is a not-for-profit organization whose m
 
 Read [about us](01_about.html) and join us by signing up to our [mailing lists](https://launchpad.net/~openerp-community) or check out the [FAQ](04_faq.html) page to become more involved. 
 
-Have a look on [our work](02_projects.html) through our various projects and start using / contributing to them.
+Have a look at [our work](02_projects.html) through our various projects and start using / contributing to them.
 
 ## Last news from Twitter
 
