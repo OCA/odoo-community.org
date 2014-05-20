@@ -15,7 +15,7 @@ Have a look on [our work](02_projects.html) through our various projects and sta
 
 ## Last news from Twitter
 
-<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/search?q=%23openerp"  data-widget-id="349620343364796416">Tweets about "#openerp"</a>
+<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/search?q=%23odoo"  data-widget-id="349620343364796416">Tweets about "#odoo"</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/OERPCommunity"  data-widget-id="349624289248559104">Tweets by @OERPCommunity</a>
+<a class="twitter-timeline" width="300" height="400" data-chrome="nofooter transparent" href="https://twitter.com/OdooCommunity"  data-widget-id="349624289248559104">Tweets by @OdooCommunity</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
