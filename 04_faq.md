@@ -85,6 +85,6 @@ The association is now soliciting organizational sponsorships. However, contribu
 Yes, but the association considers the OCA name and logo to be trademarks.
 
 ### How can I contribute to improve the OCA's website?
-You can easily fork this [github repository](https://github.com/openerp-community-association/website) and make a pull request that'll be reviewed. The website was built with Jekyll-Bootstrap.
+You can easily fork this [github repository](https://github.com/OdooCommunity/website) and make a pull request that'll be reviewed. The website was built with Jekyll-Bootstrap.
 
 
