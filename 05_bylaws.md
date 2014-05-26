@@ -15,15 +15,19 @@ group: navigation
 
 
 ## I Name and headquarters
+
 ### Article 1
 
 "Odoo Community Association" hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational.
+
 ### Article 2
 
 The Association headquarters are located in Lausanne (Switzerland).
 
 The Association shall be of unlimited duration.
+
 ## II Purposes
+
 ### Article 3
 
 The Association shall pursue the following purpose(s):
@@ -37,7 +41,9 @@ The Association shall pursue the following purpose(s):
 
 
 To promote its goals and to guarantee that its available resources are geared towards community use, all software developments controlled by the Association will be published under a licence approved by the Open Source Intiative (OSI, opensource.org) and meeting the requirements of a Certified Open Source software.
+
 ## III Resources
+
 ### Article 4
 
 The Association's resources come from:
@@ -49,7 +55,9 @@ The Association's resources come from:
 + any other resources authorized by the law.
 
 The funds shall be used in conformity with the Association's purposes.
+
 ## IV Members
+
 ### Article 5
 
 Any physical or moral person may request to join: (i) if, through their commitment or actions, they have proved their attachment to the aims of the Association, and (ii) they are not salaried by the Association.
@@ -73,6 +81,7 @@ Membership ceases:
 In all cases, the membership fee for the current year remains due. Members who have resigned or who are excluded have no rights to any part of the Association’s assets.
 
 Only the assets of the Association may be used to meet commitments. Members have no individual responsibility.
+
 ### Article 6
 
 Participant members are all physical or moral entities, involved, in one way or another in the life of the Association. Anyone can be a Participant member. Participant members remain anonymous and have no rights in the Association and do not participate in the voting.
@@ -82,6 +91,7 @@ The Active members include all physical or moral entities elected by the General
 The Charter members include all physical entities elected by the General Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can be become Charter members. Only Charter members can be elected to the Board.
 
 ## V Organs
+
 ### Article 7
 
 The Association's organs are:
@@ -92,6 +102,7 @@ The Association's organs are:
 + The auditor.
 
 ## a) General Assembly
+
 ### Article 8
 
 The General Assembly is the Association's supreme authority. It is composed of all the Charter members who have paid their annual fees at the date of the notification.
@@ -121,6 +132,7 @@ The General Assembly:
 ### Article 10
 
 The General Assembly is presided over by the president of the Association.
+
 ### Article 11
 
 Each Charter member is entitled to one vote at the General Assembly. Decisions of the General Assembly shall be taken by a majority vote of the Charter members present and voting. In case of deadlock, the President shall have the casting vote.
@@ -145,6 +157,7 @@ The agenda of the ordinary annual session of the General Assembly must include:
 + other business
 
 ## b) Board
+
 ### Article 14
 
 The Board is authorized to carry out all acts that further the purposes of the Association. It is authorized to manage the Association's business.
@@ -162,6 +175,7 @@ The Board is composed of at least 5 members and at the outside 9 members elected
 Each member's term of office shall last for 1 year and is renewable.
 
 The Board meets as often as required.
+
 ### Article 16
 
 The Board members act voluntarily and can only be compensated for their effective and travel costs. Eventual fees cannot exceed that paid for official commissions. For activities exceeding the usual function, each committee member can receive appropriate compensation.
@@ -183,6 +197,7 @@ The functions of the Board are:
 The Association shall be validly bound by the joint signature of the President or Vice-President and at least one member of the Board.
 
 ## c) Project Steering Committee
+
 ### Article 19
 
 The Board can set up one or several Project Steering Committees. A Project Steering Commitee is composed of at least one Charter member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
@@ -202,6 +217,7 @@ The members of each existing Project Steering Committee shall be appointed by th
 Each member of a Project Steering Committee shall serve on such committee until his or her successor is elected and qualified or until his or her earlier resignation or removal.
 
 ## VI Contributor License Agreement (CLA)
+
 ### Article 22
 
 OCA whishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required to be on file for every charter member and before an individual is given commit rights to an OCA project.
@@ -213,6 +229,7 @@ Note that an Entity CLA does not remove the need for every contributor to sign t
 CLAs may be submitted by traditional postal mail, fax, or by emailing a scan of the signed copy.
 
 ## VII Various Provisions
+
 ### Article 23
 
 The financial year shall begin on 1st of January and end on 31st of December of each year. The treasurer is responsible for the finances of the Association.
