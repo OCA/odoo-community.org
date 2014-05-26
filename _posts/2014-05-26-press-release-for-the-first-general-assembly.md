@@ -9,6 +9,7 @@ tags: []
 
 + For french version : [here](/translation/press_release_ga_fr.html)
 + For spanish version : [here](/translation/press_release_ga_es.html)
++ For portuguese version : [here](/translation/press_release_ga_pt.html)
 + For dutch version : [here](/translation/press_release_ga_nl.html)
 
 # Name change

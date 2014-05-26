@@ -5,37 +5,43 @@ description: ""
 ---
 {% include JB/setup %}
 
-Após os últimos anúncios da OpenERP SA, agora renomeada Odoo, a OpenERP Community Association optou por também mudar de nome, passando a se chamar Odoo Community Association (<a href="http://odoo-community-association.org">http://odoo-community-association.org/</a>), e também transferiu suas atividades do Launchpad para o GitHub.
+# Cambio de Nombre
 
-# Missão da OCA
+Debido a los anuncios recientemente realizados por OpenERP SA, ahora renombrado a Odoo, la “OpenERP Community Asociation” ha decidido cambiar el nombre a “Odoo Community Asociation” (<a href="http://odoo-community-association.org">http://odoo-community-association.org/</a>) así cómo mover sus actividades de Launchpad a Github.
 
-A OCA tem como missão apoiar o desenvolvimento colaborativo das funcionalidades do Odoo e promover a adoção em larga escala do Odoo :
+# Misión de OCA
 
-+ Ajudando e promovendo o desenvolvimento colaborativo do Odoo;
-+ Incentivando o desenvolvimento do Odoo e de suas funcionalidades ao mesmo tempo que coordena e organisa o trabalho colaborativo em relação ao software;
-+ Dando assistência à comunidade e também defendendo seus interesses e a perenidade de seus desenvolvimentos;
-+ Promovendo a utilização da solução Odoo;
-+ Facilitando as sinergias, a colaboração e as operações de arrecadação de fundos;
-+ Colaborando ativamente na elaboração dos roteiros das novas versões e suas implementações.
+La misión de la OCA es soportar el desarrollo colaborativo de las características de Odoo, y promover el uso extensivo de Odoo por con los siguientes objetivos:
 
-# Primeira Assembleia Geral da OCA
++ Ayudar y promover en el uso y desarrollo colaborativo de Odoo.
++ Encouraging the development of Odoo and its features while coordinating and organizing the collaborative work on the software;
++ Alentar el desarrollo de Odoo y sus características mientras que coordina el trabajo colaborativo alrededor del software.
++ Asistir a la comunidad en la defensa de sus intereses y la sustentabilidad de sus desarrollos.
++ Promover el uso de la solución Odoo.
++ Facilitar la sinergia, colaboraciones y esfuerzos en el levantamiento de recursos.
++ Actively collaborating on the definition of the roadmaps of new versions of the tool and their implementation.
++ Colaborar activamente en la definición del camino de las nuevas versiones de la herramienta y su implementaciones.
 
-A primeira assembleia geral dos membros acontecerá durante os OpenDays 2014, em 04 de Junho às 17h00, na sala Hocaille.
+# Primera Asamblea general.
 
-A primeira etapa para participar desta assembleia geral é preencher o formulário a seguir : <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
+Durante los Opendays 2014 se llevará a cabo la primera asamblea de miembros la cuál será realizada en la fecha Junio 4 a las 5pm en la sala “Hocaille”.
 
-Tornando-se membro da OCA antes dos OpenDays, você será elegível, como membro, ao primeiro conselho administrativo e poderá participar da eleição do mesmo.
+El primer paso para unirte a la asamblea general es llenando el siguiente formulario.
+<a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
-Para mais detalhes sobre como aderir à OCA, visite nosso site.
+Para ser un miembro de la OCA antes de los OpenDays, te puedes postular cómo miembro fundador y aplicar para ser miembro de la primera Junta Directiva.
 
-# Faça sua voz ser ouvida
+Para más detalles de que significa ser miembro de la OCA por favor revisa nuestro website. 
+<a href="http://odoo-community-association.org/member/03_membership.html">http://odoo-community-association.org/member/03_membership.html</a>
 
-A OCA deseja receber seus comentários e ideias para que possa representar melhor seus interesses em nosso próximo encontro com a Odoo. Por favor, colabore preenchendo o questionario a seguir: <a href="http://ow.ly/x8n1E">http://ow.ly/x8n1E</a>
+# Haz que tu voz se escuche.
 
-# Sobre a OCA
+La OCA necesita tener tu feedback e ideas que representen sus intereses en nuestras próximas reuniones con Odoo. Por favor llena la siguiente encuesta para ayudarnos a ayudarte. <a href="http://ow.ly/x8n1E">http://ow.ly/x8n1E</a>
 
-A Odoo Community Association, ou OCA, é um organismo sem fins lucrativos que tem como missão apoiar o desenvolvimento colaborativo das funcionalidades do Odoo e promover uma adoção em larga escala do Odoo. A OCA fornece ajuda financeira, organizacional e jurídica à comunidade open source do Odoo em um sentido amplo. Ela também representa um papel de identidade jurídica na qual os membros da comunidade podem colocar suas contribuições de desenvolvimento, financeiras e todo outro tipo de recurso com a garantia que essas contribuições permanecerão ao serviço de todos.
+# Acerca de la OCA
 
-Para mais detalhes: <a href="http://odoo-community-association.org">http://odoo-community-association.org</a>
+La Odoo Community Association, or OCA, es una organización sin fines de lucro cuya misión es soportar el desarrollo colaborativo de las características del software Odoo y promover el uso de éste software en todos los entornos. La asociación provee soporte financiero, organizacional y legal a toda la comunidad de Odoo. También sirve cómo una entidad legal independiente a la cual los miembros pueden contribuir con código, financiación y otros recursos, con el conocimiento que todas tus contribuciones serán de conocimiento público y se mantendrán así para beneficio general.
 
-Para dúvidas: oca-board AT lists POINT launchpad POINT net
+Más Información: <a href="http://odoo-community-association.org">http://odoo-community-association.org</a>
+
+Para Cualquier pregunta, por favor contacta a oca-board AT list PUNTO launchpad PUNTO net
