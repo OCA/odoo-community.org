@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 
 
-We do have several membership levels which imply various levels of participation in the association. Read the [FAQ](../04_faq.html) to know more about how to participate. Read the [bylaws](../05_bylaws.html) and send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
+We do have several membership levels which imply various levels of participation in the Association. Read the [FAQ](../04_faq.html) to know more about how to participate. Read the [bylaws](../05_bylaws.html) and send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 Have a look [here](member_list.html) to have the actual list of member.
 
@@ -26,12 +26,12 @@ By being a member, an individual is "opting in" and publicly acknowledging their
 
 ### Charter Member
 
-The third category is Charter Member. Individuals in this category have the same rights as the above Member category, but with two important differences. Firstly, individuals in this category are not self-selected, but rather must be voted into this category by the other Charter Members. Secondly, individuals in this category have the right to vote in elections for other Charter Members, and for Board Members.
+The third category is Charter Member. Individuals in this category have the same rights as the above Member category, but with two important differences. Firstly, individuals in this category are not self-selected, but rather must be voted into this category by the other Charter Members. Secondly, individuals in this category have the right to vote in elections for other Charter Members, and for Board Members of the Association.
 
-*These two factors are intended to maintain the integrity of the Foundation election processes -- and by extension the integrity of the Foundation itself. We use the term "Charter" Member to explicitly indicate that these members are responsible for upholding the "charter" of the Foundation.*
+*These two factors are intended to maintain the integrity of the Association election processes -- and by extension the integrity of the Association itself. We use the term "Charter Member" to explicitly indicate that these members are responsible for upholding the "charter" of the Association.*
 
-*Without the Charter Member category to serve as a basis for the Board election process, it would be technically possible for a group of self-interested Members to "hijack" the Board and hence the Foundation itself, turning it away from our basic goals and principles.*
+*Without the Charter Member category to serve as a basis for the Board election process, it would be technically possible for a group of self-interested Members to "hijack" the Board and hence the Association itself, turning it away from our basic goals and principles.*
 
-*We emphasize that the only real difference between a Member and a Charter Member is the right and responsibility to vote at the Foundation level. It is not our intent to make the Charter Members out to be some "privileged" class. Furthermore, the only real difference between a Member and a Participant is the self-registration on the Foundation's website. All mailing lists, projects, committees, and other Foundation activities are uniformly open and available to all friends of the Foundation.*
+*We emphasize that the only real difference between a Member and a Charter Member is the right and responsibility to vote at the Association level. It is not our intent to make the Charter Members out to be some "privileged" class. Furthermore, the only real difference between a Member and a Participant is the self-registration on the Association's website. All mailing lists, projects, committees, and other Foundation activities are uniformly open and available to all friends of the Association.*
 
 
