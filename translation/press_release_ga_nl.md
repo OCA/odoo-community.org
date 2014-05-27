@@ -22,7 +22,7 @@ De missie van de OCA is te ondersteunen dat op basis van samenwerking nieuwe fea
 
 # Eerste algemene vergadering van de OCA
 
-Gedurende de OpenDays 2014 zal de eerste algemene vergadering van kaderleden worden gehouden op 5 juni, om 17:00 in de Hocaille-zaal.
+Gedurende de OpenDays 2014 zal de eerste algemene vergadering van kaderleden worden gehouden op 5 juni, om 17:40 in de Hocaille-zaal.
 
 De eerste stap om kaderlid te worden en de algemene vergadering bijwonen is om je aan te melden als regulier lid via het volgende formulier: <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
