@@ -8,9 +8,9 @@ group: navigation
 
 ## The Odoo Community Association
 
-The Odoo Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the Odoo features, and to promote the widespread use of Odoo. The association provides financial, organizational and legal support to the broader Odoo Open Source community. It also serves as an independent legal entity to which community members can contribute the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
+The Odoo Community Association, or OCA, is a nonprofit organization whose mission is to support the collaborative development of the Odoo features and to promote the widespread use of Odoo. The Association provides financial, organizational and legal support to the broader Odoo Open Source community. It also serves as an independent legal entity to which community members can contribute to the code, the funding and other resources, with the knowledge that their contributions will be maintained for public benefit.
 
-The association's projects are all freely available and useable under an OSI-certified Open Source license.
+The Association's projects are all freely available and useable under an OSI-certified Open Source license.
 
 Our goals :
 
@@ -50,11 +50,11 @@ Read the [FAQ](04_faq.html)
 
 + [Board of Directors and Officers](member/board.html)
 + [Membership Categories](member/03_membership.html)
-+ [List of Member and Charter member](member/member_list.html)
++ [List of Member and Charter members](member/member_list.html)
 
 **Contact**
 
-Curent contact is made through the board mailing list [here](mailto:oca-board@lists.launchpad.net)
+Contact is currently made through the Board mailing list [here](mailto:oca-board@lists.launchpad.net)
 
 ## Founding members
 
@@ -66,4 +66,4 @@ The Odoo Community Association has been launched in 2013 by the following foundi
 + [Vauxoo](http://vauxoo.com/)
 + [Akretion](http://www.akretion.com/)
 
-All of the fouding members are strongly involved in the community and shared the same vision about [Collaborative software development](http://en.wikipedia.org/wiki/Collaborative_software_development_model).
+All of the founding members are strongly involved in the community and shared the same vision about [Collaborative software development](http://en.wikipedia.org/wiki/Collaborative_software_development_model).
