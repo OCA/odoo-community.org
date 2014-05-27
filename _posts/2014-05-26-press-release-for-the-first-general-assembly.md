@@ -30,11 +30,11 @@ The OCA mission is to support the collaborative development of the Odoo features
 
 # First OCA General Assembly
 
-During the OpenDays 2014, the first general assembly of charter members will be held on June the 5th at 5:40pm in the Hocaille room. 
+During the OpenDays 2014, the first general assembly of Charter members will be held on June the 5th at 5:40pm in the Hocaille room. 
 
 The first step to joining the general assembly is by filling the form at <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
-By joining the OCA as a member before the OpenDays, you will make yourself eligible to become a charter member, apply to the first board and elect it.
+By joining the OCA as a member before the OpenDays, you will make yourself eligible to become a Charter member, apply to the first Board and elect it.
 
 For more detail regarding OCA membership, please visit our web site : <a href="http://odoo-community-association.org/member/03_membership.html">http://odoo-community-association.org/member/03_membership.html</a>
 
