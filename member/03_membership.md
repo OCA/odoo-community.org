@@ -32,6 +32,6 @@ The third category is Charter Member. Individuals in this category have the same
 
 *Without the Charter Member category to serve as a basis for the Board election process, it would be technically possible for a group of self-interested Members to "hijack" the Board and hence the Association itself, turning it away from our basic goals and principles.*
 
-*We emphasize that the only real difference between a Member and a Charter Member is the right and responsibility to vote at the Association level. It is not our intent to make the Charter Members out to be some "privileged" class. Furthermore, the only real difference between a Member and a Participant is the self-registration on the Association's website. All mailing lists, projects, committees, and other Foundation activities are uniformly open and available to all friends of the Association.*
+*We emphasize that the only real difference between a Member and a Charter Member is the right and responsibility to vote at the Association level. It is not our intent to make the Charter Members out to be some "privileged" class. Furthermore, the only real difference between a Member and a Participant is the self-registration on the Association's website. All mailing lists, projects, committees, and other Association activities are uniformly open and available to all friends of the Association.*
 
 
