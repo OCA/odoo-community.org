@@ -11,7 +11,7 @@ Suite aux annonces récentes de OpenERP SA, maintenant rebaptisée Odoo, la Open
 
 L’OCA a pour mission de soutenir le développement collaboratif des fonctionnalités de Odoo et de promouvoir une large adoption de Odoo :
 
-+ En aidant et promouvant le développement logiciel collaboratif of Odoo;
++ En aidant et promouvant le développement logiciel collaboratif de Odoo;
 + En encourageant le développement de Odoo et de ses fonctionnalités tout en coordonnant et organisant le travail collaboratif autour du logiciel;
 + En assistant la communauté tout en défendant ses intérêts et la pérennité de ses développements.
 + En promouvant l’utilisation de la solution Odoo;
