@@ -11,6 +11,6 @@ Work in progress.
 
 ## Members
 
-## Participant
+## Participants
 
-Participant list can be found on Launchpad [here](https://launchpad.net/~openerp-community-association/+members) and represents all people subscribed to the Odoo community team.
+Participants list can be found on Launchpad [here](https://launchpad.net/~openerp-community-association/+members) and represents anyone subscribed to the Odoo community team.
