@@ -24,7 +24,7 @@ La misión de la OCA es soportar el desarrollo colaborativo de las característi
 
 # Primera Asamblea general.
 
-Durante los Opendays 2014 se llevará a cabo la primera asamblea de miembros la cuál será realizada en la fecha Junio 5 a las 5:40pm en la sala “Hocaille”.
+Durante los Opendays 2014 se llevará a cabo la primera asamblea de miembros la cuál será realizada en la fecha Junio 5 a las 5:50pm en la sala “Business for Partners”.
 
 El primer paso para unirte a la asamblea general es llenando el siguiente formulario.
 <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
