@@ -18,7 +18,7 @@ The association is a membership-based organization incorporated under the laws o
 ### Who owns/controls the association?
 The association is a nonprofit entity and has no shareholders. Thus, nobody "owns" the association. However, the association does have charter members who, like the shareholders in a for-profit company, elect the association's board of directors. The board of directors, acting together, manages the affairs of the association. 
 
-### Who are the members ?
+### Who are the members?
 The membership is composed of users, supporters, promoters, and developers of the Open Source Odoo software. Becoming a member is as easy as joining the site and contributing to the association's goals. Beyond members, there are various charter members. 
 
 ### Can I become a charter member?
@@ -36,7 +36,7 @@ No. Odoo SA has provided generous support to help establish the association, and
 ### What are the detailed rules of governance of OCA?
 OCA is governed by a board of directors elected by the charter members. The board selects a President, Treasurer and Secretary as officers with particular areas of responsibility. 
 
-Projects are operated by Project Steering Committees which select a Chair or Board liaison who is designated as officer of the OCA after confirmation by the board. The board also designates some special purpose committees responsible for particular areas with a chair who is an officer. Typical committees and projects operate fairly autonomously and largely by consensus. However, as needed, the board can step in to address issues inconsistent with the goals and responsibilities of OCA. By virtue of their selection of the board and new charter members, the charter membership are the ultimate authority at OCA.
+Projects are operated by Project Steering Committees (PSC) which select a Chair or Board liaison who is designated as officer of the OCA after confirmation by the board. The board also designates some special purpose committees responsible for particular areas with a chair who is an officer. Typical committees and projects operate fairly autonomously and largely by consensus. However, as needed, the board can step in to address issues inconsistent with the goals and responsibilities of OCA. By virtue of their selection of the board and new charter members, the charter membership are the ultimate authority at OCA.
 
 ## Projects and Modules Joining the Association
 
@@ -55,36 +55,36 @@ Yes. The individual contributions in the OCA's projects are expected to grant th
 ### Do project developers need to sign a legal agreement?
 No. Generally speaking this is not required, however, all the committers (as part of the [community reviewer team](https://launchpad.net/~openerp-community-reviewer) and their [related teams](https://launchpad.net/~openerp-community-reviewer/+participation)) must have signed one. For more details, please read the [CLA](cla/cla.html) page.
 
-### Do the association projects need to turn over project control to the association?
-No. The association is not interested in controlling the association projects. However, the association projects are expected to follow some association rules, mostly around the need to ensure that project code is not legally encumbered (e.g., not stolen, or improperly contributed), and that appropriate controls are in place to ensure code is properly contributed. Some additional expectations may exist around projects operating in an open and accountable fashion, handling association-provided funding appropriately and not taking actions that will cause legal problems or negative goodwill for the association. The association also encourages, but does not require, projects to support the association goals, such as implementing standards-based interoperability. 
+### Do the OCA's projects need to turn over project control to the association?
+No. The association is not interested in controlling the association projects. However, the association projects are expected to follow some association rules, mostly around the need to ensure that project code is not legally encumbered (e.g., not stolen, or improperly contributed), and that appropriate controls are in place to ensure code is properly contributed. Some additional expectations may exist around projects operating in an open and accountable fashion, handling association-provided funding appropriately and not taking actions that will cause legal problems or negative goodwill for the association. The association also encourages, but does not require, projects to support the association goals, such as implementing standard-based interoperability. 
 
 ### Can my project operate as a benevolent dictatorship?
 The OCA projects are typically governed by a Project Steering Committee (PSC). The PSC should operate openly and with a consensus-based approach. While the PSC may delegate specific responsibilities to particular project members, it is ultimately intended to be the governing body for the project. A benevolent dictatorship is not considered a suitable open and consensus-based approach to governance. 
 
 ### Do I have to use mandated source control / web system / bug system / mailing list from the association?
-No. Projects joining the association can continue to use their traditional source control system, web site system, bug tracker and mailing list software. However, the association does recommend to use Launchpad to provide a more consistent way for users and developers to interact with the different association projects. 
+No. Projects joining the association can continue to use their traditional source control system, website system, bug tracker and mailing list software. However, the association does recommend to use Launchpad to provide a more consistent way for users and developers to interact with the different association projects. 
 
 ### Does the association mandate a particular license for software?
-The association only accepts projects that use OSI-certified licenses for their software, and requires that projects stick to OSI-certified licenses. This includes common licenses such as MIT/X, BSD, GPL, and LGPL. The association encourages library projects to use the AGPL rather than the GPL, but does not require it. The association also discourages a proliferation of new and incompatible licenses. 
+The association only accepts projects that use OSI-certified licenses for their software and requires that projects stick to OSI-certified licenses. This includes common licenses such as MIT/X, BSD, GPL, and LGPL. The association encourages library projects to use the AGPL rather than the GPL, but does not require it. The association also discourages a proliferation of new and incompatible licenses. 
 
 ## Participation
 
 ### What can I do to get involved?
-Visit the OCA web site. Join the main [community association list](https://launchpad.net/~openerp-community-association). You don't need to be a programmer. You can also request your membership by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
+Visit the OCA website. Join the main [community association list](https://launchpad.net/~openerp-community-association). You don't need to be a programmer. You can also request your membership by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 ### How can I contribute code?
-The governance model currently being formulated will define the legal and related issues concerning how code will be accepted into association software projects. Currently, you can submit your merge proposal on any of the related OCA's project. It'll be reviewed by the team owner and the community reviewer team. Find more details on the contributors agreement [here](cla/cla.html).
+The governance model currently being formulated will define the legal and related issues on how the code will be accepted into the association software projects. Currently, you can submit your merge proposals on any of the related OCA's project. It will be reviewed by the team's owner and the community's reviewer team. Find more details on the contributors agreement [here](cla/cla.html).
 
 ### How can I be part of the reviewer team?
 To be accepted in one of the team, start by suggesting merge proposals and reviewing others' work. When significant work has been achieved, you can apply for the team by requesting your membership on the [community reviewer mailing list](mailto:openerp-community-reviewer@lists.launchpad.net ). Note that reviewers, in their committers role, would have to sign the [CLA](cla/cla.html).
 
-### Does the association need money?
+### Does the Association need money?
 The association is now soliciting organizational sponsorships. However, contributions of time for committee work, development, documentation, testing, user support, and advocacy are the preferred forms of contribution from individuals. 
 
 ### May I used the OCA logo and name freely?
 Yes, but the association considers the OCA name and logo to be trademarks.
 
 ### How can I contribute to improve the OCA's website?
-You can easily fork this [github repository](https://github.com/OdooCommunity/website) and make a pull request that'll be reviewed. The website was built with Jekyll-Bootstrap.
+You can easily fork this [github repository](https://github.com/OdooCommunity/website) and make a pull request that will be reviewed. The website was built with Jekyll-Bootstrap.
 
 
