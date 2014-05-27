@@ -20,7 +20,7 @@ L’OCA a pour mission de soutenir le développement collaboratif des fonctionna
 
 # Première Assemblée Générale de l’OCA
 
-La première assemblée générale des membres aura lieu pendant les OpenDays 2014, le 4 juin à 17h00, dans la salle Hocaille.
+La première assemblée générale des membres aura lieu pendant les OpenDays 2014, le 5 juin à 17h40, dans la salle Hocaille.
 
 La première étape pour participer à cette assemblée générale consiste à  remplir ce formulaire : <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
