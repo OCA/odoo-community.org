@@ -11,6 +11,7 @@ tags: []
 + For spanish version : [here](/translation/press_release_ga_es.html)
 + For portuguese version : [here](/translation/press_release_ga_pt.html)
 + For dutch version : [here](/translation/press_release_ga_nl.html)
++ For chinese version : [here](/translation/press_release_ga_zh.html)
 
 # Name change
 
