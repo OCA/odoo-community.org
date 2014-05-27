@@ -12,7 +12,7 @@ The Odoo Community Association, or OCA, is a nonprofit organization whose missio
 
 The Association's projects are all freely available and useable under an OSI-certified Open Source license.
 
-Our goals :
+Our goals:
 
 + Help and promote the collaborative software development of Odoo;
 + Encourage the development of Odoo and its features while coordinating and organizing the collaborative work on the software;
@@ -50,7 +50,7 @@ Read the [FAQ](04_faq.html)
 
 + [Board of Directors and Officers](member/board.html)
 + [Membership Categories](member/03_membership.html)
-+ [List of Member and Charter members](member/member_list.html)
++ [List of Members and Charter members](member/member_list.html)
 
 **Contact**
 
