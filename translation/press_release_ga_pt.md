@@ -20,7 +20,7 @@ A OCA tem como missão apoiar o desenvolvimento colaborativo das funcionalidades
 
 # Primeira Assembleia Geral da OCA
 
-A primeira assembleia geral dos membros acontecerá durante os OpenDays 2014, em 04 de Junho às 17h00, na sala Hocaille.
+A primeira assembleia geral dos membros acontecerá durante os OpenDays 2014, em 05 de Junho às 17h40, na sala Hocaille.
 
 A primeira etapa para participar desta assembleia geral é preencher o formulário a seguir : <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
