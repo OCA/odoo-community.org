@@ -22,7 +22,7 @@ Odoo联盟的使命是通过以下方式支持所有基于完善 Odoo 功能上�
 
 # 首届 OCA 成员大会
 
-在2014年度的 OpenDays 期间, 首届创会成员将会在 6月5日下午5点于 Hocaille 厅举行.
+在2014年度的 OpenDays 期间, 首届创会成员将会在 6月5日下午5点50分于 Business for Partners 厅举行.
 
 加入首届成员大会的第一步, 请先在这里填写表格 <a href="https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform">https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform</a>
 
