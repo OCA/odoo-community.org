@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Bylaws (FR)"
+title: "Statuts de l'association (FR)"
 description: ""
 ---
 
