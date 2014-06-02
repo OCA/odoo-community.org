@@ -231,8 +231,3 @@ In the case of the Association being dissolved, the assets should be allotted to
 Should divergences exist between the translations of these articles, the French version shall prevail.
 The present Statutes have been approved by the Constituent Delegate Assembly of May, 26th 2014 in Lausanne, Switzerland.
 
-For the Association :
-
-
-President                                                                Secretary
-
