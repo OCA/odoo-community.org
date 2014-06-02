@@ -10,7 +10,7 @@ group: navigation
 
 [Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [EN]
 
-[Version française](/translation/05_bylaws_fr.md)
+Version française : [ici](/translation/05_bylaws_fr.html)
 
 
 ## I Name and headquarters
