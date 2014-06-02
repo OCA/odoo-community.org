@@ -37,9 +37,13 @@ facilitate synergies, collaborations and fund raising efforts;
 actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 
 To promote its goals and to guarantee that its available resources are geared towards community use, all software developments controlled by the Association will be published under a licence approved by the Open Source Intiative (OSI, opensource.org) and meeting the requirements of a Certified Open Source software.
+
 ## III Resources
+
 ### Article 4
+
 The Association's resources come from:
+
 + donations;
 + legacies;
 + private and public subsidies;
@@ -47,8 +51,11 @@ The Association's resources come from:
 + any other resources authorized by the law.
 
 The funds shall be used in conformity with the Association's purposes.
+
 ## IV Members
+
 ### Article 5
+
 Any physical or moral person may request to join: (i) if, through their commitment or actions, they have proved their attachment to the aims of the Association, and (ii) they are not salaried by the Association.
 
 The Association comprises:
@@ -57,6 +64,7 @@ Delegate members
 Requests to become a member must be addressed to the Board. The Board admits new members and informs the Delegate Assembly.
 
 Membership ceases:
+
 + on death;
 + by written resignation notified to the Board at least 30 days before the end of the financial year;
 + by exclusion ordered by the Board, without reasons duty, with a right of appeal to the Delegate Assembly. Appeals must be lodged within 30 days of the Board’s decision being notified;
@@ -70,16 +78,21 @@ Only the assets of the Association may be used to meet commitments. Members have
 The Active members include all physical or moral entities elected by the Delegate Assembly who have accepted the present articles and their rules of procedures and who have paid their annual fees.
 
 The Delegate members include all physical entities elected by the Delegate Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can be become Delegate members. Only Delegate members can be elected to the Board.
+
 ## V Organs
+
 ### Article 7
 The Association's organs are:
+
 + The Delegate Assembly,
 + The Board
 + One or more Projects Steering Committee,
 + The auditor.
 
 ## a) Delegate Assembly
+
 ### Article 8
+
 The Delegate Assembly is the Association's supreme authority. It is composed of all the Delegate members who have paid their annual fees at the date of the notification.
 It shall hold an Ordinary Meeting once each year. It may also meet in extraordinary session whenever necessary, by decision of the Board or at the request of one-fifth of the Delegate members.
 The Delegate Assembly shall be considered valid regardless of the number of Delegate members present.
@@ -87,9 +100,10 @@ The Board shall inform the Delegate members, by any means specify into the rules
 
 The Delegate Assembly can also be conducted via any means of electronic communication which allow the Delegate members to take part in debates and to exercise their vote. 
 
-
 ### Article 9
+
 The Delegate Assembly:
+
 + shall approve the admission and expulsion of members;
 + appoints the members of the Board;
 + notes the contents of the reports and financial statements for the year and votes on their adoption;
@@ -101,18 +115,22 @@ The Delegate Assembly:
 + decides on the dissolution of the Association;
 
 ### Article 10
+
 The Delegate Assembly is presided over by the president of the Association.
 
 ### Article 11
+
 Each Delegate member is entitled to one vote at the Delegate Assembly. Decisions of the Delegate Assembly shall be taken by a majority vote of the Delegate members present and voting. In case of deadlock, the President shall have the casting vote.
 Decisions concerning the amendment of the Statutes and the dissolution of the Association must be approved by a two-third majority of the Delegate members present.
 
 ### Article 12
+
 The voting process is provided in the rules of procedures.
 
-
 ### Article 13
+
 The agenda of the ordinary annual session of the Delegate Assembly must include:
+
 + approval of the record of the previous Delegate Assembly
 + the Board’s annual report on activities
 + report of the treasurer and of the auditor
