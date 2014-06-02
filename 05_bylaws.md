@@ -8,11 +8,9 @@ group: navigation
 {% include JB/setup %}
 
 
-**!! Warning, those bylaws are currently under a lawyer validation !!**
-
 [Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [EN]
 
-
+[Version française](/translation/05_bylaws_fr.md)
 
 
 ## I Name and headquarters
