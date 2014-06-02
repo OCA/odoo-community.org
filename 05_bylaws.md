@@ -16,13 +16,18 @@ group: navigation
 
 
 ## I Name and headquarters
+
 ### Article 1
+
 "Odoo Community Association" hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational.
 Article 2
 The Association headquarters are located in Lausanne (Switzerland).
 The Association shall be of unlimited duration.
+
 ## II Purposes
+
 ### Article 3
+
 The Association shall pursue the following purpose(s):
 help and promote the collaborative software development of Odoo;
 encourage the development of Odoo and its features while coordinating and organizing the collaborative work on the software;
