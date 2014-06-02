@@ -6,7 +6,7 @@ description: ""
 
 {% include JB/setup %}
 
-[Télécharger](/bylaws/Publishedstatusonwebsite_fr.pdf) les statuts [FR]
+[Télécharger](/../bylaws/Publishedstatusonwebsite_fr.pdf) les statuts [FR]
 
 ## I Dénomination et siège
 
