@@ -50,7 +50,7 @@ Read the [FAQ](04_faq.html)
 
 + [Board of Directors and Officers](member/board.html)
 + [Membership Categories](member/03_membership.html)
-+ [List of Members and Charter members](member/member_list.html)
++ [List of Members and Delegate members](member/member_list.html)
 
 **Contact**
 

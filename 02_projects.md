@@ -27,7 +27,7 @@ To be accepted in one of the team, start by suggesting merge proposals and revie
 
 ## Rules to join our projects
 
-To be defined, currently based on the vote of the charter members and the community reviewers team. You can also read the [FAQ](04_faq.html) for more details. Your project will be added to the community reviewers team if it has been decided so. Ask to the community mailing list : openerp-community@lists.launchpad.net.
+To be defined, currently based on the vote of the delegate members and the community reviewers team. You can also read the [FAQ](04_faq.html) for more details. Your project will be added to the community reviewers team if it has been decided so. Ask to the community mailing list : openerp-community@lists.launchpad.net.
 
 ## Rules to add a module in an existing project
 
@@ -35,4 +35,4 @@ Currently, make a merge proposal on the proper branch, during the review process
 
 ## Contributor License Agreement
 
-The OCA desires contributors to submit a CLA, but requires committers and charter member to do so. See the specific section [here](cla/cla.html).
+The OCA desires contributors to submit a CLA, but requires committers and delegate member to do so. See the specific section [here](cla/cla.html).

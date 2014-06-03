@@ -16,16 +16,16 @@ The association, or "OCA" for short, is an independent nonprofit legal entity es
 The association is a membership-based organization incorporated under the laws of association, Switzerland. The association was expressly incorporated as a not-for-profit organization.
 
 ### Who owns/controls the association?
-The association is a nonprofit entity and has no shareholders. Thus, nobody "owns" the association. However, the association does have charter members who, like the shareholders in a for-profit company, elect the association's board of directors. The board of directors, acting together, manages the affairs of the association. 
+The association is a nonprofit entity and has no shareholders. Thus, nobody "owns" the association. However, the association does have delegate members who, like the shareholders in a for-profit company, elect the association's board of directors. The board of directors, acting together, manages the affairs of the association. 
 
 ### Who are the members?
-The membership is composed of users, supporters, promoters, and developers of the Open Source Odoo software. Becoming a member is as easy as joining the site and contributing to the association's goals. Beyond members, there are various charter members. 
+The membership is composed of users, supporters, promoters, and developers of the Open Source Odoo software. Becoming a member is as easy as joining the site and contributing to the association's goals. Beyond members, there are various delegate members. 
 
-### Can I become a charter member?
-New charter members are nominated and elected by existing charter members during the annual charter member election. 
+### Can I become a delegate member?
+New delegate members are nominated and elected by existing delegate members during the annual delegate member election. 
 
 ### Can a regular member have any influence?
-Yes! First, a regular member can do everything a charter member can do, except vote in the Board elections. They can speak up and contribute in every way. The association aims to be a do-ocracy, and so the way to have influence is to do things! Ultimately, of course, the association will only succeed in its mission if the entire community gets involved -- so please don't hesitate! We need your help! 
+Yes! First, a regular member can do everything a delegate member can do, except vote in the Board elections. They can speak up and contribute in every way. The association aims to be a do-ocracy, and so the way to have influence is to do things! Ultimately, of course, the association will only succeed in its mission if the entire community gets involved -- so please don't hesitate! We need your help! 
 
 ### Who are the Board of directors?
 The Board of Directors were voted in an initial round by the initial association membership and then by the elected association members.
@@ -34,9 +34,9 @@ The Board of Directors were voted in an initial round by the initial association
 No. Odoo SA has provided generous support to help establish the association, and some of their people may be part of the association in the future as anybody else.
 
 ### What are the detailed rules of governance of OCA?
-OCA is governed by a board of directors elected by the charter members. The board selects a President, Treasurer and Secretary as officers with particular areas of responsibility. 
+OCA is governed by a board of directors elected by the delegate members. The board selects a President, Treasurer and Secretary as officers with particular areas of responsibility. 
 
-Projects are operated by Project Steering Committees (PSC) which select a Chair or Board liaison who is designated as officer of the OCA after confirmation by the board. The board also designates some special purpose committees responsible for particular areas with a chair who is an officer. Typical committees and projects operate fairly autonomously and largely by consensus. However, as needed, the board can step in to address issues inconsistent with the goals and responsibilities of OCA. By virtue of their selection of the board and new charter members, the charter membership are the ultimate authority at OCA.
+Projects are operated by Project Steering Committees (PSC) which select a Chair or Board liaison who is designated as officer of the OCA after confirmation by the board. The board also designates some special purpose committees responsible for particular areas with a chair who is an officer. Typical committees and projects operate fairly autonomously and largely by consensus. However, as needed, the board can step in to address issues inconsistent with the goals and responsibilities of OCA. By virtue of their selection of the board and new delegate members, the delegate membership are the ultimate authority at OCA.
 
 ## Projects and Modules Joining the Association
 

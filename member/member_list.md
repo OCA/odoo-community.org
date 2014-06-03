@@ -7,7 +7,7 @@ description: ""
 
 Work in progress.
 
-## Charter Members
+## Delegate Members
 
 ## Members
 
