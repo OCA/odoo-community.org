@@ -73,7 +73,7 @@ description: ""
 + ALAIN DESNOS
 + Alberto Barrionuevo
 + Alberto Luengo
-+ Antonio Maria Antonio M. - Zeroincombenze
++ Antonio Maria Zeroincombenze
 + Barrionuevo Alberto
 + Bastante Elena
 + Boscolo Matteo
@@ -111,7 +111,7 @@ description: ""
 + Mohammad Alhashash
 + MORETTI Maurice
 + Musa  Madonsela
-+ Nicholas Nicholas Riegel
++ Nicholas Riegel
 + Nicolas JEUDY
 + P V Anthony
 + Parthiv Parthiv Patel
