@@ -54,7 +54,7 @@ The funds shall be used in conformity with the Association's purposes.
 
 ### Article 5
 
-Any physical or moral person may request to join: (i) if, through their commitment or actions, they have proved their attachment to the aims of the Association, and (ii) they are not salaried by the Association.
+Any physical person may request to join: (i) if, through their commitment or actions, they have proved their attachment to the aims of the Association, and (ii) they are not salaried by the Association.
 
 The Association comprises:
 Active members
