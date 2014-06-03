@@ -90,12 +90,9 @@ description: ""
 + Dominique Chabord
 + Edwin Blommaerts
 + Eric Vernichon
-+ Eric Vernichon
 + Erwin De Raad
 + Erwin van der Ploeg
 + Etienne Hirt
-+ Fernando Garcia Hansen
-+ Fernando Garcia Hansen
 + Fernando Garcia Hansen
 + Franco Tampieri
 + Guillaume JULLIEN
@@ -120,7 +117,6 @@ description: ""
 + Parthiv Parthiv Patel
 + Pedro Andres Ospina Salamanca
 + Peiro Francisco
-+ Peter Niederlag
 + Peter Niederlag
 + Peter Thommen
 + Philippe Vandermeer
