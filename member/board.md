@@ -7,11 +7,12 @@ description: ""
 
 The actual board members are :
 
+
++ President: Joël Grand-Guillaume
++ Vice-President: Maxime Chambreuil
++ Secretary: Nhomar Hernández
++ Treasurer: Stefan Rijnhart
 + Eric Caudal
-+ Joël Grand-Guillaume
 + Luc Maurer
-+ Maxime Chambreuil
-+ Nhomar Hernández
 + Sébastien Beau
-+ Stefan Rijnhart
 
