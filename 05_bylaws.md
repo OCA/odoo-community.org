@@ -8,7 +8,7 @@ group: navigation
 {% include JB/setup %}
 
 
-[Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [EN]
+[Download](bylaws/Publishedstatusonwebsite.pdf) the bylaws [FR/EN]
 
 Version française : [ici](/translation/05_bylaws_fr.html)
 
