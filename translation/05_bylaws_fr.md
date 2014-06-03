@@ -50,7 +50,7 @@ Les fonds sont utilisés conformément au but social.
 
 ### Article 5
 
-Peuvent prétendre à devenir membre les personnes physiques ou morales (i) ayant fait preuve de leur attachement aux buts de l'Association à travers leurs actions et leurs engagements et (ii) n'étant pas salariées de l'Association.
+Peuvent prétendre à devenir membre les personnes physiques ayant fait preuve de leur attachement aux buts de l'Association à travers leurs actions et leurs engagements et n'étant pas salariées de l'Association.
 
 L'Association est composé de:
 
