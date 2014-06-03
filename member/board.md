@@ -5,4 +5,13 @@ description: ""
 ---
 {% include JB/setup %}
 
-Work in progress.
+The actual board members are :
+
++ Eric Caudal
++ Joël Grand-Guillaume
++ Luc Maurer
++ Maxime Chambreuil
++ Nhomar Hernández
++ Sébastien Beau
++ Stefan Rijnhart
+

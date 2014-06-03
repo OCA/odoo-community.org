@@ -13,11 +13,8 @@ Have a look [here](member_list.html) to have the actual list of member.
 
 ## Categories
 
-There are three categories of individual affiliation with the OCA: Participant, Member, and Delegate Member.
+There are two categories of individual affiliation with the OCA: Member, and Delegate Member.
 
-### Participant
-
-The broadest category, that of Participant, is for those who are not formally registered on the OCA website but who nonetheless contribute code, help out by giving opinion, follow the various mailing lists, ... Anyone can be a Participant.
 
 ### Member
 
