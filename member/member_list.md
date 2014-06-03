@@ -5,7 +5,6 @@ description: ""
 ---
 {% include JB/setup %}
 
-Work in progress.
 
 ## Delegate Members
 
