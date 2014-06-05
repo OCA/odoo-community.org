@@ -22,6 +22,11 @@ Article 2
 The Association headquarters are located in Lausanne (Switzerland).
 The Association shall be of unlimited duration.
 
+### Article 2
+
+The Association headquarters are located in Lausanne (Switzerland).
+The Association shall be of unlimited duration.
+
 ## II Purposes
 
 ### Article 3
