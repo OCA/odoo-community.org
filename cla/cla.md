@@ -27,4 +27,4 @@ Your Full name will be published. The email address and other contact details ar
 + [Download](Odoo Community Association-Individual.pdf) the individual CLA
 + [Download](Odoo Community Association-Entity.pdf) the entity CLA
 
-Send it to oca-board AT lists.launchpad.net
+**Send it to:** oca-board AT lists.launchpad.net
