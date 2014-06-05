@@ -18,7 +18,7 @@ The Odoo Community Association, or OCA, is a not-for-profit organization whose m
 
 + **[Read the bylaws](../05_bylaws.html)**
 + **[Become a member by fullfuiling this form !](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform)**
-+ **[Go to our actual members list](member_list.html)**
++ **[Go to our actual members list](member/member_list.html)**
 
 ## Last news from Twitter
 
