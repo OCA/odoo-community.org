@@ -9,7 +9,7 @@ group: navigation
 
 We do have several membership levels which imply various levels of participation in the Association. Read the [FAQ](../04_faq.html) to know more about how to participate. Read the [bylaws](../05_bylaws.html) and send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
-Have a look [here](member_list.html) to have the actual list of member.
+Have a look [here](member_list.html) to have the current list of member.
 
 ## Categories
 
