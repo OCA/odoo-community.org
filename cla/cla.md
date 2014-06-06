@@ -16,7 +16,7 @@ The OCA desires that all contributors of ideas, code, or documentation to the OC
 
 For a corporation that has assigned employees to work on an OCA project, an Entity CLA (or Corporate : CCLA) [PDF form](Odoo Community Association-Entity.pdf) is available for contributing intellectual property via the corporation, that may have been assigned as part of an employment agreement. Note that an Entity CLA does not remove the need for every developer to sign their own CLA as an individual, to cover any of their contributions which are not owned by the corporation signing the Entity CLA.
 
-CLAs may be submitted by emailing a scan of the signed copy to cla@odoo-community.org . Fill out and scan the pdf document and send it to secretary.
+CLAs may be submitted by emailing a scan of the signed copy to cla AT odoo-community.org . Fill out and scan the pdf document and send it to secretary.
 
 The ICLA is not tied to any employer you may have, so it is recommended to use one's personal email address in the contact details, rather than an @work address.
 
