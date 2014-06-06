@@ -1,3 +1,7 @@
+# How to contribute to this website
+
+http://jekyllbootstrap.com/usage/jekyll-quick-start.html
+
 # Jekyll-Bootstrap
 
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
