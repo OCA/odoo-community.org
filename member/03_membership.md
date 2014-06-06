@@ -11,7 +11,7 @@ We do have two membership levels which imply various levels of participation in 
 
 Have a look [here](member_list.html) to have the current list of member.
 
-## Fes
+## Fees
 
 The General Assembly accepted a membership fees of **50 EUR.- per year per person.** The entire membership fee is due for a calendar year, there is no pro-rata temporis.
 
