@@ -18,12 +18,12 @@ There are two categories of individual affiliation with the OCA: Member, and Del
 
 ### Member
 
-The second category is called Member. Individuals in this category have the same level of rights to work on OCA activities as the Participant category, but with the important distinction that these individuals are member of the OCA, they pay their contributions. 
+The first category is called Member. Individuals in this category have the same level of rights to work on OCA activities as the Participant category, but with the important distinction that these individuals are member of the OCA, they pay their contributions. 
 By being a member, an individual is "opting in" and publicly acknowledging their connection to the OCA. This membership process also provides the OCA with a known, countable membership base. For example, the Board or various Committees may, from time to time, wish to poll the all Members on some important issue.
 
 ### Delegate Member
 
-The third category is Delegate Member. Individuals in this category have the same rights as the above Member category, but with two important differences. Firstly, individuals in this category are not self-selected, but rather must be voted into this category by the other Delegate Members. Secondly, individuals in this category have the right to vote in elections for other Delegate Members, and for Board Members of the Association.
+The second category is Delegate Member. Individuals in this category have the same rights as the above Member category, but with two important differences. Firstly, individuals in this category are not self-selected, but rather must be voted into this category by the other Delegate Members. Secondly, individuals in this category have the right to vote in elections for other Delegate Members, and for Board Members of the Association.
 
 *These two factors are intended to maintain the integrity of the Association election processes -- and by extension the integrity of the Association itself. We use the term "Delegate Member" to explicitly indicate that these members are responsible for upholding the "delegate" of the Association.*
 
