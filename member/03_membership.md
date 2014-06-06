@@ -7,9 +7,13 @@ group: navigation
 {% include JB/setup %}
 
 
-We do have several membership levels which imply various levels of participation in the Association. Read the [FAQ](../04_faq.html) to know more about how to participate. Read the [bylaws](../05_bylaws.html) and send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
+We do have two membership levels which imply various levels of participation in the Association. Read the [FAQ](../04_faq.html) to know more about how to participate. Read the [bylaws](../05_bylaws.html) and send your membership request by fulfilling and sending [this form](https://docs.google.com/forms/d/1uYhoEga_Lc-kUDobRpNP09L4lTHqya51ZlyZPlh31Eg/viewform).
 
 Have a look [here](member_list.html) to have the current list of member.
+
+## Fes
+
+The General Assembly accepted a membership fees of **50 EUR.- per year per person.** The entire membership fee is due for a calendar year, there is no pro-rata temporis.
 
 ## Categories
 
