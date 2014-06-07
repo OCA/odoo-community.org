@@ -54,7 +54,7 @@ Read the [FAQ](04_faq.html)
 
 **Contact**
 
-Contact is currently made through the Board mailing list [here](mailto:oca-board@lists.launchpad.net)
+Contact is currently made through the Board mailing list [here](mailto:board@odoo-community.org)
 
 ## Founding members
 
