@@ -232,5 +232,5 @@ In the case of the Association being dissolved, the assets should be allotted to
 ### Article 26
 
 Should divergences exist between the translations of these articles, the French version shall prevail.
-The present Statutes have been approved by the Constituent Delegate Assembly of May, 26th 2014 in Lausanne, Switzerland.
+The present Statutes have been approved by the Constituent Delegate Assembly of June, 1st 2014 in Lausanne, Switzerland.
 
