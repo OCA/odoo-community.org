@@ -229,5 +229,5 @@ En cas de dissolution de l'Association, l'actif disponible sera entièrement att
 ### Article 26
 
 Si des divergence existe entre les différentes traductions des présents statuts, la version française fait foi.
-Les présents statuts ont été adoptés par l'Assemblée des Délégués constitutive du 26 mai 2014 à Lausanne, Suisse.
+Les présents statuts ont été adoptés par l'Assemblée des Délégués constitutive du 1er juin 2014 à Lausanne, Suisse.
 
