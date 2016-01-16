@@ -16,7 +16,7 @@ Based on the vote results, the effective version available on
 http://odoo-community.org will be updated accordingly.
 
 Please also keep in mind that the OCA is registered in Switzerland and
-and must answer some obligations due to the nature of its entity type.
+must answer some obligations due to the nature of its entity type.
 These obligations may prevent your changes from being accepted.
 
 About the OCA
