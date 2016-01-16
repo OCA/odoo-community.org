@@ -1,0 +1,29 @@
+===================
+OCA Legal Documents
+===================
+
+This repository contains the sources of OCA Legal documents, namely:
+
+* the Bylaws of the Association
+* the Entity Contributor License Agreement
+* the Individual Contributor License Agreement
+
+Although you may create pull requests to propose changes, the changes
+will become effective upon the vote of the OCA Delegates during
+an Annual General Assembly.
+
+Based on the vote results, the effective version available on 
+http://odoo-community.org will be updated accordingly.
+
+About the OCA
+-------------
+
+.. image:: https://odoo-community.org/logo.png
+   :alt: Odoo Community Association
+   :target: https://odoo-community.org
+
+OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
+
+For more information, please visit http://odoo-community.org.
