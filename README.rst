@@ -4,9 +4,13 @@ OCA Legal Documents
 
 This repository contains the sources of OCA Legal documents, namely:
 
-* the Bylaws of the Association
-* the Entity Contributor License Agreement
-* the Individual Contributor License Agreement
+* `the Bylaws of the Association`_
+* `the Entity Contributor License Agreement`_
+* `the Individual Contributor License Agreement`_
+
+.. _`the Bylaws of the Association`: Bylaws.rst
+.. _`the Entity Contributor License Agreement`: ECLA.rst
+.. _`the Individual Contributor License Agreement`: ICLA.rst
 
 Although you may create pull requests to propose changes, the changes
 will become effective upon the vote of the OCA Delegates during
