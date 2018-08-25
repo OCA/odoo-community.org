@@ -4,8 +4,8 @@
 
 .. |TITLE| replace:: OCA Guidelines
 .. |DATE| replace:: 2018/08/24
-.. |RELATED| replace:: OCA Repository Policy
-.. |CATEGORIES| replace:: Contribution, Policy, Maintainer Role
+.. |RELATED| replace:: OCA Guidelines
+.. |CATEGORIES| replace:: Guidelines, Conventions
 
 .. fill in the Document information in the above lines. It will be automatically
    replaced in the document header. Don't forget to remove the []
@@ -14,6 +14,7 @@
     :depth: 4
 
 .. sectnum::
+
 
 Introduction
 ============
@@ -26,8 +27,7 @@ These are loosely based on the [Odoo Guidelines](https://www.odoo.com/documentat
 and [Old Odoo Guidelines](https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html)
 with adaptations to improve their guidelines and make them more suitable for
 this project's own needs. Readers used to the Odoo Guidelines can skip to the
-[Differences With Odoo Guidelines](#differences-with-odoo-guidelines)
-section.
+[Differences With Odoo Guidelines](#differences-with-odoo-guidelines) section.
 
 Modules
 =======

@@ -1,6 +1,19 @@
-============
-Organization
-============
+##################################
+|TITLE| (|DATE|)
+##################################
+
+.. |TITLE| replace:: Organization
+.. |DATE| replace:: 2018/08/24
+.. |RELATED| replace:: OCA Organization
+.. |CATEGORIES| replace:: Organization
+
+.. fill in the Document information in the above lines. It will be automatically
+   replaced in the document header. Don't forget to remove the []
+
+.. contents:: Table of contents
+    :depth: 4
+
+.. sectnum::
 
 Introduction
 ============

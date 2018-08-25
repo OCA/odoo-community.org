@@ -1,6 +1,23 @@
-=============
-About the OCA
-=============
+##################################
+|TITLE| (|DATE|)
+##################################
+
+.. |TITLE| replace:: About the OCA
+.. |DATE| replace:: 2018/08/24
+.. |RELATED| replace:: About the OCA
+.. |CATEGORIES| replace:: About the OCA
+
+.. fill in the Document information in the above lines. It will be automatically
+   replaced in the document header. Don't forget to remove the []
+
+.. contents:: Table of contents
+    :depth: 4
+
+.. sectnum::
+
+
+Introduction
+============
 
 The Odoo Community Association, or OCA, is a nonprofit organization whose
 mission is to support the collaborative development of the Odoo features and to

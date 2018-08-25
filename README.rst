@@ -1,20 +1,12 @@
-===================
-OCA Legal Documents
-===================
+=============
+OCA Documents
+=============
 
-This repository contains the sources of OCA Legal documents, namely:
+This repository contains OCA documents and static pages.
 
-* `the Bylaws of the Association`_
-* `the Entity Contributor License Agreement`_
-* `the Individual Contributor License Agreement`_
-
-.. _`the Bylaws of the Association`: Bylaws.rst
-.. _`the Entity Contributor License Agreement`: ECLA.rst
-.. _`the Individual Contributor License Agreement`: ICLA.rst
-
-Although you may create pull requests to propose changes, the changes
-will become effective upon the vote of the OCA Delegates during
-an Annual General Assembly.
+Although you may create pull requests to propose changes, the changes to legal
+documents (Bylaws, ECLA, ICLA) will become effective upon the vote of the OCA
+Delegates during the next Annual General Assembly.
 
 Based on the vote results, the effective version available on 
 http://odoo-community.org will be updated accordingly.
