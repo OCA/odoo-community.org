@@ -16,21 +16,24 @@
 .. sectnum::
 
 
+
+************
 Introduction
-============
+************
 
 This page introduces the coding guidelines for projects hosted under OCA. These
 guidelines aim to improve the quality of the code: better readability of
 source, better maintainability, better stability and fewer regressions.
 
-These are loosely based on the [Odoo Guidelines](https://www.odoo.com/documentation/8.0/reference/guidelines.html)
-and [Old Odoo Guidelines](https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html)
+These are loosely based on the `Odoo Guidelines <https://www.odoo.com/documentation/8.0/reference/guidelines.html>`_
+and `Old Odoo Guidelines <https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html>`_
 with adaptations to improve their guidelines and make them more suitable for
 this project's own needs. Readers used to the Odoo Guidelines can skip to the
-[Differences With Odoo Guidelines](#differences-with-odoo-guidelines) section.
+`Differences With Odoo Guidelines <#differences-with-odoo-guidelines>`_ section.
 
+*******
 Modules
-=======
+*******
 
 * Use of the singular form in module name (or use "multi"),
   except when compound of module name or object Odoo
@@ -44,12 +47,14 @@ Modules
 * When combining an Odoo module with another from OCA, Odoo's name goes before.
   I.e., if you want to combine Odoo's `crm` with OCA's `partner_firstname`, the
   name should be `crm_partner_firstname`.
-* Use the [description template](https://github.com/OCA/maintainer-tools/tree/master/template/module) but remove sections with no meaningful content.
+* Use the `description template <https://github.com/OCA/maintainer-tools/tree/master/template/module>`_
+  but remove sections with no meaningful content.
 * In the `__openerp__.py`/`__manifest__.py`  manifest file:
+
   * Avoid empty keys
   * Make sure it has the `license` and `images` keys.
-  * Make sure the text `,Odoo Community Association (OCA)` is appended
-    to the `author` text.
+  * Make sure the text `,Odoo Community Association (OCA)` is appended to the
+    `author` text.
   * The `website` key must be `https://github.com/OCA/<repo>`,
     so as to provide the most relevant link to discover more information about the addon.
     That link shows the repository README. Alternatively `https://github.com/OCA/<repo>/tree/<branch>/<addon>`
@@ -57,8 +62,9 @@ Modules
     (authors, contributors and theirs companies), and links to the relevant information on the OCA website.
 * Don't use your company logo or your corporate branding. Using the author and the list of contributors is enough for people to know about your employer/company and contact you.
 
+***************
 Version numbers
----------------
+***************
 
 The version number in the module manifest should be the Odoo major
 version (e.g. `8.0`) followed by the module `x.y.z` version numbers.
@@ -67,24 +73,23 @@ module.
 
 The `x.y.z` version numbers follow the semantics `breaking.feature.fix`:
 
-  * `x` increments when the data model or the views had significant
-    changes. Data migration might be needed, or depending modules might
-    be affected.
-  * `y` increments when non-breaking new features are added. A module
-    upgrade will probably be needed.
-  * `z` increments when bugfixes were made. Usually a server restart
-    is needed for the fixes to be made available.
+* `x` increments when the data model or the views had significant
+  changes. Data migration might be needed, or depending modules might be affected.
+* `y` increments when non-breaking new features are added. A module
+  upgrade will probably be needed.
+* `z` increments when bugfixes were made. Usually a server restart
+  is needed for the fixes to be made available.
 
 If applicable, breaking changes are expected to include instructions
 or scripts to perform migration on current installations.
 
 Migrations
-----------
+==========
 
 When you introduce a breaking change, you *must* provide a migration script to make it possible to upgrade from lower versions. For a migration to another major version of Odoo, it's quite probable you'll need a migration script too. In such cases, migration scripts are highly appreciated, but a note in the README about relevant changes needing migration is sufficient too so that later contributors can add migration scripts without having to analyze all changes again.
 
 Directories
------------
+===========
 
 A module is organized in a few directories:
 
@@ -102,7 +107,7 @@ A module is organized in a few directories:
 
 
 File naming
------------
+===========
 
 For `models`, `views` and `data` declarations, split files by the model
 involved, either created or inherited. These files should be named after the
@@ -132,7 +137,7 @@ For `static files`, the name pattern is `<module_name>.ext` (i.e.
 image but copy it in our codebase instead.
 
 Installation hooks
-------------------
+==================
 
 When **`pre_init_hook`**, **`post_init_hook`**, **`uninstall_hook`**
 and **`post_load`** are
@@ -140,131 +145,122 @@ used, they should be placed in **`hooks.py`** located at the root of module
 directory structure and keys in the manifest file keeps the same as the
 following
 
-```python
-{
-    ...
-    'pre_init_hook': 'pre_init_hook',
-    'post_init_hook': 'post_init_hook',
-    'uninstall_hook': 'uninstall_hook',
-    'post_load': 'post_load',
-    ...
-}
-```
+.. code-block:: python
+
+    {
+        'pre_init_hook': 'pre_init_hook',
+        'post_init_hook': 'post_init_hook',
+        'uninstall_hook': 'uninstall_hook',
+        'post_load': 'post_load',
+    }
 
 Remember to add into the **`__init__.py`** the following imports as
 needed. For example:
-```python
-...
-from .hooks import pre_init_hook, post_init_hook, uninstall_hook, post_load
-...
-```
+
+.. code-block:: python
+
+    from .hooks import pre_init_hook, post_init_hook, uninstall_hook, post_load
 
 For applying monkey patches use post_load hook.
 In order to apply them just if the module is installed.
 
 The complete tree should look like this:
 
-```
-addons/<my_module_name>/
-|-- __init__.py
-|-- __openerp__.py
-|-- hooks.py
-|-- controllers/
-|   |-- __init__.py
-|   `-- main.py
-|-- data/
-|   `-- <main_model>.xml
-|-- demo/
-|   `-- <inherited_model>.xml
-|-- migrations/
-|   |-- 8.0.x.y.z/
-|   |   |-- pre_migration.py
-|   |   |-- post_migration.py
-|-- models/
-|   |-- __init__.py
-|   |-- <main_model>.py
-|   `-- <inherited_model>.py
-|-- report/
-|   |-- __init__.py
-|   |-- report.xml
-|   |-- <bi_reporting_model>.py
-|   |-- report_<rml_report_name>.rml
-|   |-- report_<rml_report_name>.py
-|   |-- <webkit_report_name>.mako
-|-- security/
-|   |-- ir.model.access.csv
-|   `-- <main_model>_security.xml
-|-- static/
-|   |-- img/
-|   |   |-- my_little_kitten.png
-|   |   `-- troll.jpg
-|   |-- lib/
-|   |   `-- external_lib/
-|   `-- src/
-|       |-- js/
-|       |   `-- <my_module_name>.js
-|       |-- css/
-|       |   `-- <my_module_name>.css
-|       |-- less/
-|       |   `-- <my_module_name>.less
-|       `-- xml/
-|           `-- <my_module_name>.xml
-|-- tests/
-|   |-- __init__.py
-|   |-- <test_file>.py
-|   |-- <test_file>.yml
-|-- views/
-|   |-- <main_model>.xml
-|   `-- <inherited_main_model>_views.xml
-|   |-- report_<qweb_report>.xml
-|-- templates/
-|   |-- <main_model>.xml
-|   `-- <inherited_main_model>.xml
-`-- wizards/
+.. code-block::
+
+    addons/<my_module_name>/
     |-- __init__.py
-    |-- <wizard_model>.py
-    `-- <wizard_model>.xml
-|-- examples/
-|   |-- my_example.csv
-```
+    |-- __openerp__.py
+    |-- hooks.py
+    |-- controllers/
+    |   |-- __init__.py
+    |   `-- main.py
+    |-- data/
+    |   `-- <main_model>.xml
+    |-- demo/
+    |   `-- <inherited_model>.xml
+    |-- migrations/
+    |   `-- 8.0.x.y.z/
+    |       |-- pre_migration.py
+    |       `-- post_migration.py
+    |-- models/
+    |   |-- __init__.py
+    |   |-- <main_model>.py
+    |   `-- <inherited_model>.py
+    |-- report/
+    |   |-- __init__.py
+    |   |-- report.xml
+    |   |-- <bi_reporting_model>.py
+    |   |-- report_<rml_report_name>.rml
+    |   |-- report_<rml_report_name>.py
+    |   `-- <webkit_report_name>.mako
+    |-- security/
+    |   |-- ir.model.access.csv
+    |   `-- <main_model>_security.xml
+    |-- static/
+    |   |-- img/
+    |   |   |-- my_little_kitten.png
+    |   |   `-- troll.jpg
+    |   |-- lib/
+    |   |   `-- external_lib/
+    |   `-- src/
+    |       |-- js/
+    |       |   `-- <my_module_name>.js
+    |       |-- css/
+    |       |   `-- <my_module_name>.css
+    |       |-- less/
+    |       |   `-- <my_module_name>.less
+    |       `-- xml/
+    |           `-- <my_module_name>.xml
+    |-- tests/
+    |   |-- __init__.py
+    |   |-- <test_file>.py
+    |   `-- <test_file>.yml
+    |-- views/
+    |   |-- <main_model>.xml
+    |   |-- <inherited_main_model>_views.xml
+    |   `-- report_<qweb_report>.xml
+    |-- templates/
+    |   |-- <main_model>.xml
+    |   `-- <inherited_main_model>.xml
+    |-- wizards/
+    |   |-- __init__.py
+    |   |-- <wizard_model>.py
+    |   `-- <wizard_model>.xml
+    `-- examples/
+        `-- my_example.csv
 
 Filenames should use only `[a-z0-9_]`
 
 Use correct file permissions: folders 755 and files 644.
 
 External dependencies
----------------------
+=====================
 
 Manifest
-~~~~~~~~
+--------
 
 `__manifest__.py/__openerp__.py`
 
 If your module uses extra dependencies of python or binaries you should add
 the `external_dependencies` section to `__manifest__.py`/`__openerp__.py`.
 
-```python
-{
-    'name': 'Example Module',
-    ...
-    'external_dependencies': {
-        'bin': [
-            'external_dependency_binary_1',
-            'external_dependency_binary_2',
-            ...
-            'external_dependency_binary_N',
-        ],
-        'python': [
-            'external_dependency_python_1',
-            'external_dependency_python_2',
-            ...
-            'external_dependency_python_N',
-        ],
-    },
-    ...
-    'installable': True,
-}
-```
+.. code-block:: python
+
+    {
+        'name': 'Example Module',
+        'external_dependencies': {
+            'bin': [
+                'external_dependency_binary_1',
+                'external_dependency_binary_2',
+            ],
+            'python': [
+                'external_dependency_python_1',
+                'external_dependency_python_2',
+            ],
+        },
+        'installable': True,
+    }
 
 An entry in `bin` needs to be in `PATH`, check by running
 `which external_dependency_binary_N`.
@@ -273,41 +269,43 @@ An entry in `python` needs to be in `PYTHONPATH`, check by running
 `python -c "import external_dependency_python_N"`.
 
 ImportError
-~~~~~~~~~~~
+-----------
 
 In python files where you use external dependencies you will
 need to add `try-except` with a debug log.
 
-```python
-try:
-    import external_dependency_python_N
-    import external_dependency_python_M
-    EXTERNAL_DEPENDENCY_BINARY_N_PATH = tools.find_in_path('external_dependency_binary_N')
-    EXTERNAL_DEPENDENCY_BINARY_M_PATH = tools.find_in_path('external_dependency_binary_M')
-except (ImportError, IOError) as err:
-    _logger.debug(err)
-```
+.. code-block:: python
+
+    try:
+        import external_dependency_python_N
+        import external_dependency_python_M
+        EXTERNAL_DEPENDENCY_BINARY_N_PATH = tools.find_in_path('external_dependency_binary_N')
+        EXTERNAL_DEPENDENCY_BINARY_M_PATH = tools.find_in_path('external_dependency_binary_M')
+    except (ImportError, IOError) as err:
+        _logger.debug(err)
+
 This rule doesn't apply to the test files since these files are loaded only when
 running tests and in such a case your module and their external dependencies are installed.
 
 README
-~~~~~~
+------
 
 If your module uses extra dependencies of python or binaries, please explain
 how to install them in the `README.rst` file in the section `Installation`.
 
 requirements.txt
-~~~~~~~~~~~~~~~~
+----------------
 
 As specified in [Repositories](#repositories), you should also define
 the python packages to install in a file `requirements.txt` in the 
 root folder of the repository. This will be used for travis.
 
+*********
 XML files
-=========
+*********
 
 Format
-------
+======
 
 When declaring a record in XML:
 
@@ -327,37 +325,37 @@ When declaring a record in XML:
   (`<record id="view_id"...`, not `<record id="current_module.view_id"...`)
 
 
-```xml
-<record id="view_id" model="ir.ui.view">
-    <field name="name">view.name</field>
-    <field name="model">object_name</field>
-    <field name="priority" eval="16"/>
-    <field name="arch" type="xml">
-        <tree>
-            <field name="my_field_1"/>
-            <field name="my_field_2" string="My Label" widget="statusbar" statusbar_visible="draft,sent,progress,done" statusbar_colors='{"invoice_except":"red","waiting_date":"blue"}' />
-        </tree>
-    </field>
-</record>
-```
+.. code-block:: xml
+
+    <record id="view_id" model="ir.ui.view">
+        <field name="name">view.name</field>
+        <field name="model">object_name</field>
+        <field name="priority" eval="16"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="my_field_1"/>
+                <field name="my_field_2" string="My Label" widget="statusbar" statusbar_visible="draft,sent,progress,done" statusbar_colors='{"invoice_except":"red","waiting_date":"blue"}' />
+            </tree>
+        </field>
+    </record>
 
 Records
--------
+=======
 
 * For records of model `ir.filters` use explicit `user_id` field.
 
-```xml
-<record id="filter_id" model="ir.filters">
-    <field name="name">Filter name</field>
-    <field name="model_id">filter.model</field>
-    <field name="user_id" eval="False"/>
-</record>
-```
+.. code-block:: xml
+
+    <record id="filter_id" model="ir.filters">
+        <field name="name">Filter name</field>
+        <field name="model_id">filter.model</field>
+        <field name="user_id" eval="False"/>
+    </record>
 
 More info [here](https://github.com/odoo/odoo/pull/8218)
 
 Views
------
+=====
 
 * For v8 and above it is recommended to avoid using the `string` attribute on
   list views (`<tree>`) which [has been
@@ -369,7 +367,7 @@ Views
   in favor of `decoration-{$name}`.
 
 QWeb
-----
+====
 
 * `t-*-options` QWeb directives (`t-field-options`, `t-esc-options` and
   `t-raw-options`) should not be used in v10 and above, as they are [to be
@@ -377,22 +375,22 @@ QWeb
   after version 10.
 
 Naming xml_id
--------------
+=============
 
 Data Records
-~~~~~~~~~~~~
+------------
 
 Use the followng pattern, where `<model_name>` is the name of the model that
 the record is an instance of: `<model_name>_<record_name>`
 
-```xml
-<record id="res_users_important_person" model="res.users">
-    ...
-</record>
-````
+.. code-block:: xml
+
+    <record id="res_users_important_person" model="res.users">
+        ...
+    </record>
 
 Security, View and Action
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 Use the following patterns, where `<model_name>` is the name of the model that
 the menu, view, etc. belongs to (e.g. for a `res.users` form view, the name
@@ -412,45 +410,45 @@ would be `res_users_view_form`):
   'model_name_group_user', 'public' for public user, 'company' for
   multi-company rules, ...).
 
-```xml
-<!-- views and menus -->
-<record id="model_name_menu" model="ir.ui.menu">
-    ...
-</record>
+.. code-block:: xml
 
-<record id="model_name_view_form" model="ir.ui.view">
-    ...
-</record>
+    <!-- views and menus -->
+    <record id="model_name_menu" model="ir.ui.menu">
+        ...
+    </record>
 
-<record id="model_name_view_kanban" model="ir.ui.view">
-    ...
-</record>
+    <record id="model_name_view_form" model="ir.ui.view">
+        ...
+    </record>
 
-<!-- actions -->
-<record id="model_name_action" model="ir.actions.act_window">
-    ...
-</record>
+    <record id="model_name_view_kanban" model="ir.ui.view">
+        ...
+    </record>
 
-<record id="model_name_action_child_list" model="ir.actions.act_window">
-    ...
-</record>
+    <!-- actions -->
+    <record id="model_name_action" model="ir.actions.act_window">
+        ...
+    </record>
 
-<!-- security -->
-<record id="model_name_group_user" model="res.groups">
-    ...
-</record>
+    <record id="model_name_action_child_list" model="ir.actions.act_window">
+        ...
+    </record>
 
-<record id="model_name_rule_public" model="ir.rule">
-    ...
-</record>
+    <!-- security -->
+    <record id="model_name_group_user" model="res.groups">
+        ...
+    </record>
 
-<record id="model_name_rule_company" model="ir.rule">
-    ...
-</record>
-```
+    <record id="model_name_rule_public" model="ir.rule">
+        ...
+    </record>
+
+    <record id="model_name_rule_company" model="ir.rule">
+        ...
+    </record>
 
 Inherited XML
-~~~~~~~~~~~~~
+-------------
 
 A module can extend a view only one time.
 
@@ -462,13 +460,12 @@ eases looking up the original view and other inheritance if they all have the
 same name.
 
 
-```xml
-<record id="original_id" model="ir.ui.view">
-<field name="inherit_id" ref="original_module.original_id"/>
-    ...
-</record>
-```
+.. code-block:: xml
 
+    <record id="original_id" model="ir.ui.view">
+        <field name="inherit_id" ref="original_module.original_id"/>
+        ...
+    </record>
 
 Use of `<... position="replace">` is not recommended because
 could show the error `Element ... cannot be located in parent view`
@@ -478,49 +475,50 @@ If you need to use this option, it must have an explicit comment
 explaining why it is absolutely necessary and also use a
 high value in its `priority` (greater than 100 is recommended) to avoid the error.
 
+.. code-block:: xml
 
-```xml
-<record id="view_id" model="ir.ui.view">
-    <field name="name">view.name</field>
-    <field name="model">object_name</field>
-    <field name="priority">110</field> <!--Priority greater than 100-->
-    <field name="arch" type="xml">
-        <!-- It is necessary because...-->
-        <xpath expr="//field[@name='my_field_1']" position="replace"/>
-    </field>
-</record>
-```
+    <record id="view_id" model="ir.ui.view">
+        <field name="name">view.name</field>
+        <field name="model">object_name</field>
+        <field name="priority">110</field> <!--Priority greater than 100-->
+        <field name="arch" type="xml">
+            <!-- It is necessary because...-->
+            <xpath expr="//field[@name='my_field_1']" position="replace"/>
+        </field>
+    </record>
 
 Also, we can hide an element from the view using `invisible="1"`.
 
 Demo Records
-~~~~~~~~~~~~
+------------
 
 Suffix all demo record XML IDs with `demo`. This allows them to be easily
 distinguished from regular records, which otherwise requires examining the
 source or reinstalling the module with demo data disabled.
 
-```xml
-<record id="res_users_not_a_real_user_demo" model="res.users">
-    ...
-</record>
-```
+.. code-block:: xml
 
+    <record id="res_users_not_a_real_user_demo" model="res.users">
+        ...
+    </record>
+
+******
 Python
-======
+******
 
 PEP8 options
-------------
+============
 
 Using the linter flake8 can help to see syntax and semantic warnings or errors.
 Project Source Code should adhere to PEP8 and PyFlakes standards with
 a few exceptions:
 
 * In `__init__.py` only
-    *  F401: `module` imported but unused
+
+  *  F401: `module` imported but unused
 
 Imports
--------
+=======
 
 The imports are ordered as
 
@@ -533,44 +531,45 @@ The imports are ordered as
 
 Inside these 6 groups, the imported lines are alphabetically sorted.
 
-```python
-# 1: imports of python lib
-import base64
-import logging
-import re
-import time
+.. code-block:: python
 
-# 2: import of known third party lib
-import lxml
+    # 1: imports of python lib
+    import base64
+    import logging
+    import re
+    import time
 
-# 3:  imports of openerp
-import openerp
-from openerp import api, fields, models  # alphabetically ordered
-from openerp.tools.safe_eval import safe_eval
-from openerp.tools.translate import _
+    # 2: import of known third party lib
+    import lxml
 
-# 4:  imports from odoo modules
-from openerp.addons.website.models.website import slug
-from openerp.addons.web.controllers.main import login_redirect
+    # 3:  imports of openerp
+    import openerp
+    from openerp import api, fields, models  # alphabetically ordered
+    from openerp.tools.safe_eval import safe_eval
+    from openerp.tools.translate import _
 
-# 5: local imports
-from . import utils
+    # 4:  imports from odoo modules
+    from openerp.addons.website.models.website import slug
+    from openerp.addons.web.controllers.main import login_redirect
 
-# 6: Import of unknown third party lib
-_logger = logging.getLogger(__name__)
-try:
-  import external_dependency_python_N
-except ImportError:
-  _logger.debug('Cannot `import external_dependency_python_N`.')
-```
+    # 5: local imports
+    from . import utils
 
- * Note:
-   * You can use [isort](https://pypi.python.org/pypi/isort/) to automatically
-     sort imports.
-   * Install with `pip install isort` and use with `isort myfile.py`.
+    # 6: Import of unknown third party lib
+    _logger = logging.getLogger(__name__)
+    try:
+        import external_dependency_python_N
+    except ImportError:
+        _logger.debug('Cannot `import external_dependency_python_N`.')
+
+* Note:
+
+  * You can use [isort](https://pypi.python.org/pypi/isort/) to automatically
+    sort imports.
+  * Install with `pip install isort` and use with `isort myfile.py`.
 
 Idioms
-------
+======
 
 * For Python 2 (Odoo < 11.0), all python files should contain
   ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` as first line.
@@ -582,33 +581,38 @@ Idioms
   features or idioms.
 * Use list comprehension, dict comprehension, and basic manipulation using
   `map`, `filter`, `sum`, ... They make the code more pythonic, easier to read
-   and are generally more efficient
+  and are generally more efficient
 * The same applies for recordset methods: use `filtered`, `mapped`, `sorted`,
   ...
 * Exceptions: Use `from openerp.exceptions import Warning as UserError` (v8)
   or `from openerp.exceptions import UserError` (v9)
   or find a more appropriate exception in `openerp.exceptions.py`
 * Document your code
-    * Docstring on methods should explain the purpose of a function,
-      not a summary of the code
-    * Simple comments for parts of code which do things which are not
-      immediately obvious
-    * Too many comments are usually a sign that the code is unreadable and
-      needs to be refactored
+
+  * Docstring on methods should explain the purpose of a function,
+    not a summary of the code
+  * Simple comments for parts of code which do things which are not
+    immediately obvious
+  * Too many comments are usually a sign that the code is unreadable and
+    needs to be refactored
+
 * Use meaningful variable/class/method names
 * If a function is too long or too indented due to loops, this is a sign
   that it needs to be refactored into smaller functions
 * If a function call, dictionary, list or tuple is broken into two lines,
   break it at the opening symbol. This adds a four space indent to the next
   line instead of starting the next line at the opening symbol.
+
   Example:
-  ```python
-  partner_id = fields.Many2one(
-      "res.partner",
-      "Partner",
-      "Required",
-  )
-  ```
+
+  .. code-block:: python
+
+    partner_id = fields.Many2one(
+        "res.partner",
+          "Partner",
+          "Required",
+      )
+
 * When making a comma separated list, dict, tuple, ... with one element per
   line, append a comma to the last element. This makes it so the next element
   added only changes one line in the changeset instead of changing the last
@@ -622,51 +626,51 @@ Idioms
   fragmentation in parent methods.
 
 Symbols
--------
+=======
 
 Odoo Python Classes
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Use UpperCamelCase for code in api v8, underscore lowercase notation for old
 api.
 
-```python
-class AccountInvoice(models.Model):
-    ...
+.. code-block:: python
 
-class account_invoice(orm.Model):
-    ...
-```
+    class AccountInvoice(models.Model):
+        ...
+
+    class account_invoice(orm.Model):
+        ...
 
 Variable names
-~~~~~~~~~~~~~~
+--------------
 
 * Use underscore lowercase notation for common variables (snake_case)
 * Since new API works with records or recordsets instead of id lists, don't
   suffix variable names with `_id` or `_ids` if they do not contain an ids or
   lists of ids.
 
-```python
-    ...
+.. code-block:: python
+
     res_partner = self.env['res.partner']
     partners = res_partner.browse(ids)
     partner_id = partners[0].id
-```
 
 * Use underscore uppercase notation for global variables or constants
-```python
-...
-CONSTANT_VAR1 = 'Value'
-...
-class...
-...
-```
+
+.. code-block:: python
+
+    CONSTANT_VAR1 = 'Value'
+    ...
+    class ...
+    ...
+
 
 SQL
----
+===
 
 No SQL Injection
-~~~~~~~~~~~~~~~~
+----------------
 
 Care must be taken not to introduce SQL injections vulnerabilities when using manual SQL queries. The vulnerability is present when user input is either incorrectly filtered or badly quoted, allowing an attacker to introduce undesirable clauses to a SQL query (such as circumventing filters or executing **UPDATE** or **DELETE** commands).
 
@@ -674,20 +678,20 @@ The best way to be safe is to never, NEVER use Python string concatenation (+) o
 
 The second reason, which is almost as important, is that it is the job of the database abstraction layer (psycopg2) to decide how to format query parameters, not your job! For example psycopg2 knows that when you pass a list of values it needs to format them as a comma-separated list, enclosed in parentheses!
 
-```python
-# the following is very bad:
-#   - it's a SQL injection vulnerability
-#   - it's unreadable
-#   - it's not your job to format the list of ids
-cr.execute('select distinct child_id from account_account_consol_rel ' +
-           'where parent_id in ('+','.join(map(str, ids))+')')
+.. code-block:: python
 
-# better
-cr.execute('SELECT DISTINCT child_id '\
-           'FROM account_account_consol_rel '\
-           'WHERE parent_id IN %s',
-           (tuple(ids),))
-```
+    # the following is very bad:
+    #   - it's a SQL injection vulnerability
+    #   - it's unreadable
+    #   - it's not your job to format the list of ids
+    cr.execute('select distinct child_id from account_account_consol_rel ' +
+               'where parent_id in ('+','.join(map(str, ids))+')')
+
+    # better
+    cr.execute('SELECT DISTINCT child_id '\
+               'FROM account_account_consol_rel '\
+               'WHERE parent_id IN %s',
+               (tuple(ids),))
 
 This is very important, so please be careful also when refactoring, and most importantly do not copy these patterns!
 
@@ -695,30 +699,30 @@ Here is a [memorable example](http://www.bobby-tables.com) to help you remember 
 
 Before continuing, please be sure to read the online documentation of pyscopg2 to learn of to use it properly:
 
-  - [The problem with query parameters](http://initd.org/psycopg/docs/usage.html#the-problem-with-the-query-parameters)
-  - [How to pass parameters with psycopg2](http://initd.org/psycopg/docs/usage.html#passing-parameters-to-sql-queries)
-  - [Advanced parameter types](http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types)
+- [The problem with query parameters](http://initd.org/psycopg/docs/usage.html#the-problem-with-the-query-parameters)
+- [How to pass parameters with psycopg2](http://initd.org/psycopg/docs/usage.html#passing-parameters-to-sql-queries)
+- [Advanced parameter types](http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types)
 
 Never commit the transaction
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------
 
 The OpenERP/OpenObject framework is in charge of providing the transactional context for all RPC calls. The principle is that a new database cursor is opened at the beginning of each RPC call, and committed when the call has returned, just before transmitting the answer to the RPC client, approximately like this:
 
-```python
-def execute(self, db_name, uid, obj, method, *args, **kw):
-    db, pool = pooler.get_db_and_pool(db_name)
-    # create transaction cursor
-    cr = db.cursor()
-    try:
-        res = pool.execute_cr(cr, uid, obj, method, *args, **kw)
-        cr.commit() # all good, we commit
-    except Exception:
-        cr.rollback() # error, rollback everything atomically
-        raise
-    finally:
-        cr.close() # always close cursor opened manually
-    return res
-```
+.. code-block:: python
+
+    def execute(self, db_name, uid, obj, method, *args, **kw):
+        db, pool = pooler.get_db_and_pool(db_name)
+        # create transaction cursor
+        cr = db.cursor()
+        try:
+            res = pool.execute_cr(cr, uid, obj, method, *args, **kw)
+            cr.commit() # all good, we commit
+        except Exception:
+            cr.rollback() # error, rollback everything atomically
+            raise
+        finally:
+            cr.close() # always close cursor opened manually
+        return res
 
 If any error occurs during the execution of the RPC call, the transaction is rolled back atomically, preserving the state of the system.
 
@@ -726,173 +730,175 @@ Similarly, the system also provides a dedicated transaction during the execution
 
 The consequence is that if you manually call `cr.commit()` anywhere there is a very high chance that you will break the system in various ways, because you will cause partial commits, and thus partial and unclean rollbacks, causing among others:
 
- - inconsistent business data, usually data loss ;
- - workflow desynchronization, documents stuck permanently ;
- - tests that can't be rolled back cleanly, and will start polluting the database, and triggering error (this is true even if no error occurs during the transaction);
+- inconsistent business data, usually data loss ;
+- workflow desynchronization, documents stuck permanently ;
+- tests that can't be rolled back cleanly, and will start polluting the database, and triggering error (this is true even if no error occurs during the transaction);
 
 Unless:
 
- - You have created your own database cursor explicitly! And the situations where you need to do that are exceptional!
-   And by the way if you did create your own cursor, then you need to handle error cases and proper rollback, as well as properly close the cursor when you're done with it.
+- You have created your own database cursor explicitly! And the situations where you need to do that are exceptional!
+  And by the way if you did create your own cursor, then you need to handle error cases and proper rollback, as well as properly close the cursor when you're done with it.
 
-   And contrary to popular belief, you do not even need to call `cr.commit()` in the following situations:
+  And contrary to popular belief, you do not even need to call `cr.commit()` in the following situations:
 
-   - in the `_auto_init()` method of an `models.Model` object: this is taken care of by the addons initialization method, or by the ORM transaction when creating custom models
-   - in reports: the `commit()` is handled by the framework too, so you can update the database even from within a report
-   - within `models.TransientModel` methods: these methods are called exactly like regular `models.Model` ones, within a transaction and with the corresponding `cr.commit()`/`rollback()` at the end ;
-   - etc. (see general rule above if you have in doubt!)
+  - in the `_auto_init()` method of an `models.Model` object: this is taken care of by the addons initialization method, or by the ORM transaction when creating custom models
+  - in reports: the `commit()` is handled by the framework too, so you can update the database even from within a report
+  - within `models.TransientModel` methods: these methods are called exactly like regular `models.Model` ones, within a transaction and with the corresponding `cr.commit()`/`rollback()` at the end ;
+  - etc. (see general rule above if you have in doubt!)
 
- - All `cr.commit()` calls outside of the server framework from now on must have an explicit comment explaining why they are absolutely necessary, why they are indeed correct, and why they do not break the transactions. Otherwise they can and will be removed!
+- All `cr.commit()` calls outside of the server framework from now on must have an explicit comment explaining why they are absolutely necessary, why they are indeed correct, and why they do not break the transactions. Otherwise they can and will be removed!
 
- - You can avoid the `cr.commit` using `cr.savepoint` method.
+- You can avoid the `cr.commit` using `cr.savepoint` method.
 
-  ```python
-    try:
-        with cr.savepoint():
-            # Create a savepoint and rollback this section if any exception is raised.
-            method1()
-            method2()
-    # Catch here any exceptions if you need to.
-    except (except_class1, except_class2):
-        # Add here the logic if anything fails. NOTE: Don't need rollback sentence.
-        pass
+  .. code-block:: python
 
-  ```
+        try:
+            with cr.savepoint():
+                # Create a savepoint and rollback this section if any exception is raised.
+                method1()
+                method2()
+        # Catch here any exceptions if you need to.
+        except (except_class1, except_class2):
+            # Add here the logic if anything fails. NOTE: Don't need rollback sentence.
+            pass
 
- - You can isolate a transaction for a valid `cr.commit` using `Environment`:
+- You can isolate a transaction for a valid `cr.commit` using `Environment`:
 
-  ```python
-    with openerp.api.Environment.manage():
-        with openerp.registry(self.env.cr.dbname).cursor() as new_cr:
-            # Create a new environment with new cursor database
-            new_env = api.Environment(new_cr, self.env.uid, self.env.context)
-            # with_env replace original env for this method
-            # A good comment here of why this isolated transaction is required.
-            self.with_env(new_env).write({'name': 'hello'})  # isolated transaction to commit
-        # You don't need to close nor to commit your cursor as they are done when exiting "with" block
-    # You don't need clear caches because is cleared when finish "with"
-  ```
+  .. code-block:: python
 
+        with openerp.api.Environment.manage():
+            with openerp.registry(self.env.cr.dbname).cursor() as new_cr:
+                # Create a new environment with new cursor database
+                new_env = api.Environment(new_cr, self.env.uid, self.env.context)
+                # with_env replace original env for this method
+                # A good comment here of why this isolated transaction is required.
+                self.with_env(new_env).write({'name': 'hello'})  # isolated transaction to commit
+            # You don't need to close nor to commit your cursor as they are done when exiting "with" block
+        # You don't need clear caches because is cleared when finish "with"
 
 Do not bypass the ORM
----------------------
+=====================
 
 You should never use the database cursor directly when the ORM can do the same thing! By doing so you are bypassing all the ORM features, possibly the transactions, access rights and so on.
 
 And chances are that you are also making the code harder to read and probably less secure (see also next guideline):
 
-```python
-# very very wrong
-cr.execute('select id from auction_lots where auction_id in (' +
-           ','.join(map(str, ids)) + ') and state=%s and obj_price>0',
-           ('draft',))
-auction_lots_ids = [x[0] for x in cr.fetchall()]
+.. code-block:: python
 
-# no injection, but still wrong
-cr.execute('select id from auction_lots where auction_id in %s '
-           'and state=%s and obj_price>0',
-           (tuple(ids), 'draft',))
-auction_lots_ids = [x[0] for x in cr.fetchall()]
+    # very very wrong
+    cr.execute('select id from auction_lots where auction_id in (' +
+               ','.join(map(str, ids)) + ') and state=%s and obj_price>0',
+               ('draft',))
+    auction_lots_ids = [x[0] for x in cr.fetchall()]
 
-# better
-auction_lots_ids = self.search(cr, uid, [
-    ('auction_id', 'in', ids),
-    ('state', '=', 'draft'),
-    ('obj_price', '>', 0),
-])
-```
+    # no injection, but still wrong
+    cr.execute('select id from auction_lots where auction_id in %s '
+               'and state=%s and obj_price>0',
+               (tuple(ids), 'draft',))
+    auction_lots_ids = [x[0] for x in cr.fetchall()]
+
+    # better
+    auction_lots_ids = self.search(cr, uid, [
+        ('auction_id', 'in', ids),
+        ('state', '=', 'draft'),
+        ('obj_price', '>', 0),
+    ])
 
 Models
-------
+======
 
 * Model names
-    * Use dot lowercase name for models. Example: `sale.order`
-    * Use name in a singular form. `sale.order` instead of `sale.orders`
+
+  * Use dot lowercase name for models. Example: `sale.order`
+  * Use name in a singular form. `sale.order` instead of `sale.orders`
+
 * Method conventions
-    * Compute Field: the compute method pattern is `_compute_<field_name>`
-    * Inverse method: the inverse method pattern is `_inverse_<field_name>`
-    * Search method: the search method pattern is `_search_<field_name>`
-    * Default method: the default method pattern is `_default_<field_name>`
-    * Onchange method: the onchange method pattern is `_onchange_<field_name>`
-    * Constraint method: the constraint method pattern is
-      `_check_<constraint_name>`
-    * Action method: an object action method is prefix with `action_`.
-      Its decorator is `@api.multi`, but since it use only one record, add
-      `self.ensure_one()` at the beginning of the method.
-    * `@api.one` method: For v8 is recommended use `@api.multi` and avoid use
-      `@api.one`, for compatibility with v9 where is deprecated `@api.one`.
+
+  * Compute Field: the compute method pattern is `_compute_<field_name>`
+  * Inverse method: the inverse method pattern is `_inverse_<field_name>`
+  * Search method: the search method pattern is `_search_<field_name>`
+  * Default method: the default method pattern is `_default_<field_name>`
+  * Onchange method: the onchange method pattern is `_onchange_<field_name>`
+  * Constraint method: the constraint method pattern is
+    `_check_<constraint_name>`
+  * Action method: an object action method is prefix with `action_`.
+    Its decorator is `@api.multi`, but since it use only one record, add
+    `self.ensure_one()` at the beginning of the method.
+  * `@api.one` method: For v8 is recommended use `@api.multi` and avoid use
+    `@api.one`, for compatibility with v9 where is deprecated `@api.one`.
+
 * In a Model attribute order should be
-    1. Private attributes (`_name`, `_description`, `_inherit`, ...)
-    2. Default method and `_default_get`
-    3. Fields declarations
-    4. Compute and search methods in the same order than field declaration
-    5. Constrains methods (`@api.constrains`) and onchange methods
-       (`@api.onchange`)
-    6. CRUD methods (ORM overrides)
-    7. Action methods
-    8. And finally, other business methods.
 
-```python
-class Event(models.Model):
-    # Private attributes
-    _name = 'event.event'
-    _description = 'Event'
+  1. Private attributes (`_name`, `_description`, `_inherit`, ...)
+  2. Default method and `_default_get`
+  3. Fields declarations
+  4. Compute and search methods in the same order than field declaration
+  5. Constrains methods (`@api.constrains`) and onchange methods
+     (`@api.onchange`)
+  6. CRUD methods (ORM overrides)
+  7. Action methods
+  8. And finally, other business methods.
 
-    # Default methods
-    def _default_name(self):
+.. code-block:: python
+
+    class Event(models.Model):
+        # Private attributes
+        _name = 'event.event'
+        _description = 'Event'
+
+        # Default methods
+        def _default_name(self):
+                ...
+
+        # Fields declaration
+        name = fields.Char(string='Name', default=_default_name)
+        seats_reserved = fields.Integer(
+            oldname='register_current',
+            string='Reserved Seats',
+            store=True,
+            readonly=True,
+            compute='_compute_seats',
+        )
+        seats_available = fields.Integer(
+            oldname='register_avail',
+            string='Available Seats',
+            store=True,
+            readonly=True,
+            compute='_compute_seats',
+        )
+        price = fields.Integer(string='Price')
+
+        # compute and search fields, in the same order that fields declaration
+        @api.multi
+        @api.depends('seats_max', 'registration_ids.state')
+        def _compute_seats(self):
             ...
 
-    # Fields declaration
-    name = fields.Char(string='Name', default=_default_name)
-    seats_reserved = fields.Integer(
-        oldname='register_current',
-        string='Reserved Seats',
-        store=True,
-        readonly=True,
-        compute='_compute_seats',
-    )
-    seats_available = fields.Integer(
-        oldname='register_avail',
-        string='Available Seats',
-        store=True,
-        readonly=True,
-        compute='_compute_seats',
-    )
-    price = fields.Integer(string='Price')
+        # Constraints and onchanges
+        @api.constrains('seats_max', 'seats_available')
+        def _check_seats_limit(self):
+            ...
 
-    # compute and search fields, in the same order that fields declaration
-    @api.multi
-    @api.depends('seats_max', 'registration_ids.state')
-    def _compute_seats(self):
-        ...
+        @api.onchange('date_begin')
+        def _onchange_date_begin(self):
+            ...
 
-    # Constraints and onchanges
-    @api.constrains('seats_max', 'seats_available')
-    def _check_seats_limit(self):
-        ...
+        # CRUD methods
+        def create(self):
+            ...
 
-    @api.onchange('date_begin')
-    def _onchange_date_begin(self):
-        ...
+        # Action methods
+        @api.multi
+        def action_validate(self):
+            self.ensure_one()
+            ...
 
-    # CRUD methods
-    def create(self):
-        ...
-
-    # Action methods
-    @api.multi
-    def action_validate(self):
-        self.ensure_one()
-        ...
-
-    # Business methods
-    def mail_user_confirm(self):
-        ...
-```
-
+        # Business methods
+        def mail_user_confirm(self):
+            ...
 
 Fields
-------
+======
 
 * `One2Many` and `Many2Many` fields should always have `_ids` as suffix
   (example: sale_order_line_ids)
@@ -903,18 +909,21 @@ Fields
   it's automatically taken. If your variable name contains "_" in the name,
   they are converted to spaces when creating the automatic string and each word
   is capitalized.
-  (example: old api `'name': fields.char('Name', ...)`
-            new api `'name': fields.Char(...)`)
+  (example:
+
+      old api `'name': fields.char('Name', ...)`
+      new api `'name': fields.Char(...)`)
+
 * Default functions should be declared with a lambda call on self. The reason
   for this is so a default function can be inherited. Assigning a function
   pointer directly to the `default` parameter does not allow for inheritance.
 
-  ```python
-  a_field(..., default=lambda self: self._default_get())
-  ```
+  .. code-block:: python
+
+      a_field(..., default=lambda self: self._default_get())
 
 Exceptions
-----------
+==========
 
 The `pass` into block except is not a good practice!
 
@@ -923,23 +932,25 @@ after the exception occurred
 
 If you really need to use the `pass` consider logging that exception
 
-```python
-try:
-    sentences
-except Exception:
-    _logger.debug('Why the exception is safe....', exc_info=1))
-```
+.. code-block:: python
 
+    try:
+        sentences
+    except Exception:
+        _logger.debug('Why the exception is safe....', exc_info=1))
+
+**********
 Javascript
-==========
+**********
 
 * `use strict;` is recommended for all javascript files
 * Use a linter (jshint, ...)
 * Never add minified Javascript libraries
 * Use UpperCamelCase for class declarations
 
+***
 CSS
-===
+***
 
 * Prefix all your classes with `o_<module_name>` where `module_name` is the
   technical name of the module (`sale`, `im_chat`, ...) or the main route
@@ -950,8 +961,9 @@ CSS
 * Use bootstrap native classes
 * Use underscore lowercase notation to name classes
 
+*****
 Tests
-=====
+*****
 
 As a general rule, a bug fix should come with a unittest which would fail
 without the fix itself. This is to assure that regression will not happen in
@@ -968,7 +980,7 @@ you should name it ``module_name_example`` (ie: `cms_form` and `cms_form_example
 In this way coverage analysis will ignore this extra module by default.
 
 Investigating Travis Test Failures
-----------------------------------
+==================================
 
 It can sometimes be difficult to reproduce a Travis test failure locally due to
 subtle environment differences. In these scenarios it can be helpful to connect to
@@ -990,29 +1002,30 @@ the author of the commit that triggered the Runbot build.
 
 Once you've connected to the container, you can run tests as follows:
 
-```
-cp -r ~/data_dir/filestore/openerp_template ~/data_dir/filestore/[github_username]
-createdb -T openerp_template [github_username]
-[~/odoo-9.0/odoo.py or ~/odoo-10.0/odoo-bin] -d [github_username] --db-filter=[github_username] --xmlrpc-port=18069 -i [module_name] --test-enable
-```
+.. code-block:: bash
+
+    cp -r ~/data_dir/filestore/openerp_template ~/data_dir/filestore/[github_username]
+    createdb -T openerp_template [github_username]
+    [~/odoo-9.0/odoo.py or ~/odoo-10.0/odoo-bin] -d [github_username] --db-filter=[github_username] --xmlrpc-port=18069 -i [module_name] --test-enable
 
 The test instance can be accessed through your browser at
 http://localhost:18080/ thanks to SSH port forwarding. To rebuild the DB as
 needed, run:
 
-```
-dropdb [github_username]
-createdb -T openerp_template [github_username]
-```
+.. code-block:: bash
+
+    dropdb [github_username]
+    createdb -T openerp_template [github_username]
 
 **WARNING**: Do not stop the default Odoo service running in the container as
 this will bring down the entire Runbot instance.
 
+***
 Git
-===
+***
 
 Commit message
---------------
+==============
 
 Write a short commit summary without prefixing it. It should not be longer than
 50 characters: `This is a commit message`
@@ -1034,26 +1047,27 @@ changes. This part should be multiple lines no longer than 80 characters.
   This is helpful if we need to revert changes on a module separately.
 * Only make a single commit per logical change set. Do not add commits such as
   "Fix pep8", "Code review" or "Add unittest" if they fix commits which are
-   being proposed
+  being proposed
 * Use present imperative (Fix formatting, Remove unused field) avoid appending
   's' to verbs: Fixes, Removes
 
-```
-website: remove unused alert div
+.. code-block::
 
-Fix look of input-group-btn
-Bootstrap's CSS depends on the input-group-btn element being the first/last
-child of its parent.
-This was not the case because of the invisible and useless alert.
-```
-```
-web: add module system to the web client
-This commit introduces a new module system for the javascript code.
-Instead of using global ...
-```
+    website: remove unused alert div
+
+    Fix look of input-group-btn
+    Bootstrap's CSS depends on the input-group-btn element being the first/last
+    child of its parent.
+    This was not the case because of the invisible and useless alert.
+
+.. code-block::
+
+    web: add module system to the web client
+    This commit introduces a new module system for the javascript code.
+    Instead of using global ...
 
 Review
-------
+======
 
 Peer review is the only way to ensure good quality of the code and to be able
 to rely on the other developers. The peer review in this project will be
@@ -1071,10 +1085,10 @@ managed through Pull Requests. It will serve the following main purposes:
 
 Meaning "If there are enough reviewers, all problems are easy to solve". Eric
 S. Raymond has written influentially about peer review in software development:
- http://en.wikipedia.org/wiki/Software_peer_review.
+http://en.wikipedia.org/wiki/Software_peer_review.
 
 Please respect a few basic rules:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------
 
 * Two reviewers must approve a merge proposal in order to be able to merge it
 * 5 calendar days must be given to be able to merge it
@@ -1099,7 +1113,7 @@ Further reading:
 * https://insidecoding.wordpress.com/2013/01/07/code-review-guidelines/
 
 There are the following important parts in a review:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------
 
 * Start by thanking the contributor / developer for their work. No matter the
   issue of the PR, someone has done work for you, so be thankful for that.
@@ -1109,6 +1123,7 @@ There are the following important parts in a review:
   allow people to run and test the code
 * Choose the review tag (comment, approve, rejected, needs information,...)
   and don't forget to add a type of review to let people know:
+
   * Code review: means you look at the code
   * Test: means you tested it functionally speaking
 
@@ -1117,7 +1132,7 @@ when committing. The author is found using the git log command. Use the commit
 message provided by the contributor if any.
 
 It makes sense to be picky in the following cases:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------------------
 
 * The origin/reason for the patch/dev is not documented very well
 * No adapted / convenient description written in the `__openerp__.py` file for
@@ -1135,38 +1150,41 @@ Pull requests can be closed if:
 
 * there is no activity for 6 months
 
+******
 Github
-======
+******
 
 Teams
------
+=====
 
 * Team name must not contain odoo or openerp
 * Team name for localization is "Belgium Maintainers" for Belgium
 
 Repositories
-------------
+============
 
 Naming
-~~~~~~
+------
 
 * Project name must not contain odoo or openerp
 * Project name for localization is "l10n-belgium" for Belgium
 * Project name for connectors is "connector-magento" for Magento connector
 
 Branch configuration
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
-Python packages to install, must be preferably, define in requirements.txt than travis.yml file.
+Python packages to install must be preferably defined in requirements.txt than travis.yml file.
+
 Requirements.txt avoid to repeat packages in all travis.yml files of repositories in case of using with oca_dependencies.txt file.
 
 Issues
-------
+======
 
 * Issues are used for blueprints and bugs.
 
+********************************
 Differences With Odoo Guidelines
-================================
+********************************
 
 Not the entire Odoo guidelines fit OCA modules needs. In many cases rules need
 to be more stringent. In other cases, conventions are improved for better
@@ -1175,52 +1193,66 @@ maintainability in an ecosystem of many smaller modules.
 The differences include:
 
 * [Module Structure](#modules)
-    * Using one file per model
-    * Separating data and demo data xml folders
-    * Not changing xml_ids while inheriting
-    * Add guideline to use external dependencies
-    * Define a separated file for installation hooks
+
+  * Using one file per model
+  * Separating data and demo data xml folders
+  * Not changing xml_ids while inheriting
+  * Add guideline to use external dependencies
+  * Define a separated file for installation hooks
+
 * [XML](#xml-files)
-    * Avoid use current module in xml_id
-    * Use explicit `user_id` field for records of model `ir.filters`
+
+  * Avoid use current module in xml_id
+  * Use explicit `user_id` field for records of model `ir.filters`
+
 * [Python](#python)
-    * Use Python standards
-    * Fuller PEP8 compliance
-    * Use ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` in first line
-    * Using relative import for local files
-    * More python idioms
-    * A way to deal with long comma-separated lines
-    * Hints on documentation
-    * Don't use CamelCase for model variables
-    * Use underscore uppercase notation for global variables or constants
+
+  * Use Python standards
+  * Fuller PEP8 compliance
+  * Use ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` in first line
+  * Using relative import for local files
+  * More python idioms
+  * A way to deal with long comma-separated lines
+  * Hints on documentation
+  * Don't use CamelCase for model variables
+  * Use underscore uppercase notation for global variables or constants
+
 * [SQL](#sql)
-    * Add section for No SQL Injection
-    * Add section for don't bypass the ORM
-    * Add section for never commit the transaction
+
+  * Add section for No SQL Injection
+  * Add section for don't bypass the ORM
+  * Add section for never commit the transaction
+
 * [Field](#field)
-    * A hint for function defaults
-    * Use default label string if is possible
-    * Add the inverse method pattern
+
+  * A hint for function defaults
+  * Use default label string if is possible
+  * Add the inverse method pattern
+
 * [Tests Section Added](#tests)
 * [Git](#git)
-    * No prefixing of commits
-    * Default git commit message standards
-    * Squashing changes in pull requests when necessary
-    * Use of present imperative
+
+  * No prefixing of commits
+  * Default git commit message standards
+  * Squashing changes in pull requests when necessary
+  * Use of present imperative
+
 * [Github Section](#github)
 * [Review Section](#review)
 
+************************
 Backporting Odoo Modules
-========================
+************************
 
 Suggesting a backport of a module among an OCA repository is possible, but you
 must respect a few rules:
 
- * You need to keep the license of the module coded by Odoo SA
- * You need to add the OCA as author (and Odoo SA of course)
- * You need to make the module "OCA compatible" : PEP8, OCA convention and so
-   on so it won't break our CI like runbot, Travis and so.
- * You need to add a disclaimer in the Readme with the following text:
-```
-**This module is a backport from Odoo SA and as such, it is not included in the OCA CLA. That means we do not have a copy of the copyright on it like all other OCA modules.**
-```
+* You need to keep the license of the module coded by Odoo SA
+* You need to add the OCA as author (and Odoo SA of course)
+* You need to make the module "OCA compatible" : PEP8, OCA convention and so
+  on so it won't break our CI like runbot, Travis and so.
+* You need to add a disclaimer in the Readme with the following text:
+
+  .. pull-quote::
+  
+    This module is a backport from Odoo SA and as such, it is not included in the OCA CLA. That means we do not have a copy of the copyright on it like all other OCA modules.**
