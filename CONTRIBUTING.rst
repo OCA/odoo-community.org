@@ -1,4 +1,22 @@
-# OCA Guidelines
+##################################
+|TITLE| (|DATE|)
+##################################
+
+.. |TITLE| replace:: OCA Guidelines
+.. |DATE| replace:: 2018/08/24
+.. |RELATED| replace:: OCA Repository Policy
+.. |CATEGORIES| replace:: Contribution, Policy, Maintainer Role
+
+.. fill in the Document information in the above lines. It will be automatically
+   replaced in the document header. Don't forget to remove the []
+
+.. contents:: Table of contents
+    :depth: 4
+
+.. sectnum::
+
+Introduction
+============
 
 This page introduces the coding guidelines for projects hosted under OCA. These
 guidelines aim to improve the quality of the code: better readability of
@@ -11,62 +29,8 @@ this project's own needs. Readers used to the Odoo Guidelines can skip to the
 [Differences With Odoo Guidelines](#differences-with-odoo-guidelines)
 section.
 
-##### Table of Contents
-
-  * [OCA Guidelines](#oca-guidelines)
-    * [Modules](#modules)
-      * [Version numbers](#version-numbers)
-      * [Migrations](#migrations)
-      * [Directories](#directories)
-      * [File naming](#file-naming)
-      * [Installation hooks](#installation-hooks)
-      * [External dependencies](#external-dependencies)
-        * [Manifest (`__manifest__.py/__openerp__.py`)](#manifest-__manifest__py__openerp__py)
-        * [ImportError](#importerror)
-        * [README](#user-content-readme)
-        * [requirements.txt](#requirementstxt)
-    * [XML files](#xml-files)
-      * [Format](#format)
-      * [Records](#records)
-      * [Views](#views)
-      * [QWeb](#qweb)
-      * [Naming xml_id](#naming-xml_id)
-        * [Data Records](#data-records)
-        * [Security, View and Action](#security-view-and-action)
-        * [Inherited XML](#inherited-xml)
-        * [Demo Records](#demo-records)
-    * [Python](#python)
-      * [PEP8 options](#pep8-options)
-      * [Imports](#imports)
-      * [Idioms](#idioms)
-      * [Symbols](#symbols)
-        * [Odoo Python Classes](#odoo-python-classes)
-        * [Variable names](#variable-names)
-      * [SQL](#sql)
-        * [No SQL Injection](#no-sql-injection)
-        * [Never commit the transaction](#never-commit-the-transaction)
-      * [Do not bypass the ORM](#do-not-bypass-the-orm)
-      * [Models](#models)
-      * [Fields](#fields)
-      * [Exceptions](#exceptions)
-    * [Javascript](#javascript)
-    * [CSS](#css)
-    * [Tests](#tests)
-      * [Investigating Travis Test Failures](#investigating-travis-test-failures)
-    * [Git](#git)
-      * [Commit message](#commit-message)
-      * [Review](#review)
-        * [Please respect a few basic rules:](#please-respect-a-few-basic-rules)
-        * [There are the following important parts in a review:](#there-are-the-following-important-parts-in-a-review)
-        * [It makes sense to be picky in the following cases:](#it-makes-sense-to-be-picky-in-the-following-cases)
-    * [Github](#github)
-      * [Teams](#teams)
-      * [Repositories](#repositories)
-      * [Issues](#issues)
-    * [Differences With Odoo Guidelines](#differences-with-odoo-guidelines)
-  * [Backporting Odoo Modules](#backporting-odoo-modules)
-
-## Modules
+Modules
+=======
 
 * Use of the singular form in module name (or use "multi"),
   except when compound of module name or object Odoo
@@ -93,7 +57,8 @@ section.
     (authors, contributors and theirs companies), and links to the relevant information on the OCA website.
 * Don't use your company logo or your corporate branding. Using the author and the list of contributors is enough for people to know about your employer/company and contact you.
 
-### Version numbers
+Version numbers
+---------------
 
 The version number in the module manifest should be the Odoo major
 version (e.g. `8.0`) followed by the module `x.y.z` version numbers.
@@ -113,11 +78,13 @@ The `x.y.z` version numbers follow the semantics `breaking.feature.fix`:
 If applicable, breaking changes are expected to include instructions
 or scripts to perform migration on current installations.
 
-### Migrations
+Migrations
+----------
 
 When you introduce a breaking change, you *must* provide a migration script to make it possible to upgrade from lower versions. For a migration to another major version of Odoo, it's quite probable you'll need a migration script too. In such cases, migration scripts are highly appreciated, but a note in the README about relevant changes needing migration is sufficient too so that later contributors can add migration scripts without having to analyze all changes again.
 
-### Directories
+Directories
+-----------
 
 A module is organized in a few directories:
 
@@ -134,7 +101,8 @@ A module is organized in a few directories:
 * `wizards/`: wizard model and views
 
 
-### File naming
+File naming
+-----------
 
 For `models`, `views` and `data` declarations, split files by the model
 involved, either created or inherited. These files should be named after the
@@ -163,7 +131,9 @@ For `static files`, the name pattern is `<module_name>.ext` (i.e.
 ...). Don't link data (image, libraries) outside Odoo: don't use an url to an
 image but copy it in our codebase instead.
 
-### Installation hooks
+Installation hooks
+------------------
+
 When **`pre_init_hook`**, **`post_init_hook`**, **`uninstall_hook`**
 and **`post_load`** are
 used, they should be placed in **`hooks.py`** located at the root of module
@@ -191,7 +161,6 @@ from .hooks import pre_init_hook, post_init_hook, uninstall_hook, post_load
 
 For applying monkey patches use post_load hook.
 In order to apply them just if the module is installed.
-
 
 The complete tree should look like this:
 
@@ -263,9 +232,14 @@ Filenames should use only `[a-z0-9_]`
 
 Use correct file permissions: folders 755 and files 644.
 
-### External dependencies
+External dependencies
+---------------------
 
-#### Manifest (`__manifest__.py/__openerp__.py`)
+Manifest
+~~~~~~~~
+
+`__manifest__.py/__openerp__.py`
+
 If your module uses extra dependencies of python or binaries you should add
 the `external_dependencies` section to `__manifest__.py`/`__openerp__.py`.
 
@@ -298,7 +272,9 @@ An entry in `bin` needs to be in `PATH`, check by running
 An entry in `python` needs to be in `PYTHONPATH`, check by running
 `python -c "import external_dependency_python_N"`.
 
-#### ImportError
+ImportError
+~~~~~~~~~~~
+
 In python files where you use external dependencies you will
 need to add `try-except` with a debug log.
 
@@ -314,19 +290,24 @@ except (ImportError, IOError) as err:
 This rule doesn't apply to the test files since these files are loaded only when
 running tests and in such a case your module and their external dependencies are installed.
 
-#### README
+README
+~~~~~~
+
 If your module uses extra dependencies of python or binaries, please explain
 how to install them in the `README.rst` file in the section `Installation`.
 
-#### requirements.txt
+requirements.txt
+~~~~~~~~~~~~~~~~
 
 As specified in [Repositories](#repositories), you should also define
 the python packages to install in a file `requirements.txt` in the 
 root folder of the repository. This will be used for travis.
 
-## XML files
+XML files
+=========
 
-### Format
+Format
+------
 
 When declaring a record in XML:
 
@@ -360,7 +341,8 @@ When declaring a record in XML:
 </record>
 ```
 
-### Records
+Records
+-------
 
 * For records of model `ir.filters` use explicit `user_id` field.
 
@@ -374,7 +356,8 @@ When declaring a record in XML:
 
 More info [here](https://github.com/odoo/odoo/pull/8218)
 
-### Views
+Views
+-----
 
 * For v8 and above it is recommended to avoid using the `string` attribute on
   list views (`<tree>`) which [has been
@@ -385,16 +368,19 @@ More info [here](https://github.com/odoo/odoo/pull/8218)
   deprecated](https://www.odoo.com/documentation/10.0/reference/views.html#lists)
   in favor of `decoration-{$name}`.
 
-### QWeb
+QWeb
+----
 
 * `t-*-options` QWeb directives (`t-field-options`, `t-esc-options` and
   `t-raw-options`) should not be used in v10 and above, as they are [to be
   removed](https://github.com/odoo/odoo/blob/8f99b24f6cb1ea70b371e2944ff36b75a6f9c80e/odoo/addons/base/ir/ir_qweb/ir_qweb.py#L155)
   after version 10.
 
-### Naming xml_id
+Naming xml_id
+-------------
 
-#### Data Records
+Data Records
+~~~~~~~~~~~~
 
 Use the followng pattern, where `<model_name>` is the name of the model that
 the record is an instance of: `<model_name>_<record_name>`
@@ -403,9 +389,10 @@ the record is an instance of: `<model_name>_<record_name>`
 <record id="res_users_important_person" model="res.users">
     ...
 </record>
-```
+````
 
-#### Security, View and Action
+Security, View and Action
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Use the following patterns, where `<model_name>` is the name of the model that
 the menu, view, etc. belongs to (e.g. for a `res.users` form view, the name
@@ -462,7 +449,8 @@ would be `res_users_view_form`):
 </record>
 ```
 
-#### Inherited XML
+Inherited XML
+~~~~~~~~~~~~~
 
 A module can extend a view only one time.
 
@@ -505,7 +493,8 @@ high value in its `priority` (greater than 100 is recommended) to avoid the erro
 
 Also, we can hide an element from the view using `invisible="1"`.
 
-#### Demo Records
+Demo Records
+~~~~~~~~~~~~
 
 Suffix all demo record XML IDs with `demo`. This allows them to be easily
 distinguished from regular records, which otherwise requires examining the
@@ -517,9 +506,11 @@ source or reinstalling the module with demo data disabled.
 </record>
 ```
 
-## Python
+Python
+======
 
-### PEP8 options
+PEP8 options
+------------
 
 Using the linter flake8 can help to see syntax and semantic warnings or errors.
 Project Source Code should adhere to PEP8 and PyFlakes standards with
@@ -528,7 +519,8 @@ a few exceptions:
 * In `__init__.py` only
     *  F401: `module` imported but unused
 
-### Imports
+Imports
+-------
 
 The imports are ordered as
 
@@ -577,7 +569,8 @@ except ImportError:
      sort imports.
    * Install with `pip install isort` and use with `isort myfile.py`.
 
-### Idioms
+Idioms
+------
 
 * For Python 2 (Odoo < 11.0), all python files should contain
   ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` as first line.
@@ -628,9 +621,11 @@ except ImportError:
 * Avoid use of ``api.v7`` decorator in new code, unless there is already an API
   fragmentation in parent methods.
 
-### Symbols
+Symbols
+-------
 
-#### Odoo Python Classes
+Odoo Python Classes
+~~~~~~~~~~~~~~~~~~~
 
 Use UpperCamelCase for code in api v8, underscore lowercase notation for old
 api.
@@ -643,7 +638,9 @@ class account_invoice(orm.Model):
     ...
 ```
 
-#### Variable names
+Variable names
+~~~~~~~~~~~~~~
+
 * Use underscore lowercase notation for common variables (snake_case)
 * Since new API works with records or recordsets instead of id lists, don't
   suffix variable names with `_id` or `_ids` if they do not contain an ids or
@@ -665,9 +662,12 @@ class...
 ...
 ```
 
-### SQL
+SQL
+---
 
-#### No SQL Injection
+No SQL Injection
+~~~~~~~~~~~~~~~~
+
 Care must be taken not to introduce SQL injections vulnerabilities when using manual SQL queries. The vulnerability is present when user input is either incorrectly filtered or badly quoted, allowing an attacker to introduce undesirable clauses to a SQL query (such as circumventing filters or executing **UPDATE** or **DELETE** commands).
 
 The best way to be safe is to never, NEVER use Python string concatenation (+) or string parameters interpolation (%) to pass variables to a SQL query string.
@@ -699,7 +699,8 @@ Before continuing, please be sure to read the online documentation of pyscopg2 t
   - [How to pass parameters with psycopg2](http://initd.org/psycopg/docs/usage.html#passing-parameters-to-sql-queries)
   - [Advanced parameter types](http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types)
 
-#### Never commit the transaction
+Never commit the transaction
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The OpenERP/OpenObject framework is in charge of providing the transactional context for all RPC calls. The principle is that a new database cursor is opened at the beginning of each RPC call, and committed when the call has returned, just before transmitting the answer to the RPC client, approximately like this:
 
@@ -773,7 +774,8 @@ Unless:
   ```
 
 
-### Do not bypass the ORM
+Do not bypass the ORM
+---------------------
 
 You should never use the database cursor directly when the ORM can do the same thing! By doing so you are bypassing all the ORM features, possibly the transactions, access rights and so on.
 
@@ -800,7 +802,9 @@ auction_lots_ids = self.search(cr, uid, [
 ])
 ```
 
-### Models
+Models
+------
+
 * Model names
     * Use dot lowercase name for models. Example: `sale.order`
     * Use name in a singular form. `sale.order` instead of `sale.orders`
@@ -887,7 +891,9 @@ class Event(models.Model):
 ```
 
 
-### Fields
+Fields
+------
+
 * `One2Many` and `Many2Many` fields should always have `_ids` as suffix
   (example: sale_order_line_ids)
 * `Many2One` fields should have `_id` as suffix
@@ -907,29 +913,33 @@ class Event(models.Model):
   a_field(..., default=lambda self: self._default_get())
   ```
 
-### Exceptions
-  The `pass` into block except is not a good practice!
+Exceptions
+----------
 
-  By including the `pass` we assume that our algorithm can continue to function after the exception occurred
+The `pass` into block except is not a good practice!
 
-  If you really need to use the `pass` consider logging that exception
+By including the `pass` we assume that our algorithm can continue to function
+after the exception occurred
 
-  ```python
-    try:
-        sentences
-    except Exception:
-        _logger.debug('Why the exception is safe....', exc_info=1))
-  ```
+If you really need to use the `pass` consider logging that exception
 
+```python
+try:
+    sentences
+except Exception:
+    _logger.debug('Why the exception is safe....', exc_info=1))
+```
 
-## Javascript
+Javascript
+==========
 
 * `use strict;` is recommended for all javascript files
 * Use a linter (jshint, ...)
 * Never add minified Javascript libraries
 * Use UpperCamelCase for class declarations
 
-## CSS
+CSS
+===
 
 * Prefix all your classes with `o_<module_name>` where `module_name` is the
   technical name of the module (`sale`, `im_chat`, ...) or the main route
@@ -940,7 +950,8 @@ class Event(models.Model):
 * Use bootstrap native classes
 * Use underscore lowercase notation to name classes
 
-## Tests
+Tests
+=====
 
 As a general rule, a bug fix should come with a unittest which would fail
 without the fix itself. This is to assure that regression will not happen in
@@ -956,7 +967,8 @@ test cases.
 you should name it ``module_name_example`` (ie: `cms_form` and `cms_form_example`).
 In this way coverage analysis will ignore this extra module by default.
 
-### Investigating Travis Test Failures
+Investigating Travis Test Failures
+----------------------------------
 
 It can sometimes be difficult to reproduce a Travis test failure locally due to
 subtle environment differences. In these scenarios it can be helpful to connect to
@@ -996,9 +1008,11 @@ createdb -T openerp_template [github_username]
 **WARNING**: Do not stop the default Odoo service running in the container as
 this will bring down the entire Runbot instance.
 
-## Git
+Git
+===
 
-### Commit message
+Commit message
+--------------
 
 Write a short commit summary without prefixing it. It should not be longer than
 50 characters: `This is a commit message`
@@ -1038,7 +1052,8 @@ This commit introduces a new module system for the javascript code.
 Instead of using global ...
 ```
 
-### Review
+Review
+------
 
 Peer review is the only way to ensure good quality of the code and to be able
 to rely on the other developers. The peer review in this project will be
@@ -1058,7 +1073,8 @@ Meaning "If there are enough reviewers, all problems are easy to solve". Eric
 S. Raymond has written influentially about peer review in software development:
  http://en.wikipedia.org/wiki/Software_peer_review.
 
-#### Please respect a few basic rules:
+Please respect a few basic rules:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Two reviewers must approve a merge proposal in order to be able to merge it
 * 5 calendar days must be given to be able to merge it
@@ -1082,7 +1098,8 @@ S. Raymond has written influentially about peer review in software development:
 Further reading:
 * https://insidecoding.wordpress.com/2013/01/07/code-review-guidelines/
 
-#### There are the following important parts in a review:
+There are the following important parts in a review:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Start by thanking the contributor / developer for their work. No matter the
   issue of the PR, someone has done work for you, so be thankful for that.
@@ -1099,7 +1116,8 @@ While making the merge, please respect the author using the `--author` option
 when committing. The author is found using the git log command. Use the commit
 message provided by the contributor if any.
 
-#### It makes sense to be picky in the following cases:
+It makes sense to be picky in the following cases:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * The origin/reason for the patch/dev is not documented very well
 * No adapted / convenient description written in the `__openerp__.py` file for
@@ -1117,30 +1135,38 @@ Pull requests can be closed if:
 
 * there is no activity for 6 months
 
-## Github
+Github
+======
 
-### Teams
+Teams
+-----
 
 * Team name must not contain odoo or openerp
 * Team name for localization is "Belgium Maintainers" for Belgium
 
-### Repositories
+Repositories
+------------
 
-#### Naming
+Naming
+~~~~~~
 
 * Project name must not contain odoo or openerp
 * Project name for localization is "l10n-belgium" for Belgium
 * Project name for connectors is "connector-magento" for Magento connector
 
-#### Branch configuration
+Branch configuration
+~~~~~~~~~~~~~~~~~~~~
+
 Python packages to install, must be preferably, define in requirements.txt than travis.yml file.
 Requirements.txt avoid to repeat packages in all travis.yml files of repositories in case of using with oca_dependencies.txt file.
 
-### Issues
+Issues
+------
 
 * Issues are used for blueprints and bugs.
 
-## Differences With Odoo Guidelines
+Differences With Odoo Guidelines
+================================
 
 Not the entire Odoo guidelines fit OCA modules needs. In many cases rules need
 to be more stringent. In other cases, conventions are improved for better
@@ -1184,7 +1210,8 @@ The differences include:
 * [Github Section](#github)
 * [Review Section](#review)
 
-# Backporting Odoo Modules
+Backporting Odoo Modules
+========================
 
 Suggesting a backport of a module among an OCA repository is possible, but you
 must respect a few rules:
