@@ -29,7 +29,7 @@ These are loosely based on the `Odoo Guidelines <https://www.odoo.com/documentat
 and `Old Odoo Guidelines <https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html>`_
 with adaptations to improve their guidelines and make them more suitable for
 this project's own needs. Readers used to the Odoo Guidelines can skip to the
-`Differences With Odoo Guidelines <#differences-with-odoo-guidelines>`_ section.
+`Differences With Odoo Guidelines <#id1>`_ section.
 
 *******
 Modules
@@ -1192,7 +1192,7 @@ maintainability in an ecosystem of many smaller modules.
 
 The differences include:
 
-* [Module Structure](#modules)
+* `Module Structure <#modules>`_
 
   * Using one file per model
   * Separating data and demo data xml folders
@@ -1200,12 +1200,12 @@ The differences include:
   * Add guideline to use external dependencies
   * Define a separated file for installation hooks
 
-* [XML](#xml-files)
+* `XML <#xml-files>`_
 
   * Avoid use current module in xml_id
   * Use explicit `user_id` field for records of model `ir.filters`
 
-* [Python](#python)
+* `Python <#python>`_
 
   * Use Python standards
   * Fuller PEP8 compliance
@@ -1217,28 +1217,28 @@ The differences include:
   * Don't use CamelCase for model variables
   * Use underscore uppercase notation for global variables or constants
 
-* [SQL](#sql)
+* `SQL <#sql>`_
 
   * Add section for No SQL Injection
   * Add section for don't bypass the ORM
   * Add section for never commit the transaction
 
-* [Field](#field)
+* `Field <#field>`_
 
   * A hint for function defaults
   * Use default label string if is possible
   * Add the inverse method pattern
 
-* [Tests Section Added](#tests)
-* [Git](#git)
+* `Tests Section Added <#tests>`_
+* `Git <#git>`_
 
   * No prefixing of commits
   * Default git commit message standards
   * Squashing changes in pull requests when necessary
   * Use of present imperative
 
-* [Github Section](#github)
-* [Review Section](#review)
+* `Github Section <#github>`_
+* `Review Section <#review>`_
 
 ************************
 Backporting Odoo Modules
@@ -1249,7 +1249,7 @@ must respect a few rules:
 
 * You need to keep the license of the module coded by Odoo SA
 * You need to add the OCA as author (and Odoo SA of course)
-* You need to make the module "OCA compatible" : PEP8, OCA convention and so
+* You need to make the module "OCA compatible": PEP8, OCA convention and so
   on so it won't break our CI like runbot, Travis and so.
 * You need to add a disclaimer in the Readme with the following text:
 
