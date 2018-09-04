@@ -4,11 +4,6 @@
 
 .. |TITLE| replace:: Organization
 .. |DATE| replace:: 2018/08/24
-.. |RELATED| replace:: OCA Organization
-.. |CATEGORIES| replace:: Organization
-
-.. fill in the Document information in the above lines. It will be automatically
-   replaced in the document header. Don't forget to remove the []
 
 .. contents:: Table of contents
     :depth: 4
@@ -50,7 +45,7 @@ Communication
 =============
 
 PSC members should always be subscribed to their project's `public list
-<https://odoo-community.org/groups>`_, and to at least the contributors@ list to
+<https://odoo-community.org/groups>`_, and to at least the `contributors@` list to
 be aware of the other collaboration and contributions.
 Virtually all PSC communication should happen on the project’s public list.
 

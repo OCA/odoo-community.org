@@ -4,11 +4,6 @@
 
 .. |TITLE| replace:: Contributor License Agreement
 .. |DATE| replace:: 2018/08/24
-.. |RELATED| replace:: OCA CLA
-.. |CATEGORIES| replace:: Legal Documents
-
-.. fill in the Document information in the above lines. It will be automatically
-   replaced in the document header. Don't forget to remove the []
 
 .. contents:: Table of contents
     :depth: 4
@@ -83,8 +78,8 @@ OCA Contributor Logo
 ====================
 
 Signing the CLA allows you to use the official OCA Contributor logo on your
-profile, resume or marketing materials.
-However, you are not authorized to modify it.
+profile, resume or marketing materials. However, the OCA Contributor Logo is
+copyrighted so you are not authorized to modify it.
 
 .. image:: https://odoo-community.org/website/image/ir.attachment/32626_5ec4a91/datas
     :alt: OCA Contributor Logo
