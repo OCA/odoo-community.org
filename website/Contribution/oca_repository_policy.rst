@@ -401,7 +401,7 @@ Revision History
 ===== ============ ============================= ===================
 Rev.  Date         Description                   Author
 ===== ============ ============================= ===================
-1.1   2018/08/24   Conversion to request         Eric Caudal
+1.1   2018/08/24   Conversion to rst             Eric Caudal
 1.0   2018         Initial Release               Daniel Reis
 ===== ============ ============================= ===================
 
