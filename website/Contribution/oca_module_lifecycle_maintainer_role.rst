@@ -144,6 +144,8 @@ References
 ----------
 |RELATED|
 
+The canonical URL to this document is https://odoo-community.org/page/maintainer-role.
+
 Categories
 ----------
 |CATEGORIES|
