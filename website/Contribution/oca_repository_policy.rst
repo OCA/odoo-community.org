@@ -392,6 +392,8 @@ References
 ----------
 |RELATED|
 
+The canonical URL to this document is https://odoo-community.org/page/development-status.
+
 Categories
 ----------
 |CATEGORIES|
