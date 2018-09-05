@@ -26,9 +26,8 @@ with adaptations to improve their guidelines and make them more suitable for
 this project's own needs. Readers used to the Odoo Guidelines can skip to the
 `Differences With Odoo Guidelines <#id1>`_ section.
 
-*******
 Modules
-*******
+=======
 
 * Use of the singular form in module name (or use "multi"),
   except when compound of module name or object Odoo
@@ -57,9 +56,8 @@ Modules
     (authors, contributors and theirs companies), and links to the relevant information on the OCA website.
 * Don't use your company logo or your corporate branding. Using the author and the list of contributors is enough for people to know about your employer/company and contact you.
 
-***************
 Version numbers
-***************
+===============
 
 The version number in the module manifest should be the Odoo major
 version (e.g. `8.0`) followed by the module `x.y.z` version numbers.
