@@ -4,8 +4,6 @@
 
 .. |TITLE| replace:: OCA Module Lifecycle - Maintainer Role Policy
 .. |DATE| replace:: 2018/08/24
-.. |RELATED| replace:: OCA Repository Policy
-.. |CATEGORIES| replace:: Contribution, Policy, Maintainer Role
 
 .. fill in the Document information in the above lines. It will be automatically
    replaced in the document header. Don't forget to remove the []
@@ -138,38 +136,5 @@ Adding, removing maintainers
 -  Current maintainers are displayed (using their avatar) in the addon
        README.rst.
 
-Document information
-====================
-References
-----------
-|RELATED|
-
-The canonical URL to this document is https://odoo-community.org/page/maintainer-role.
-
-Categories
-----------
-|CATEGORIES|
-
-Revision History
-----------------
-===== ============ ============================= ===================
-Rev.  Date         Description                   Author
-===== ============ ============================= ===================
-1.1   2018/08/24   Conversion to rst             Eric Caudal
-1.0   2018         Initial Release               Daniel Reis
-===== ============ ============================= ===================
-
-License
--------
-This work is licensed by the
-`Odoo Community Association <https://odoo-community.org>`_
-under `Creative Commons Attribution 4.0 International License <http://creativecommons.org/licenses/by/4.0/>`_.
-
-Maintainer
-----------
-OCA, or the `Odoo Community Association <https://odoo-community.org>`_,
-is a nonprofit organization whose mission is to support the collaborative
-development of Odoo features and promote its widespread use.
-
-If you want to contribute, please check our
-`website <https://odoo-community.org/page/Contribute>`_.
+.. note::
+   The canonical URL to this document is https://odoo-community.org/page/maintainer-role.
