@@ -20,7 +20,7 @@ This page introduces the coding guidelines for projects hosted under OCA. These
 guidelines aim to improve the quality of the code: better readability of
 source, better maintainability, better stability and fewer regressions.
 
-These are loosely based on the `Odoo Guidelines <https://www.odoo.com/documentation/8.0/reference/guidelines.html>`_
+These are loosely based on the `Odoo Guidelines <https://www.odoo.com/documentation/11.0/reference/guidelines.html>`_
 and `Old Odoo Guidelines <https://doc.odoo.com/contribute/15_guidelines/coding_guidelines_framework.html>`_
 with adaptations to improve their guidelines and make them more suitable for
 this project's own needs. Readers used to the Odoo Guidelines can skip to the
@@ -43,7 +43,7 @@ Modules
   name should be `crm_partner_firstname`.
 * Use the `description template <https://github.com/OCA/maintainer-tools/tree/master/template/module>`_
   but remove sections with no meaningful content.
-* In the `__openerp__.py`/`__manifest__.py`  manifest file:
+* In `__manifest__.py`:
 
   * Avoid empty keys
   * Make sure it has the `license` and `images` keys.
@@ -60,8 +60,8 @@ Version numbers
 ===============
 
 The version number in the module manifest should be the Odoo major
-version (e.g. `8.0`) followed by the module `x.y.z` version numbers.
-For example: `8.0.1.0.0` is expected for the first release of an 8.0
+version (e.g. `12.0`) followed by the module `x.y.z` version numbers.
+For example: `12.0.1.0.0` is expected for the first release of an 12.0
 module.
 
 The `x.y.z` version numbers follow the semantics `breaking.feature.fix`:
@@ -163,7 +163,7 @@ The complete tree should look like this:
 
     addons/<my_module_name>/
     |-- __init__.py
-    |-- __openerp__.py
+    |-- __manifest__.py
     |-- hooks.py
     |-- controllers/
     |   |-- __init__.py
@@ -173,7 +173,7 @@ The complete tree should look like this:
     |-- demo/
     |   `-- <inherited_model>.xml
     |-- migrations/
-    |   `-- 8.0.x.y.z/
+    |   `-- 12.0.x.y.z/
     |       |-- pre_migration.py
     |       `-- post_migration.py
     |-- models/
@@ -233,10 +233,10 @@ External dependencies
 Manifest
 --------
 
-`__manifest__.py/__openerp__.py`
+`__manifest__.py`
 
 If your module uses extra dependencies of python or binaries you should add
-the `external_dependencies` section to `__manifest__.py`/`__openerp__.py`.
+the `external_dependencies` section to `__manifest__.py`.
 
 .. code-block:: python
 
@@ -517,7 +517,7 @@ The imports are ordered as
 
 1. Standard library imports
 2. Known third party imports (One per line sorted and split in python stdlib)
-3. Odoo imports (`openerp`)
+3. Odoo imports (`odoo`)
 4. Imports from Odoo modules (rarely, and only if necessary)
 5. Local imports in the relative form
 6. Unknown third party imports (One per line sorted and split in python stdlib)
@@ -535,15 +535,15 @@ Inside these 6 groups, the imported lines are alphabetically sorted.
     # 2: import of known third party lib
     import lxml
 
-    # 3:  imports of openerp
-    import openerp
-    from openerp import api, fields, models  # alphabetically ordered
-    from openerp.tools.safe_eval import safe_eval
-    from openerp.tools.translate import _
+    # 3:  imports of odoo
+    import odoo
+    from odoo import api, fields, models  # alphabetically ordered
+    from odoo.tools.safe_eval import safe_eval
+    from odoo.tools.translate import _
 
     # 4:  imports from odoo modules
-    from openerp.addons.website.models.website import slug
-    from openerp.addons.web.controllers.main import login_redirect
+    from odoo.addons.website.models.website import slug
+    from odoo.addons.web.controllers.main import login_redirect
 
     # 5: local imports
     from . import utils
@@ -577,9 +577,9 @@ Idioms
   and are generally more efficient
 * The same applies for recordset methods: use `filtered`, `mapped`, `sorted`,
   ...
-* Exceptions: Use `from openerp.exceptions import Warning as UserError` (v8)
-  or `from openerp.exceptions import UserError` (v9)
-  or find a more appropriate exception in `openerp.exceptions.py`
+* Exceptions: Use `from odoo.exceptions import Warning as UserError` (v8)
+  or `from odoo.exceptions import UserError` (as of v9)
+  or find a more appropriate exception in `odoo.exceptions.py`
 * Document your code
 
   * Docstring on methods should explain the purpose of a function,
@@ -699,7 +699,11 @@ Before continuing, please be sure to read the online documentation of pyscopg2 t
 Never commit the transaction
 ----------------------------
 
-The OpenERP/OpenObject framework is in charge of providing the transactional context for all RPC calls. The principle is that a new database cursor is opened at the beginning of each RPC call, and committed when the call has returned, just before transmitting the answer to the RPC client, approximately like this:
+The Odoo framework is in charge of providing the transactional context for all
+RPC calls.
+The principle is that a new database cursor is opened at the beginning of each
+RPC call, and committed when the call has returned, just before transmitting the
+answer to the RPC client, approximately like this:
 
 .. code-block:: python
 
@@ -759,8 +763,8 @@ Unless:
 
   .. code-block:: python
 
-        with openerp.api.Environment.manage():
-            with openerp.registry(self.env.cr.dbname).cursor() as new_cr:
+        with odoo.api.Environment.manage():
+            with odoo.registry(self.env.cr.dbname).cursor() as new_cr:
                 # Create a new environment with new cursor database
                 new_env = api.Environment(new_cr, self.env.uid, self.env.context)
                 # with_env replace original env for this method
@@ -772,9 +776,12 @@ Unless:
 Do not bypass the ORM
 =====================
 
-You should never use the database cursor directly when the ORM can do the same thing! By doing so you are bypassing all the ORM features, possibly the transactions, access rights and so on.
+You should never use the database cursor directly when the ORM can do the same
+thing! By doing so you are bypassing all the ORM features, possibly the
+transactions, access rights and so on.
 
-And chances are that you are also making the code harder to read and probably less secure (see also next guideline):
+And chances are that you are also making the code harder to read and probably
+less secure (see also previous guideline: `No SQL Injection`_):
 
 .. code-block:: python
 
@@ -997,8 +1004,8 @@ Once you've connected to the container, you can run tests as follows:
 
 .. code-block:: bash
 
-    cp -r ~/data_dir/filestore/openerp_template ~/data_dir/filestore/[github_username]
-    createdb -T openerp_template [github_username]
+    cp -r ~/data_dir/filestore/odoo_template ~/data_dir/filestore/[github_username]
+    createdb -T odoo_template [github_username]
     [~/odoo-9.0/odoo.py or ~/odoo-10.0/odoo-bin] -d [github_username] --db-filter=[github_username] --xmlrpc-port=18069 -i [module_name] --test-enable
 
 The test instance can be accessed through your browser at
@@ -1008,7 +1015,7 @@ needed, run:
 .. code-block:: bash
 
     dropdb [github_username]
-    createdb -T openerp_template [github_username]
+    createdb -T odoo_template [github_username]
 
 **WARNING**: Do not stop the default Odoo service running in the container as
 this will bring down the entire Runbot instance.
@@ -1103,7 +1110,9 @@ Please respect a few basic rules:
 * Are there demo data?
 
 Further reading:
+
 * https://insidecoding.wordpress.com/2013/01/07/code-review-guidelines/
+
 
 There are the following important parts in a review:
 ----------------------------------------------------
@@ -1128,7 +1137,7 @@ It makes sense to be picky in the following cases:
 --------------------------------------------------
 
 * The origin/reason for the patch/dev is not documented very well
-* No adapted / convenient description written in the `__openerp__.py` file for
+* No adapted / convenient description written in the `__manifest__.py` file for
   the module
 * Tests or scenario are not all green and/or not adapted
 * Having tests is very much encouraged
@@ -1150,8 +1159,8 @@ Github
 Teams
 =====
 
-* Team name must not contain odoo or openerp
-* Team name for localization is "Belgium Maintainers" for Belgium
+* Team name must not contain `odoo` or `openerp`.
+* Team name for localization is "Belgium Maintainers" for Belgium.
 
 Repositories
 ============
@@ -1159,9 +1168,9 @@ Repositories
 Naming
 ------
 
-* Project name must not contain odoo or openerp
-* Project name for localization is "l10n-belgium" for Belgium
-* Project name for connectors is "connector-magento" for Magento connector
+* Project name must not contain `odoo` or `openerp`.
+* Project name for localization is `l10n-belgium` for Belgium.
+* Project name for connectors is `connector-magento` for Magento connector.
 
 Branch configuration
 --------------------
@@ -1244,8 +1253,10 @@ must respect a few rules:
 * You need to add the OCA as author (and Odoo SA of course)
 * You need to make the module "OCA compatible": PEP8, OCA convention and so
   on so it won't break our CI like runbot, Travis and so.
-* You need to add a disclaimer in the Readme with the following text:
+* You need to add a disclaimer in the `README.rst` file with the following text:
 
   .. pull-quote::
   
-    This module is a backport from Odoo SA and as such, it is not included in the OCA CLA. That means we do not have a copy of the copyright on it like all other OCA modules.**
+    This module is a backport from Odoo SA and as such, it is not included in
+    the OCA CLA. That means we do not have a copy of the copyright on it like
+    all other OCA modules.
