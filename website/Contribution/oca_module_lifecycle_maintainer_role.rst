@@ -5,9 +5,6 @@
 .. |TITLE| replace:: OCA Module Lifecycle - Maintainer Role Policy
 .. |DATE| replace:: 2018/08/24
 
-.. fill in the Document information in the above lines. It will be automatically
-   replaced in the document header. Don't forget to remove the []
-
 .. contents:: Table of contents
     :depth: 4
 
