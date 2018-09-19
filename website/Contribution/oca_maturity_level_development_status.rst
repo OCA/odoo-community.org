@@ -1,3 +1,17 @@
+##################################
+|TITLE| (|DATE|)
+##################################
+
+.. |TITLE| replace:: OCA Maturity Levels and Development Status Policy
+.. |DATE| replace:: 2018/08/24
+
+.. contents:: Table of contents
+    :depth: 4
+
+.. sectnum::
+
+Introduction
+============
 The requirements to merge code into OCA projects depend on the module's
 maturity level.
 
@@ -44,7 +58,7 @@ be assigned each maturity level.
 When no development\_status is set in the manifest, Beta is assumed.
 
 **Alpha and Beta modules**
---------------------------
+==========================
 
 Alpha and Beta modules allow for the incubation of OCA Stable modules.
 They enable the work to be split into several smaller pull requests,
@@ -108,7 +122,7 @@ As a summary, alpha and beta modules:
 -  Are recommended to have at least one peer review before merging PRs.
 
 **Stable modules**
-------------------
+==================
 
 Stable modules are adequate for production use, and meet all the
 original OCA quality requirements: green CI build passing all current
@@ -137,7 +151,7 @@ As a summary, “stable” modules:
 -  Must have code formatted
 
 **Mature modules**
-------------------
+==================
 
 Mature modules not only meet the stable criteria, but are also known to
 be actively maintained. Usually these are modules in use in several
