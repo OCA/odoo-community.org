@@ -18,11 +18,11 @@ Contributing new features to the OCA
 -  Features are provided by Odoo addon modules.
 
 -  Addons modules are organized in code repositories, by topic: App or
-       functional area, vertical area, or country (localization). When
-       relevant, we may sub-topics with specific repositories.
+   functional area, vertical area, or country (localization). When
+   relevant, we may sub-topics with specific repositories.
 
 -  OCA addon modules are expected to be quality checked, stable, and
-       relevant.
+   relevant.
 
 **The OCA high standards are needed for the quality reference library
 goal, but entail a hard process, that can limit contributor motivation
@@ -36,7 +36,7 @@ all OCA standards:
    -  Validate the right module name and repository to host the feature.
 
    -  Validate overlap, conflicts and synergies with existing OCA
-          features.
+      features.
 
    -  Validate functional design.
 
@@ -84,13 +84,13 @@ of addon modules. To achieve this, a few practices have been set in
 place:
 
 -  For **quality**, the code goes through automated checks, and must be
-       peer reviewed.
+   peer reviewed.
 
 -  A **stability** policy, similar to the Odoo “API stable” policy, is
-       enforced.
+   enforced.
 
 -  For **relevance**, the maintainer curate features to ensure they are
-       generic enough and don’t significantly overlap.
+   generic enough and don’t significantly overlap.
 
 For a new module to be accepted into the OCA, all the above criteria
 should be met. This can be a challenge for those first contributing to
