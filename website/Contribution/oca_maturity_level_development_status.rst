@@ -25,7 +25,7 @@ Github repository and published in PyPi platform:
 -  **Production/Stable:** suitable for production environment
 
 -  **Mature:** In Production level since more than one version and
-       actively maintained.
+   actively maintained.
 
 This is consistent with the terminology used on PyPi, and the allowed
 values are the same as the ones used by PyPi.
@@ -77,28 +77,28 @@ abandoned and deleted from the repository.
 
 The suggested module incubation workflow looks like this:
 
-1. Create a “WIP” Issue for the module, used to coordinate the work and
-       different PRs related to it. It should state the final goal and
-       describe the next work units to be done.
+#. Create a “WIP” Issue for the module, used to coordinate the work and
+   different PRs related to it. It should state the final goal and
+   describe the next work units to be done.
 
-2. Create the PRs implementing the work units described in the WIP
-       Issue. They must pass CI tests and peer review.
+#. Create the PRs implementing the work units described in the WIP
+   Issue. They must pass CI tests and peer review.
 
-3. Once contributors feel that the module is complete, promotion to
-       “stable” status can be proposed through a PR changing the
-       **development\_status** manifest key.
+#. Once contributors feel that the module is complete, promotion to
+   “stable” status can be proposed through a PR changing the
+   **development\_status** manifest key.
 
 This workflow can also be extended to support a functional design stage,
 prior to the implementation:
 
 -  Before the “WIP” Issue, an “RFC” issue (complemented by a Google Doc
-       or similar, if necessary) can be created for an initial
-       discussion of the scope, desired features and the implementation
-       design outline.
+   or similar, if necessary) can be created for an initial
+   discussion of the scope, desired features and the implementation
+   design outline.
 
 -  Once a “WIP” Issue is created, a first PR can create the skeleton of
-       the new module, including the basic DESCRIPTION.rst, and a
-       SPECS.rst file for the specifications and technical design.
+   the new module, including the basic DESCRIPTION.rst, and a
+   SPECS.rst file for the specifications and technical design.
 
 The Alpha stage is not required, but it may be useful to signal that the
 module is not expected to work as planned yet (or at all). It is in the
@@ -111,13 +111,13 @@ functional testers that the module should be usable enough to be tested.
 As a summary, alpha and beta modules:
 
 -  Must at all times follow the OCA coding standards and ensure TravisCI
-       green builds.
+   green builds.
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
-       with other installed modules, allowing people to try them
+   with other installed modules, allowing people to try them
 
 -  Are recommended to have a “WIP” Issue to list the pending tasks and
-       coordinate the work around them.
+   coordinate the work around them.
 
 -  Are recommended to have at least one peer review before merging PRs.
 
@@ -135,18 +135,18 @@ allowing for feature additions and improvements.
 As a summary, “stable” modules:
 
 -  Must at all times follow the OCA coding standards and ensure TravisCI
-       green builds.
+   green builds.
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
-       with other installed modules, allowing people to try them.
+   with other installed modules, allowing people to try them.
 
 -  Must have some tests (no minimum coverage percentage required).
 
 -  Must depend only on Stable and Mature modules..
 
 -  Two peer reviews and a review period of at least five days are needed
-       for merge. The review period can be shorter if three or more
-       reviewers approve the PR.
+   for merge. The review period can be shorter if three or more
+   reviewers approve the PR.
 
 -  Must have code formatted
 
@@ -164,7 +164,7 @@ Mature modules:
 -  Must meet all "Stable" module criteria.
 
 -  Are recommended to also exists for at least one previous Odoo
-       version.
+   version.
 
 -  Must have tests with good code coverage.
 
@@ -175,9 +175,9 @@ Mature modules:
 -  Are recommended to have a changelog (HISTORY.rst).
 
 -  Must be stable across Odoo versions: in case that significant changes
-       are made to the data model, automatic migration OpenUpgrade
-       scripts are provided. API breakages must be documented clearly,
-       and be accompanied with a change in the major version number.
+   are made to the data model, automatic migration OpenUpgrade
+   scripts are provided. API breakages must be documented clearly,
+   and be accompanied with a change in the major version number.
 
 -  Must have at least 2 independent contributors.
 
@@ -186,4 +186,7 @@ Mature modules:
 -  Must depend only on Mature modules.
 
 -  Must not have relevant overlap with existing Mature modules (unless a
-       good justification is given, evaluated by the relevant PSC).
+   good justification is given, evaluated by the relevant PSC).
+
+   .. note::
+      The canonical URL to this document is https://odoo-community.org/page/maturity-levels
