@@ -201,7 +201,7 @@ Article 22
 
 OCA whishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required for every Delegate member and before an individual is given commit rights to an OCA project.
 
-**Note** The CLA signature process is a bit different from the process applied by Odoo S.A. The OCA always requires written and signed documents and the OCA-Bot, upon commit, checks against a CLA flag in the backend of the OCA Odoo instance whether somebody has already signed the ICLA or is covered by an ECLA.
+**Note** The CLA signature process is a bit different from the process applied by Odoo S.A. Also the CLA itself is of course a different one. The OCA always requires written and signed documents and the OCA-Bot, upon commit, checks against a CLA flag in the backend of the OCA Odoo instance whether somebody has already signed the ICLA or is covered by an ECLA.
 
 For a corporation that has assigned employees to work on an OCA project, a Entity CLA (ECLA) is available for contributing intellectual property via the corporation, that may have been assigned as part of an employment agreement.
 
