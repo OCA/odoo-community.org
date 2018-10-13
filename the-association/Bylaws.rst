@@ -1,6 +1,14 @@
-=======================================
-OCA, Odoo Community Association, Bylaws
-=======================================
+##################################
+|TITLE| (|DATE|)
+##################################
+
+.. |TITLE| replace:: OCA Bylaws
+.. |DATE| replace:: 2018/08/24
+
+.. contents:: Table of contents
+    :depth: 4
+
+.. sectnum::
 
 Name and headquarters
 =====================
