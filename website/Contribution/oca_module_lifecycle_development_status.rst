@@ -189,4 +189,4 @@ Mature modules:
    good justification is given, evaluated by the relevant PSC).
 
    .. note::
-      The canonical URL to this document is https://odoo-community.org/page/maturity-levels
+      The canonical URL to this document is https://odoo-community.org/page/development-status
