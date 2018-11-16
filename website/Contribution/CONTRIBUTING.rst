@@ -264,7 +264,7 @@ An entry in `python` needs to be in `PYTHONPATH`, check by running
 ImportError
 -----------
 
-In python files where you use external dependencies you will
+In python files where you use external dependencies, you will
 need to add `try-except` with a debug log.
 
 .. code-block:: python
@@ -279,6 +279,11 @@ need to add `try-except` with a debug log.
 
 This rule doesn't apply to the test files since these files are loaded only when
 running tests and in such a case your module and their external dependencies are installed.
+
+This rule doesn't apply neither to Odoo >= v12, as an unmet dependency in an
+uninstalled module doesn't block the service thanks to this commit:
+
+https://github.com/odoo/odoo/commit/8226aa1db828d2a559c7ffaa31a27ef3e5ba4d0b
 
 README
 ------
