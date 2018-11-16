@@ -106,7 +106,7 @@ For `models`, `views` and `data` declarations, split files by the model
 involved, either created or inherited. When they are XML files, a suffix should
 be included with its category. For example, demo data for res.partner should go
 in a file named `demo/res_partner_demo.xml` and a view for partner should go in
-a file named `views/res_partner_view.xml`. An exception can be made when the
+a file named `views/res_partner_views.xml`. An exception can be made when the
 model is a model intended to be used only as a one2many model nested on the
 main model. In this case, you can include the model definition inside it.
 Example `sale.order.line` model can be together with `sale.order` in
@@ -118,7 +118,7 @@ For model named `<main_model>` the following files may be created:
 * `data/<main_model>_data.xml`
 * `demo/<main_model>_demo.xml`
 * `templates/<main_model>_template.xml`
-* `views/<main_model>_view.xml`
+* `views/<main_model>_views.xml`
 
 For `controller`, if there is only one file it should be named `main.py`.
 If there are several controller classes or functions you can split them into
@@ -210,7 +210,7 @@ The complete tree should look like this:
     |   |-- <test_file>.py
     |   `-- <test_file>.yml
     |-- views/
-    |   |-- <main_model>.xml
+    |   |-- <main_model>_views.xml
     |   |-- <inherited_main_model>_views.xml
     |   `-- report_<qweb_report>.xml
     |-- templates/
