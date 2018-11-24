@@ -1095,16 +1095,14 @@ http://en.wikipedia.org/wiki/Software_peer_review.
 Please respect a few basic rules:
 ---------------------------------
 
-* Two reviewers must approve a merge proposal in order to be able to merge it
-* 5 calendar days must be given to be able to merge it
-* A PR can be merged in less than 5 calendar days if and only if it is approved
-  by 3 reviewers. If you are in a hurry just send a mail at
-  contributors@odoo-community.org or ask by IRC (FreeNode
-  oca, openobject channel).
+* Read and follow the rules stated for the `module maturity levels <https://odoo-community.org/page/development-status>`_.
 * At least one of the review above must be from a member of the PSC or having
   write access on the repository (here one of the
-  [OCA Core Maintainers](https://odoo-community.org/project/core-maintainers-55)
-  can do the job. You can notify them on Github using '@OCA/core-maintainers')
+  `OCA Core Maintainers <https://github.com/orgs/OCA/teams/core-maintainers>`_.
+  can do the job. You can notify them on Github using ``@OCA/core-maintainers``)
+* If you are in a hurry just send a mail at
+  contributors@odoo-community.org or ask by IRC (FreeNode
+  oca, openobject channel).
 * Is the module generic enough to be part of community addons?
 * Is the module duplicating features with other community addons?
 * Does the documentation allow to understand what it does and how to use it?
