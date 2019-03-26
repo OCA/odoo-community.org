@@ -157,6 +157,9 @@ needed. For example:
 For applying monkey patches use post_load hook.
 In order to apply them just if the module is installed.
 
+Complete structure
+==================
+
 The complete tree should look like this:
 
 .. code-block::
