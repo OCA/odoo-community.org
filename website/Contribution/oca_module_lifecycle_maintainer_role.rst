@@ -70,7 +70,7 @@ Maintainer role and responsibilities
    -  **Control:** Doing final checks and merging approved pull
       requests.
 
-   -  **Versioning: **
+   -  **Versioning:**
 
       -  Bumping version numbers during merge or immediately after.
 
