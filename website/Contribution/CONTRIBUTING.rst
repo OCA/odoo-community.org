@@ -298,7 +298,7 @@ requirements.txt
 ----------------
 
 As specified in [Repositories](#repositories), you should also define
-the python packages to install in a file `requirements.txt` in the 
+the python packages to install in a file `requirements.txt` in the
 root folder of the repository. This will be used for travis.
 
 *********
@@ -952,7 +952,8 @@ Javascript
 **********
 
 * `use strict;` is recommended for all javascript files
-* Use a linter (jshint, ...)
+* Use `ESLint <https://eslint.org/>`_ with `this configuration
+  <https://github.com/OCA/pylint-odoo/blob/master/pylint_odoo/examples/.jslintrc>`__
 * Never add minified Javascript libraries
 * Use UpperCamelCase for class declarations
 
@@ -1262,7 +1263,7 @@ must respect a few rules:
 * You need to add a disclaimer in the `README.rst` file with the following text:
 
   .. pull-quote::
-  
+
     This module is a backport from Odoo SA and as such, it is not included in
     the OCA CLA. That means we do not have a copy of the copyright on it like
     all other OCA modules.
