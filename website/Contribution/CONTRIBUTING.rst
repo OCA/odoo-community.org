@@ -611,10 +611,10 @@ Idioms
   .. code-block:: python
 
     partner_id = fields.Many2one(
-        "res.partner",
-          "Partner",
-          "Required",
-      )
+        comodel_name="res.partner",
+        required=True,
+        ondelete="restrict",
+    )
 
 * When making a comma separated list, dict, tuple, ... with one element per
   line, append a comma to the last element. This makes it so the next element
