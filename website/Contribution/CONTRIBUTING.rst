@@ -959,6 +959,15 @@ Javascript
 * Never add minified Javascript libraries
 * Use UpperCamelCase for class declarations
 
+You can autofix your javascript code. Once eslint installed, run the following lines locally: 
+
+```
+git clone https://github.com/OCA/pylint-odoo
+cd pylint-odoo
+
+eslint --fix --config pylint_odoo/examples/.jslintrc $MY_MODULE_PATH
+```
+
 ***
 CSS
 ***
