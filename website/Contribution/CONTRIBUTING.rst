@@ -696,6 +696,24 @@ The second reason, which is almost as important, is that it is the job of the da
                'WHERE parent_id IN %s',
                (tuple(ids),))
 
+In some cases you could need to create queries where the table name or some other elements are required to be inserted dinamically, in that cases use the ``AsIs`` class like the examples to avoid sql errors for bad formatting:
+
+.. code-block:: python
+
+    # Bad, SQL syntax error is raised because of a bad formatting
+    # Example 1
+    cr.execute('SELECT * FROM %s WHERE id=%s', (table, 1))
+    # Example 2
+    cr.execute('DROP SEQUENCE IF EXISTS ir_sequence_%s', (number,))
+
+    # Good
+    from psycopg2.extensions import AsIs
+    ...
+    # Example 1
+    cr.execute('SELECT * FROM %s WHERE id=%s', (AsIs(table), 1))
+    # Example 2
+    cr.execute('DROP SEQUENCE IF EXISTS ir_sequence_%s', (AsIs(number),))
+
 This is very important, so please be careful also when refactoring, and most importantly do not copy these patterns!
 
 Here is a [memorable example](http://www.bobby-tables.com) to help you remember what the issue is about (but do not copy the code there).
