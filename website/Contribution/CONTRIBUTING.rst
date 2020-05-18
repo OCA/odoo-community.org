@@ -303,6 +303,32 @@ As specified in [Repositories](#repositories), you should also define
 the python packages to install in a file `requirements.txt` in the
 root folder of the repository. This will be used for travis.
 
+oca_dependencies.txt
+--------------------
+
+List the OCA project dependencies, one per line
+Add a repository url and branch if you need a forked version
+
+**Examples**:
+
+To depend on the standard version of sale-workflow, use::
+
+    sale-workflow
+
+To explicitely give the URL of a fork, and still use the version specified in
+``.travis.yml``, use::
+
+    sale-workflow https://github.com/OCA/sale-workflow
+
+To provide both the URL and a branch, use::
+
+    sale-workflow https://github.com/OCA/sale-workflow branchname
+
+To use a specific commit version, set the branch (required) and the
+commit SHA to select::
+
+    sale-workflow https://github.com/OCA/sale-workflow branchname f848e37
+
 *********
 XML files
 *********
