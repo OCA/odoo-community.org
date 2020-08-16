@@ -648,6 +648,22 @@ api.
 Variable names
 --------------
 
+* Always give your variables a meaningful name. You may know what it's
+  referring to now, but you won't in 2 months, and others don't either.
+  One-letter variables are acceptable only in lambda expressions and loop
+  indices, or perhaps in pure maths expressions (and even there it doesn't hurt
+  to use a real name).
+
+.. code-block:: python
+
+    # unclear and misleading
+    a = {}
+    sfields = {}
+
+    # better
+    results = {}
+    selected_fields = {}
+
 * Use underscore lowercase notation for common variables (snake_case)
 * Since new API works with records or recordsets instead of id lists, don't
   suffix variable names with `_id` or `_ids` if they do not contain an ids or
