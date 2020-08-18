@@ -299,7 +299,7 @@ how to install them in the `README.rst` file in the section `Installation`.
 requirements.txt
 ----------------
 
-As specified in [Repositories](#repositories), you should also define
+As specified in `the Repositories Section <#repositories>`_, you should also define
 the python packages to install in a file `requirements.txt` in the
 root folder of the repository. This will be used for travis.
 
@@ -347,7 +347,7 @@ Records
 
 * For records of model `ir.filters` use explicit `user_id` field.
 
-.. code-block:: xml
+  .. code-block:: xml
 
     <record id="filter_id" model="ir.filters">
         <field name="name">Filter name</field>
@@ -355,26 +355,26 @@ Records
         <field name="user_id" eval="False"/>
     </record>
 
-More info [here](https://github.com/odoo/odoo/pull/8218)
+  More info `here <https://github.com/odoo/odoo/pull/8218>`_.
 
 Views
 =====
 
 * For v8 and above it is recommended to avoid using the `string` attribute on
-  list views (`<tree>`) which [has been
-  deprecated](https://www.odoo.com/documentation/10.0/reference/views.html#lists)
+  list views (`<tree>`) which
+  `has been deprecated <https://www.odoo.com/documentation/10.0/reference/views.html#lists>`_
   and is no longer displayed.
 * For v9 and above it is recommended to avoid using the `colors` and `fonts`
-  attributes on list views (`<tree>`) which [have been
-  deprecated](https://www.odoo.com/documentation/10.0/reference/views.html#lists)
+  attributes on list views (`<tree>`) which
+  `have been deprecated <https://www.odoo.com/documentation/10.0/reference/views.html#lists>`_
   in favor of `decoration-{$name}`.
 
 QWeb
 ====
 
 * `t-*-options` QWeb directives (`t-field-options`, `t-esc-options` and
-  `t-raw-options`) should not be used in v10 and above, as they are [to be
-  removed](https://github.com/odoo/odoo/blob/8f99b24f6cb1ea70b371e2944ff36b75a6f9c80e/odoo/addons/base/ir/ir_qweb/ir_qweb.py#L155)
+  `t-raw-options`) should not be used in v10 and above, as they are
+  `to be removed <https://github.com/odoo/odoo/blob/8f99b24f6cb1ea70b371e2944ff36b75a6f9c80e/odoo/addons/base/ir/ir_qweb/ir_qweb.py#L155>`_
   after version 10.
 
 Naming xml_id
@@ -567,8 +567,9 @@ Inside these 6 groups, the imported lines are alphabetically sorted.
 
 * Note:
 
-  * You can use [isort](https://pypi.python.org/pypi/isort/) to automatically
-    sort imports.
+  * You can use
+    `isort <https://pypi.python.org/pypi/isort/>`_
+    to automatically sort imports.
   * Install with `pip install isort` and use with `isort myfile.py`.
 
 Idioms
@@ -653,7 +654,7 @@ Variable names
   suffix variable names with `_id` or `_ids` if they do not contain an ids or
   lists of ids.
 
-.. code-block:: python
+  .. code-block:: python
 
     res_partner = self.env['res.partner']
     partners = res_partner.browse(ids)
@@ -661,7 +662,7 @@ Variable names
 
 * Use underscore uppercase notation for global variables or constants
 
-.. code-block:: python
+  .. code-block:: python
 
     CONSTANT_VAR1 = 'Value'
     ...
@@ -698,13 +699,15 @@ The second reason, which is almost as important, is that it is the job of the da
 
 This is very important, so please be careful also when refactoring, and most importantly do not copy these patterns!
 
-Here is a [memorable example](http://www.bobby-tables.com) to help you remember what the issue is about (but do not copy the code there).
+Here is a
+`memorable example <http://www.bobby-tables.com>`_
+to help you remember what the issue is about (but do not copy the code there).
 
 Before continuing, please be sure to read the online documentation of pyscopg2 to learn of to use it properly:
 
-- [The problem with query parameters](http://initd.org/psycopg/docs/usage.html#the-problem-with-the-query-parameters)
-- [How to pass parameters with psycopg2](http://initd.org/psycopg/docs/usage.html#passing-parameters-to-sql-queries)
-- [Advanced parameter types](http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types)
+- `The problem with query parameters <http://initd.org/psycopg/docs/usage.html#the-problem-with-the-query-parameters>`_
+- `How to pass parameters with psycopg2 <http://initd.org/psycopg/docs/usage.html#passing-parameters-to-sql-queries>`_
+- `Advanced parameter types <http://initd.org/psycopg/docs/usage.html#adaptation-of-python-values-to-sql-types>`_
 
 Never commit the transaction
 ----------------------------
