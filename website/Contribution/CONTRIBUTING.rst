@@ -843,8 +843,8 @@ Models
 * In a Model attribute order should be
 
   1. Private attributes (`_name`, `_description`, `_inherit`, ...)
-  2. Default method and `_default_get`
-  3. Fields declarations
+  2. Fields declarations
+  3. Default method and `_default_get`
   4. Compute and search methods in the same order than field declaration
   5. Constrains methods (`@api.constrains`) and onchange methods
      (`@api.onchange`)
@@ -859,12 +859,8 @@ Models
         _name = 'event.event'
         _description = 'Event'
 
-        # Default methods
-        def _default_name(self):
-                ...
-
         # Fields declaration
-        name = fields.Char(string='Name', default=_default_name)
+        name = fields.Char(default=lambda self: self._default_name())
         seats_reserved = fields.Integer(
             oldname='register_current',
             string='Reserved Seats',
@@ -880,6 +876,10 @@ Models
             compute='_compute_seats',
         )
         price = fields.Integer(string='Price')
+
+        # Default methods
+        def _default_name(self):
+            ...
 
         # compute and search fields, in the same order that fields declaration
         @api.multi
