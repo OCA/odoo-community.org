@@ -884,15 +884,16 @@ Models
 
 * In a Model attribute order should be
 
-  1. Private attributes (`_name`, `_description`, `_inherit`, ...)
-  2. Fields declarations
-  3. Default method and `_default_get`
-  4. Compute and search methods in the same order than field declaration
-  5. Constrains methods (`@api.constrains`) and onchange methods
+  #. Private attributes (`_name`, `_description`, `_inherit`, ...)
+  #. Fields declarations
+  #. SQL constraints
+  #. Default method and `_default_get`
+  #. Compute and search methods in the same order than field declaration
+  #. Constrains methods (`@api.constrains`) and onchange methods
      (`@api.onchange`)
-  6. CRUD methods (ORM overrides)
-  7. Action methods
-  8. And finally, other business methods.
+  #. CRUD methods (ORM overrides)
+  #. Action methods
+  #. And finally, other business methods.
 
 .. code-block:: python
 
@@ -918,6 +919,11 @@ Models
             compute='_compute_seats',
         )
         price = fields.Integer(string='Price')
+
+        # SQL constraints
+        _sql_constraints = [
+            ('name_uniq', 'unique(name)', 'Name must be unique'),
+        ]
 
         # Default methods
         def _default_name(self):
