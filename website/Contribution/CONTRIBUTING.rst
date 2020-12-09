@@ -607,7 +607,8 @@ Idioms
 * For Python 3 (Odoo >= 11.0), no need for utf-8 coding line as this is
   implicit.
 * Prefer `%` over `.format()`, prefer `%(varname)` instead of positional.
-  This is better for translation and clarity.
+  This is better for translation
+  `and security <https://github.com/OCA/pylint-odoo/issues/302#issue-758472967>`__.
 * Always favor **Readability** over **conciseness** or using the language
   features or idioms.
 * Use list comprehension, dict comprehension, and basic manipulation using
