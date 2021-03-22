@@ -1162,8 +1162,10 @@ Please respect a few basic rules:
   `OCA Core Maintainers <https://github.com/orgs/OCA/teams/core-maintainers>`_.
   can do the job. You can notify them on Github using ``@OCA/core-maintainers``)
 * If you are in a hurry just send a mail at
-  contributors@odoo-community.org or ask by IRC (FreeNode
-  oca, openobject channel).
+  contributors@odoo-community.org or ask by chat in either of:
+
+  - `OCA discord server <https://discord.gg/rN5xRdE>`_
+  - `Matrix community +oca:matrix.org <https://matrix.to/#/+oca:matrix.org>`__ (bridged to discord).
 * Is the module generic enough to be part of community addons?
 * Is the module duplicating features with other community addons?
 * Does the documentation allow to understand what it does and how to use it?
