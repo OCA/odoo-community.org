@@ -1328,3 +1328,13 @@ must respect a few rules:
     This module is a backport from Odoo SA and as such, it is not included in
     the OCA CLA. That means we do not have a copy of the copyright on it like
     all other OCA modules.
+
+************
+Translations
+************
+
+OCA uses Weblate for translation, at https://translation.odoo-community.org/
+
+Pull requests should never directly modify ``.po`` files, because this could produce merge conflicts with pushes coming from weblate. Modifying ``.po`` files is the responsibility of weblate only.
+
+Pull requests adding new modules can add their own ``.po`` files.
