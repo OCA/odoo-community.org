@@ -1167,7 +1167,7 @@ Please respect a few basic rules:
   contributors@odoo-community.org or ask by chat in either of:
 
   - `OCA discord server <https://discord.gg/rN5xRdE>`_
-  - `Matrix community +oca:matrix.org <https://matrix.to/#/+oca:matrix.org>`__ (bridged to discord).
+  - `Matrix space #oca:matrix.org <https://matrix.to/#/#oca:matrix.org>`__ (bridged to discord).
 * Is the module generic enough to be part of community addons?
 * Is the module duplicating features with other community addons?
 * Does the documentation allow to understand what it does and how to use it?
