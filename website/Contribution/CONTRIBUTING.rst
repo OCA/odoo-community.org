@@ -1116,12 +1116,12 @@ changes. This part should be multiple lines no longer than 80 characters.
   being proposed
 * Use present imperative (Fix formatting, Remove unused field) avoid appending
   's' to verbs: Fixes, Removes
-* Use tags as `listed in the Odoo Guidelines <https://www.odoo.com/documentation/14.0/reference/guidelines.html#tag-and-module-name>`_ with the following extensions:
+* Use tags as `listed in the Odoo Guidelines <https://www.odoo.com/documentation/14.0/contributing/development/coding_guidelines.html#tag-and-module-name`_ with the following extensions:
   - **[MIG]** for migrating a module
 
 .. code-block::
 
-    website: remove unused alert div
+    [FIX] website: remove unused alert div
 
     Fix look of input-group-btn
     Bootstrap's CSS depends on the input-group-btn element being the first/last
@@ -1130,7 +1130,7 @@ changes. This part should be multiple lines no longer than 80 characters.
 
 .. code-block::
 
-    web: add module system to the web client
+    [IMP] web: add module system to the web client
     This commit introduces a new module system for the javascript code.
     Instead of using global ...
 
