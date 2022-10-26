@@ -83,23 +83,34 @@ When you introduce a breaking change, you *must* provide a migration script to m
 
 For forward porting a module, consult: https://github.com/OCA/maintainer-tools/wiki#migration
 
-Directories
-===========
+Directories and files
+=====================
 
-A module is organized in a few directories:
+A module is organized in a few `directories and files <https://github.com/OCA/maintainer-tools/tree/master/template/module>`_:
 
 * `controllers/`: contains controllers (http routes)
 * `data/`: data xml
 * `demo/`: demo xml
 * `examples/`: external files
   `lib/`, ...
+* `i18n/`: `translations <#translations>`_
+* `migrations/`: directory (e.g. 15.0.1.0.0) with scripts to run before or after updating the module
 * `models/`: model definitions
+* `readme/`: files (e.g. DESCRIPTION.rst, USAGE.rst, CONTRIBUTORS.rst) used to build the module's `README.rst <https://github.com/OCA/maintainer-tools/tree/master/template/module/README.rst>`_ file.
 * `reports/`: reporting models (BI/analysis), Webkit/RML print report templates
+* `security/`: security groups, giving them access to models, with rules to limit the access to some records
 * `static/`: contains the web assets, separated into `css/`, `js/`, `img/`,
 * `templates/`: if you have several web templates and several backend views you can split them here
+* `tests/`: `unit tests <#tests>`_ to assure that the module works as expected
 * `views/`: contains the views and templates, and QWeb report print templates
 * `wizards/`: wizard model and views
+* `README.rst`: is built from the files in the readme directory. You should not create or modify it
+* `__init__.py`: python file specifying which python files/directories to load
+* `__manifest__.py`: information about the module (in JSON format)
+* `exceptions.py`: for validation errors
+* `hooks.py`: `hooks <#installation-hooks>`_ to load before/after installing, before uninstalling, after loading
 
+See complete structure below.
 
 File naming
 ===========
@@ -167,9 +178,6 @@ The complete tree should look like this:
 .. code-block::
 
     addons/<my_module_name>/
-    |-- __init__.py
-    |-- __manifest__.py
-    |-- hooks.py
     |-- controllers/
     |   |-- __init__.py
     |   `-- main.py
@@ -177,14 +185,24 @@ The complete tree should look like this:
     |   `-- <main_model>.xml
     |-- demo/
     |   `-- <inherited_model>.xml
+    |-- examples/
+    |   `-- my_example.csv
+    |-- i18n/
+    |   |-- en_GB.po
+    |   |-- es.po
+    |   `-- module_name.pot
     |-- migrations/
-    |   `-- 12.0.x.y.z/
-    |       |-- pre_migration.py
-    |       `-- post_migration.py
+    |   `-- 16.0.x.y.z/
+    |       |-- pre-migration.py
+    |       `-- post-migration.py
     |-- models/
     |   |-- __init__.py
     |   |-- <main_model>.py
     |   `-- <inherited_model>.py
+    |-- readme/
+    |   |-- CONTRIBUTORS.rst
+    |   |-- DESCRIPTION.rst
+    |   `-- USAGE.rst
     |-- reports/
     |   |-- __init__.py
     |   |-- reports.xml
@@ -210,6 +228,9 @@ The complete tree should look like this:
     |       |   `-- <my_module_name>.less
     |       `-- xml/
     |           `-- <my_module_name>.xml
+    |-- templates/
+    |   |-- <main_model>.xml
+    |   `-- <inherited_main_model>.xml
     |-- tests/
     |   |-- __init__.py
     |   |-- <test_file>.py
@@ -218,15 +239,15 @@ The complete tree should look like this:
     |   |-- <main_model>_views.xml
     |   |-- <inherited_main_model>_views.xml
     |   `-- report_<qweb_report>.xml
-    |-- templates/
-    |   |-- <main_model>.xml
-    |   `-- <inherited_main_model>.xml
     |-- wizards/
     |   |-- __init__.py
     |   |-- <wizard_model>.py
     |   `-- <wizard_model>.xml
-    `-- examples/
-        `-- my_example.csv
+    |-- README.rst
+    |-- __init__.py
+    |-- __manifest__.py
+    |-- exceptions.py
+    `-- hooks.py
 
 Filenames should use only `[a-z0-9_]`
 
