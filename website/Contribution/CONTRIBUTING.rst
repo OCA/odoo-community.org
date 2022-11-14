@@ -1139,7 +1139,7 @@ When you open a PR, please check if the commit message is cut with ellipsis. For
 
 .. code-block::
 
-    [fix] module_foo: and this is my very long m[...]
+    [FIX] module_foo: and this is my very long m[...]
 
 When this happens, it means your message is too long. You should shorten it.
 Start by rephrasing and keeping the summary very synthetic.
