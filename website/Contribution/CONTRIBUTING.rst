@@ -1093,7 +1093,7 @@ Git
 Commit message
 ==============
 
-Write a short commit summary without prefixing it. It should not be longer than
+Write a **short** commit summary without prefixing it. It should not be longer than
 50 characters: `This is a commit message`
 
 Then, in the message itself, specify the part of the code impacted by your
@@ -1131,8 +1131,20 @@ changes. This part should be multiple lines no longer than 80 characters.
 .. code-block::
 
     [IMP] web: add module system to the web client
+
     This commit introduces a new module system for the javascript code.
     Instead of using global ...
+    
+When you open a PR, please check if the commit message is cut with ellipsis. For example:
+
+.. code-block::
+
+    [FIX] module_foo: and this is my very long m[...]
+
+When this happens, it means your message is too long. You should shorten it.
+Start by rephrasing and keeping the summary very synthetic.
+The explanation or motivation should be kept in the description of the commit.
+
 
 Review
 ======
@@ -1176,6 +1188,7 @@ Please respect a few basic rules:
 * Are there some use cases?
 * Is there any setup in code? Should not!
 * Are there demo data?
+* Are the commit messages short, clear and clean?
 
 Further reading:
 
