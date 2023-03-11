@@ -94,7 +94,7 @@ A module is organized in a few directories:
 * `examples/`: external files
   `lib/`, ...
 * `models/`: model definitions
-* `report/`: reporting models (BI/analysis), Webkit/RML print report templates
+* `reports/`: reporting models (BI/analysis), Webkit/RML print report templates
 * `static/`: contains the web assets, separated into `css/`, `js/`, `img/`,
 * `templates/`: if you have several web templates and several backend views you can split them here
 * `views/`: contains the views and templates, and QWeb report print templates
@@ -185,9 +185,9 @@ The complete tree should look like this:
     |   |-- __init__.py
     |   |-- <main_model>.py
     |   `-- <inherited_model>.py
-    |-- report/
+    |-- reports/
     |   |-- __init__.py
-    |   |-- report.xml
+    |   |-- reports.xml
     |   |-- <bi_reporting_model>.py
     |   |-- report_<rml_report_name>.rml
     |   |-- report_<rml_report_name>.py
