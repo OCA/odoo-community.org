@@ -94,6 +94,8 @@ A module is organized in a few directories:
 * `examples/`: external files
   `lib/`, ...
 * `models/`: model definitions
+* `readme/`: contains rst files required to make README file of module, for example `CONFIGURE.rst`, `CONTRIBUTORS.rst`...
+  use `<https://github.com/OCA/maintainer-tools#readme-generator>`_ to generate README.rst file.
 * `reports/`: reporting models (BI/analysis), Webkit/RML print report templates
 * `static/`: contains the web assets, separated into `css/`, `js/`, `img/`,
 * `templates/`: if you have several web templates and several backend views you can split them here
@@ -185,6 +187,13 @@ The complete tree should look like this:
     |   |-- __init__.py
     |   |-- <main_model>.py
     |   `-- <inherited_model>.py
+    |-- readme
+    |   |-- CREDITS.rst
+    |   |-- CONFIGURE.rst
+    |   |-- CONTRIBUTORS.rst
+    |   |-- DESCRIPTION.rst
+    |   |-- USAGE.rst
+    |   |-- ROADMAP.rst
     |-- reports/
     |   |-- __init__.py
     |   |-- reports.xml
