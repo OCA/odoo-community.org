@@ -1066,6 +1066,12 @@ test cases.
 you should name it ``module_name_example`` (ie: `cms_form` and `cms_form_example`).
 In this way coverage analysis will ignore this extra module by default.
 
+The tests you write should not interfere with other modules behavior nor the
+testing infrastructure. e.g.: Don't test an external API directly as it will
+depends on that API reliability. The best is to mock the call or to simulate
+the expected response. If you really want to do it, the best is to ask for a
+separate repository for your module.
+
 Investigating Travis Test Failures
 ==================================
 
