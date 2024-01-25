@@ -327,8 +327,8 @@ root folder of the repository. This will be used for travis.
 oca_dependencies.txt
 --------------------
 
-List the OCA project dependencies, one per line
-Add a repository url and branch if you need a forked version
+In the root folder of the repository, list the OCA project dependencies, one per line.
+Add a repository url and branch if you need a forked version.
 
 **Examples**:
 
