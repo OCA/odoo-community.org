@@ -1066,6 +1066,181 @@ test cases.
 you should name it ``module_name_example`` (ie: `cms_form` and `cms_form_example`).
 In this way coverage analysis will ignore this extra module by default.
 
+Avoid Flaky Tests
+=================
+
+Flaky tests are unit tests that produce inconsistent or unreliable results.
+These tests may pass or fail intermittently, even when the code being tested
+hasn't changed. Flakiness can be caused by various factors, such as race
+conditions, external dependencies, or non-deterministic behavior in the code.
+How to avoid them?
+
+You can find online some general studies and guidelines about the subject:
+
+- https://docs.gitlab.com/ee/development/testing_guide/flaky_tests.html
+- https://semaphoreci.com/community/tutorials/how-to-deal-with-and-eliminate-flaky-tests
+- https://martinfowler.com/articles/nonDeterminism.html
+
+In the context of Odoo, the following are some tips to avoid flaky tests:
+
+Beware with ``subTest`` pollution
+---------------------------------
+
+If you test uses ``subTest``, keep in mind that the DB transaction and the
+environmental cache aren't reset between subtests.
+
+Remember that some decorators are internally implemented using subtests.
+
+A bad example:
+
+.. code-block:: python
+
+  from odoo.tests import TransactionCase, users
+
+  class TestSomething(TransactionCase):
+    @users('admin', 'demo')
+    def test_something(self):
+      """2nd run will fail with duplicate key on login field."""
+      self.env["res.users"].create({"name": "Foo", "login": "foo"})
+
+Test with the lowest permissions possible
+-----------------------------------------
+
+By default, tests are executed without permission restrictions. This can
+produce false positives because later, real users that will do the same flows
+might encounter access errors.
+
+Try to test with the lowest permissions possible. Odoo test tools include
+``new_test_user`` and ``users`` helpers to help you with that.
+
+You can also set the ``uid`` or ``env`` attributes of the test case in its
+``setUpClass`` to ensure the rest of the test is ran under a constrained
+environment.
+
+Beware with unexpected metadata carried by a record's env
+---------------------------------------------------------
+
+When you store a record in a class or instance variable, the record has a
+``.env`` attribute that carries things such as the DB cursor, the user ID, the
+sudo status and the context. Even if you change the test user, those things
+will probably remain the same.
+
+A bad example:
+
+.. code-block:: python
+
+  from odoo.exceptions import AccessError
+  from odoo.tests import TransactionCase, users, new_test_user
+
+  class TestSomething(TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+      super().setUpClass()
+      cls.partner = cls.env["res.partner"].create({"name": "Foo"})
+      new_test_user(cls.env, "test_portal", groups="base.group_portal")
+
+    @users("test_portal")
+    def test_cannot_read(self):
+      # OK
+      self.assertEqual(self.uid, self.portal.id)
+      # KO; self.partner.env.uid is not self.uid, but you didn't notice
+      self.assertRaises(AccessError, self.partner.read)
+      # This would be OK, though
+      partner = self.partner.with_env(self.env)
+      self.assertRaises(AccessError, partner.read)
+
+Avoid dynamic dates
+-------------------
+
+If you are testing a feature that depends on a date, you should avoid using
+``datetime.now()`` or ``datetime.today()``. Instead, use fixed dates. A way to
+do this is to use `the freezegun library
+<https://pypi.org/project/freezegun/>__` (which is a standard Odoo test
+dependency since Odoo 14.0):
+
+.. code-block:: python
+
+  from datetime import datetime
+  from freezegun import freeze_time
+  from odoo.tests import TransactionCase
+
+  class TestSomething(TransactionCase):
+    @freeze_time("2024-01-01 10:10:10")
+    def test_creation_time(self):
+      partner = self.env["res.partner"].create({"name": "Foo"})
+      self.assertEqual(partner.create_date, datetime(2024, 1, 1, 10, 10, 10))
+
+Avoid contacting external services
+----------------------------------
+
+If your module connects with some kind of external service, you should mock its
+tests to avoid false negatives when the service is down or slow. You can help
+yourself with the `unittest.mock
+<https://docs.python.org/3/library/unittest.mock.html>`_ library. Since Odoo
+16.0, it is used behind the scenes when you call ``cls.classPatch()``,
+``cls.startClassPatcher()``, ``self.patch()`` (also available in older
+versions) or ``self.startPatcher()`` in a test case:
+
+.. code-block:: python
+
+  from odoo.tests import TransactionCase
+
+  class TestSomething(TransactionCase):
+    @classmethod
+    def setUpClass(cls):
+      super().setUpClass()
+      cls.classPatch(
+        self.env["res.partner"], "patched_method", lambda self: "Some response"
+      )
+
+    def test_something(self):
+      ...  # Your test here
+
+Example with ``unittest.mock`` directly:
+
+.. code-block:: python
+
+  from unittest.mock import patch
+  from odoo.tests import TransactionCase
+
+  class TestSomething(TransactionCase):
+    @patch("my_module.external_service")
+    def test_something(self, mock_external_service):
+      mock_external_service.return_value = "Some response"
+      # Your test here
+
+The `vcrpy <https://pypi.org/project/vcrpy-unittest/>`_ library is also
+helpful for recording and replaying HTTP interactions.
+
+Remember that what you want to test is your code, not the external service.
+There are monitoring tools for that. Also remember that, if there is a bug in
+the external service, it is not your responsibility to fix it. And if you want
+to contemplate that possibility, you just have to test the buggy behavior in a
+deterministic manner, also using mocks.
+
+Still, sometimes you may still want to test the real service, just to make sure
+they didn't change their API. In this case, `do just like upstream Odoo does
+<https://github.com/odoo/odoo/blob/226b5645c763936986a67872c7d624681cc9b9b8/addons/account/tests/test_download_xsds.py#L4>`__ and mark your test with these standard test tags:
+
+* ``-standard`` to skip these tests by default.
+* ``external`` to mark them as depending on connection with the outside world,
+  whose state is not under your control.
+* ``external_l10n``, just like ``external`` but for localization tests.
+
+You will be able then to isolate those test runs separately::
+
+  odoo -i my_module -d my_database -u my_module --test-tags=external,external_l10n
+
+Avoid relying on demo data
+--------------------------
+
+Demo data can be altered manually or by other third party module (through its
+fully XML-ID identifier). Uncontrolled inputs can produce false positives or
+negatives in your tests.
+
+If you create the test data within your test suite, you will have more
+consistent and resilient results.
+
 Investigating Travis Test Failures
 ==================================
 
@@ -1155,7 +1330,7 @@ changes. This part should be multiple lines no longer than 80 characters.
 
     This commit introduces a new module system for the javascript code.
     Instead of using global ...
-    
+
 When you open a PR, please check if the commit message is cut with ellipsis. For example:
 
 .. code-block::
