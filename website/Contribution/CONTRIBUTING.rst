@@ -625,10 +625,6 @@ Inside these 6 groups, the imported lines are alphabetically sorted.
 Idioms
 ======
 
-* For Python 2 (Odoo < 11.0), all python files should contain
-  ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` as first line.
-* For Python 3 (Odoo >= 11.0), no need for utf-8 coding line as this is
-  implicit.
 * Prefer `%` over `.format()`, prefer `%(varname)` instead of positional.
   This is better for translation
   `and security <https://github.com/OCA/pylint-odoo/issues/302#issue-758472967>`__.
@@ -1488,7 +1484,6 @@ The differences include:
 
   * Use Python standards
   * Fuller PEP8 compliance
-  * Use ``# coding: utf-8`` or ``# -*- coding: utf-8 -*-`` in first line
   * Using relative import for local files
   * More python idioms
   * A way to deal with long comma-separated lines
