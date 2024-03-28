@@ -905,7 +905,7 @@ Models
 
 * In a Model attribute order should be
 
-  #. Private attributes (`_name`, `_description`, `_inherit`, ...)
+  #. Private attributes (`_name`, `_inherit`, `_description`, ...)
   #. Fields declarations
   #. SQL constraints
   #. Default method and `_default_get`
@@ -919,9 +919,11 @@ Models
 .. code-block:: python
 
     class Event(models.Model):
-        # Private attributes
+        # Private attributes: model declaration (_name and inherits), _description, ...
         _name = 'event.event'
+        _inherit = ['event.event', 'mail.thread']
         _description = 'Event'
+        _order = 'name'
 
         # Fields declaration
         name = fields.Char(default=lambda self: self._default_name())
