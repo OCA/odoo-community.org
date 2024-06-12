@@ -16,7 +16,7 @@ Name and headquarters
 Article 1
 ---------
 
-“Odoo Community Association” hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational. 
+“Odoo Community Association” hereafter “OCA” or “Association” is a non-profit association governed by the present statutes and, secondarily, by Articles 60 et seq. of the Swiss Civil Code. It is neutral politically, and non-denominational.
 
 Article 2
 ---------
@@ -31,7 +31,7 @@ Article 3
 
 The Association shall pursue the following purpose(s): help and promote the collaborative software development of Odoo; encourage the development of Odoo and its features while coordinating and organizing the collaborative work on the software; assist the community while defending its interests and the sustainability of its developments; promote the use of the Odoo solution; facilitate synergies, collaborations and fund raising efforts; actively collaborate on the definition of the roadmaps of new versions of the tool and their implementation.
 
-To promote its goals and to guarantee that its available resources are geared towards community use, all software developments controlled by the Association will be published under a licence approved by the Open Source Intiative (OSI, opensource.org) and meeting the requirements of a Certified Open Source software.
+To promote its goals and to guarantee that its available resources are geared towards community use, all software developments controlled by the Association will be published under a licence approved by the Open Source Initiative (OSI, opensource.org) and meeting the requirements of a Certified Open Source software.
 
 Resources
 =========
@@ -183,7 +183,7 @@ c) Project Steering Committee
 Article 19
 ----------
 
-The Board can set up one or several Project Steering Committees. A Project Steering Commitee is composed of at least one member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
+The Board can set up one or several Project Steering Committees. A Project Steering Committee is composed of at least one member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
 
 Unless elected as member in accordance to these articles, a member of a Project Steering Committee shall not be considered as a member of the Association. The Board can end a Project Steering Committee at any time. A Project Steering Committee shall not be considered as the Board of the Association. A Project Steering Committee can not exercise the powers and the authority confered to the Board.
 
@@ -192,7 +192,7 @@ Article 20
 
 Each Project Steering Committee is responsible of the diligent management of one or more projects identified by the Board. These projects can include, but are not limited to, the creation or the maintenance of Open Source projects.
 
-Subject to the directives issued by the Board, the president of each Project Steering Committee shall be mainly responsible of the project(s) managed by such committee, and rules and processes shall be established for the daily management of the project(s) the committee is responsible of. To fullfil its responsabilities, the Project Steering Committee must abide the politics, the processes and the norms aproved by the Board . 
+Subject to the directives issued by the Board, the president of each Project Steering Committee shall be mainly responsible of the project(s) managed by such committee, and rules and processes shall be established for the daily management of the project(s) the committee is responsible of. To fulfill its responsibilities, the Project Steering Committee must abide the politics, the processes and the norms approved by the Board.
 
 Article 21
 ----------
@@ -207,7 +207,7 @@ Contributor License Agreement (CLA)
 Article 22
 ----------
 
-OCA whishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required for every Delegate member and before an individual is given commit rights to an OCA project.
+OCA wishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required for every Delegate member and before an individual is given commit rights to an OCA project.
 
 For a corporation that has assigned employees to work on an OCA project, a Entity CLA (ECLA) is available for contributing intellectual property via the corporation, that may have been assigned as part of an employment agreement.
 
