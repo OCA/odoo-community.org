@@ -165,7 +165,7 @@ needed. For example:
 
 .. code-block:: python
 
-    from .hooks import pre_init_hook, post_init_hook, uninstall_hook, post_load
+    from hooks import pre_init_hook, post_init_hook, uninstall_hook, post_load
 
 For applying monkey patches use post_load hook.
 In order to apply them just if the module is installed.
