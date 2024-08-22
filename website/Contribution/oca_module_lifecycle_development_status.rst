@@ -66,7 +66,7 @@ that are easier to review and make it easier to divide the work between
 several people.
 
 Each pull request is an iteration providing a correct set of features.
-The corresponding code should always pass TravisCI checks and should
+The corresponding code should always pass CI checks and should
 have at least one peer review.
 
 Since these modules are a work in progress toward a “stable” module,
@@ -110,7 +110,7 @@ functional testers that the module should be usable enough to be tested.
 
 As a summary, alpha and beta modules:
 
--  Must at all times follow the OCA coding standards and ensure TravisCI
+-  Must at all times follow the OCA coding standards and ensure CI
    green builds.
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
@@ -134,7 +134,7 @@ allowing for feature additions and improvements.
 
 As a summary, “stable” modules:
 
--  Must at all times follow the OCA coding standards and ensure TravisCI
+-  Must at all times follow the OCA coding standards and ensure CI
    green builds.
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
