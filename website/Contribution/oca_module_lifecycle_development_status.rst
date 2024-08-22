@@ -108,7 +108,7 @@ prior to the implementation:
 
 The Alpha stage is not required, but it may be useful to signal that the
 module is not expected to work as planned yet (or at all). It is in the
-early stages of design and construction, and trying it on Runbot is
+early stages of design and construction, and trying it on Runboat is
 pointless
 
 Changing the development status to Beta is a way to signal reviewers and
@@ -119,7 +119,7 @@ As a summary, alpha and beta modules:
 -  Must at all times follow the OCA coding standards and ensure CI
    green builds (coverage is optional).
 
--  Must be correctly installed by the OCA Runbot, without conflicting
+-  Must be correctly installed by the OCA Runboat, without conflicting
    with other installed modules, allowing people to try them
 
 -  Are recommended to have a “WIP” Issue to list the pending tasks and
@@ -143,7 +143,7 @@ As a summary, “stable” modules:
 -  Must at all times follow the OCA coding standards and ensure CI
    green builds (coverage is optional).
 
--  Must be correctly installed by the OCA Runbot, without conflicting
+-  Must be correctly installed by the OCA Runboat, without conflicting
    with other installed modules, allowing people to try them.
 
 -  Must have some tests.
