@@ -65,9 +65,15 @@ They enable the work to be split into several smaller pull requests,
 that are easier to review and make it easier to divide the work between
 several people.
 
+Should have at least one peer review.
+
+No minimum coverage percentage required.
+
 Each pull request is an iteration providing a correct set of features.
-The corresponding code should always pass CI checks and should
-have at least one peer review.
+The corresponding code should always pass CI checks;
+since there is no minimum coverage percentage required,
+the coverage CI check can be failing.
+Right now, the coverage CI check is managed with Codecov.
 
 Since these modules are a work in progress toward a “stable” module,
 they are not suitable for use in production. The design and
@@ -111,7 +117,7 @@ functional testers that the module should be usable enough to be tested.
 As a summary, alpha and beta modules:
 
 -  Must at all times follow the OCA coding standards and ensure CI
-   green builds.
+   green builds (coverage is optional).
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
    with other installed modules, allowing people to try them
@@ -135,12 +141,12 @@ allowing for feature additions and improvements.
 As a summary, “stable” modules:
 
 -  Must at all times follow the OCA coding standards and ensure CI
-   green builds.
+   green builds (coverage is optional).
 
 -  Must be correctly installed by the OCA Runbot, without conflicting
    with other installed modules, allowing people to try them.
 
--  Must have some tests (no minimum coverage percentage required).
+-  Must have some tests.
 
 -  Must depend only on Stable and Mature modules..
 
