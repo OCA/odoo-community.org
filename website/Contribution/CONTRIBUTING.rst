@@ -64,17 +64,15 @@ version (e.g. `12.0`) followed by the module `x.y.z` version numbers.
 For example: `12.0.1.0.0` is expected for the first release of an 12.0
 module.
 
-The `x.y.z` version numbers follow the semantics `breaking.feature.fix`:
+The `x.y.z` versioning scheme follows the `major.minor.patch` convention:
 
-* `x` increments when the data model or the views had significant
-  changes. Data migration might be needed, or depending modules might be affected.
-* `y` increments when non-breaking new features are added. A module
-  upgrade will probably be needed.
-* `z` increments when bugfixes were made. Usually a server restart
-  is needed for the fixes to be made available.
+* `x` (Major): Increments when there are significant changes to the data model or views. These changes may require data migration and could impact dependent modules.
+* `y` (Minor): Increments when new features are added that do not break backward compatibility. A module upgrade will likely be necessary.
+* `z` (Patch): Increments when bug fixes are made. Typically, a server restart is needed to apply these fixes.
 
-If applicable, breaking changes are expected to include instructions
-or scripts to perform migration on current installations.
+When introducing breaking changes, it is expected that you include instructions or scripts to facilitate migration on current installations.
+
+For more details on semantic versioning, please consult the `SemVer documentation <https://semver.org/>`_.
 
 Migrations
 ==========
