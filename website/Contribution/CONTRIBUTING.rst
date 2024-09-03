@@ -1311,6 +1311,7 @@ changes. This part should be multiple lines no longer than 80 characters.
 * Use present imperative (Fix formatting, Remove unused field) avoid appending
   's' to verbs: Fixes, Removes
 * Use tags as `listed in the Odoo Guidelines <https://www.odoo.com/documentation/16.0/contributing/development/git_guidelines.html#tag-and-module-name>`_ with the following extensions:
+
   - **[MIG]** for migrating a module
 
 .. code-block::
