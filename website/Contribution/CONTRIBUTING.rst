@@ -279,6 +279,17 @@ the `external_dependencies` section to `__manifest__.py`.
         'installable': True,
     }
 
+Regarding python package pinning, it is a responsibility of the integrator delivering the end-project.
+
+* a module should never place exact pins on their dependencies (whether they are also Odoo dependencies or not);
+* a module may require a lower bound (e.g. external_dependency_python>1.4) if they depend on recent features of a library (but not higher than necessary);
+* a module may exceptionally place an upper bound if they know they are incompatible with recent versions of a library AND it is not feasible to fix the compatibility issue.
+
+If the module dependencies versions are pinned or if bounds are too stricts, then integrators may face a "dependency hell" with unresolvable dependency conflicts.
+
+Note that versions in Odoo's requirements.txt are the tested ones (bundled versions used in the latest Debian stable version), but Odoo may work well with more recent versions of many libraries, and it happens that one needs to use more recent versions of the Odoo requirements to be compatible with other modern libraries.
+
+
 An entry in `bin` needs to be in `PATH`, check by running
 `which external_dependency_binary_N`.
 
