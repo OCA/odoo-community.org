@@ -3,7 +3,7 @@
 ##################################
 
 .. |TITLE| replace:: OCA Bylaws
-.. |DATE| replace:: 2018/08/24
+.. |DATE| replace:: 2025/06/11
 
 .. contents:: Table of contents
     :depth: 4
