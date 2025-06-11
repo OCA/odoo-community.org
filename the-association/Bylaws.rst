@@ -55,26 +55,29 @@ Members
 Article 5
 ---------
 
-Any physical person may request to join: if, through their commitment or actions, they have proved their attachment to the aims of the Association, and they are not salaried by the Association.
+Any physical person may request to join: if, through their commitment or actions, they have proved their attachment to the aims of the Association.
 
-The Association comprises: Active members Delegate members Requests to become a member must be addressed to the Board. The Board admits new members and informs the Delegate Assembly.
+The Association comprises: 
+
+* Active members 
+* Delegate members
 
 Membership ceases:
 
 * on death;
 * by written resignation notified to the Board at least 30 days before the end of the financial year;
 * by exclusion ordered by the Board, without reasons duty, with a right of appeal to the Delegate Assembly. Appeals must be lodged within 30 days of the Board’s decision being notified;
-* for non-payment of dues for more than one year
-* for three (3) consecutive absences at a Delegate Assembly (Delegate members only)
+* for non-payment of dues for more than one year;
+* for three (3) consecutive absences at a Delegate Assembly (Delegate members only).
 
 In all cases, the membership fee for the current year remains due. Members who have resigned or who are excluded have no rights to any part of the Association’s assets. Only the assets of the Association may be used to meet commitments. Members have no individual responsibility.
 
 Article 6
 ---------
 
-The Active members include all physical or moral entities elected by the Delegate Assembly who have accepted the present articles and their rules of procedures and who have paid their annual fees.
+The Active members include all entities elected by the Delegate Assembly who have accepted the present articles and their rules of procedures and who have paid their annual fees.
 
-The Delegate members include all physical entities elected by the Delegate Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can be become Delegate members. Only Delegate members can be elected to the Board.
+The Delegate members include all physical entities elected by the Delegate Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can become Delegate members. Only Delegate members can be elected to the Board.
 
 Organs
 ======
@@ -109,9 +112,10 @@ The Delegate Assembly:
 * approves the annual budget;
 * supervises the activity of other organs, which it may dismiss, stating the grounds therefore;
 * appoints an auditor for the Organization’s accounts;
-* fixes the annual membership fees.
+* sets the annual membership fees.
 * decides on any modification of statutes;
-* decides on the dissolution of the Association;
+* decides on the dissolution of the Association.
+
 
 Article 10
 ----------
@@ -121,7 +125,7 @@ The Delegate Assembly is presided over by the president of the Association.
 Article 11
 ----------
 
-Each Delegate member is entitled to one vote at the Delegate Assembly. Decisions of the Delegate Assembly shall be taken by a majority vote of the Delegate members present and voting. In case of deadlock, the President shall have the casting vote. Decisions concerning the amendment of the Statutes and the dissolution of the Association must be approved by a two-third majority of the Delegate members present.
+Each Delegate member is entitled to one vote at the Delegate Assembly. Decisions of the Delegate Assembly shall be taken by a majority vote of the Delegate members present and voting. In case of deadlock, the President shall have the casting vote. Decisions concerning the amendment of the Statutes and the dissolution of the Association must be approved by a two-third majority of the Delegate members present, and at least half of the Delegates must be present and vote.
 
 Article 12
 ----------
@@ -152,7 +156,7 @@ The Board is authorized to carry out all acts that further the purposes of the A
 Article 15
 ----------
 
-The Board is composed of 5 to 9 Delegates elected by the Delegate Assembly. An existing Board Member must have attended 80 % of the board meetings during its term to be a candidate for a re-election.
+The Board is composed of 5 to 9 Delegates elected by the Delegate Assembly.
 
 The Board will appoint at least:
 
@@ -171,7 +175,7 @@ The Board members act voluntarily and can only be compensated for their effectiv
 Article 17
 ----------
 
-The functions of the Board are: to take all measures to attain the goals of the Association; to convene Delegate Assemblies; to take decisions with regard to admission of new members, to resignations of members, and to their possible expulsion; to ensure the Statutes are applied, to draft rules of procedure, and to administer the assets of the Association.
+The functions of the Board are: to set the strategy and goals for the Association; to take all measures to attain the goals of the Association; to convene Delegate Assemblies; to take decisions with regard to admission of new members, to resignations of members, and to their possible expulsion; to ensure the Statutes are applied, to draft rules of procedure, and to administer the assets of the Association.
 
 Article 18
 ----------
@@ -183,16 +187,16 @@ c) Project Steering Committee
 Article 19
 ----------
 
-The Board can set up one or several Project Steering Committees. A Project Steering Committee is composed of at least one member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
+The Board can set up one or several Project Steering Committees. A Project Steering Commitee is composed of at least one member of the Association, appointed as the president of this committee, and can include one or several entities, members or not of the Association, selected by the Board based on merit and contribution to the project.
 
-Unless elected as member in accordance to these articles, a member of a Project Steering Committee shall not be considered as a member of the Association. The Board can end a Project Steering Committee at any time. A Project Steering Committee shall not be considered as the Board of the Association. A Project Steering Committee can not exercise the powers and the authority confered to the Board.
+Unless elected as member in accordance to these articles, a member of a Project Steering Committee shall not be considered as a member of the Association. The Board can end a Project Steering Committee at any time. A Project Steering Committee shall not be considered as the Board of the Association. A Project Steering Committee can not exercise the powers and the authority conferred to the Board.
 
 Article 20
 ----------
 
-Each Project Steering Committee is responsible of the diligent management of one or more projects identified by the Board. These projects can include, but are not limited to, the creation or the maintenance of Open Source projects.
+Each Project Steering Committee is responsible for the diligent management of one or more projects identified by the Board. These projects can include, but are not limited to, the creation or the maintenance of Open Source projects.
 
-Subject to the directives issued by the Board, the president of each Project Steering Committee shall be mainly responsible of the project(s) managed by such committee, and rules and processes shall be established for the daily management of the project(s) the committee is responsible of. To fulfill its responsibilities, the Project Steering Committee must abide the politics, the processes and the norms approved by the Board.
+Subject to the directives issued by the Board, the president of each Project Steering Committee shall be mainly responsible of the project(s) managed by such committee, and rules and processes shall be established for the daily management of the project(s) the committee is responsible of. To fulfill its responsibilities, the Project Steering Committee must abide the policies, the processes and the norms approved by the Board.
 
 Article 21
 ----------
@@ -207,13 +211,11 @@ Contributor License Agreement (CLA)
 Article 22
 ----------
 
-OCA wishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required for every Delegate member and before an individual is given commit rights to an OCA project.
+OCA wishes that all contributors of ideas, code, or documentation to the Association projects complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA). The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time. A signed CLA is required for every Delegate member and before an individual contribution can be accepted  to an OCA project.
 
 For a corporation that has assigned employees to work on an OCA project, a Entity CLA (ECLA) is available for contributing intellectual property via the corporation, that may have been assigned as part of an employment agreement.
 
 Note that an Entity CLA does not remove the need for every contributor to sign their own CLA as an individual, to cover any of their contributions which are not owned by the corporation signing the ECLA.
-
-CLAs may be submitted by traditional postal mail, fax, or by emailing a scan of the signed copy.
 
 Various Provisions
 ==================
@@ -226,7 +228,7 @@ The financial year shall begin on 1st of January and end on 31st of December of 
 Article 24
 ----------
 
-The rules of procedures, established by Board, and approved by the majority of the two-thirds of its Delegate members, complete these articles.
+The rules of procedures, established by the Board, and approved by the majority of two-thirds of its Delegate members, complete these articles.
 
 Article 25
 ----------
@@ -236,4 +238,4 @@ In the case of the Association being dissolved, the assets should be allotted to
 Article 26
 ----------
 
-Should divergences exist between the translations of these articles, the French version shall prevail. The present Statutes have been approved by the Constituent Delegate Assembly of June, 1st 2014 in Lausanne, Switzerland.
+The present Statutes have been approved by the Constituent Delegate Assembly of June, 1st 2014 in Lausanne, Switzerland.
