@@ -75,9 +75,9 @@ In all cases, the membership fee for the current year remains due. Members who h
 Article 6
 ---------
 
-The Active members include all entities elected by the Delegate Assembly who have accepted the present articles and their rules of procedures and who have paid their annual fees.
+The Active members include all members elected by the Delegate Assembly who have accepted the present articles and their rules of procedures and who have paid their annual fees.
 
-The Delegate members include all physical entities elected by the Delegate Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can become Delegate members. Only Delegate members can be elected to the Board.
+The Delegate members include all members elected by the Delegate Assembly upon the proposal of the Board. Only physical persons, Active members of the Association, can become Delegate members. Only Delegate members can be elected to the Board.
 
 Organs
 ======
