@@ -436,6 +436,56 @@ QWeb
   `to be removed <https://github.com/odoo/odoo/blob/8f99b24f6cb1ea70b371e2944ff36b75a6f9c80e/odoo/addons/base/ir/ir_qweb/ir_qweb.py#L155>`_
   after version 10.
 
+Modifying website behavior
+==========================
+
+This section only applies if you're targeting Odoo 12.0 or higher.
+
+Since Odoo 12.0, multi-websites are supported out of the box when installing
+the ``website`` module. This means that modules that add or alter website
+behaviors should provide a way to enable or disable those features per website.
+
+If your module is altering upstream Odoo behavior, the features it adds should
+be disabled by default.
+
+This will help integrating your module with others because each module can test
+how Odoo will behave, as that behavior will be predictable because no module
+should pollute website workflows by default if another module happens to be
+installed in the same instance before your tests are run.
+
+If your module adds new features that do not alter upstream Odoo behavior, then
+these may be enabled by default, but users should be able to disable them too.
+
+Don't forget to include instructions about how to enable or disable features in
+your README. The most common ways are:
+
+* Enabling or disabling a view, using website editor, under the *Customize* menu.
+* Using the website backend configuration panel, which would save the choice
+  in the related ``website`` record.
+
+Checking if a feature is enabled
+--------------------------------
+
+At the technical level, how to know if a feature is enabled in current website?
+Example:
+
+.. code-block:: python
+    from odoo.http import route, request, Controller
+
+
+    class SomeController(Controller):
+        # Add website=True to route(), to be able to get website data from request
+        @route(["/my/route], website=True)
+        def my_route(self):
+            # Check if feature is enabled in website; this is common if your
+            # feature is enabled by a field in the `website` model
+            if request.website.my_route_enabled:
+                do_something()
+            # Check if view is enabled in website; this is common if your
+            # feature is enabled by customizing some website page
+            if request.website.viewref("my_module.my_view").active:
+                do_something_else()
+
 Naming xml_id
 =============
 
