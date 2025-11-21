@@ -94,7 +94,8 @@ A module is organized in a few `directories and files <https://github.com/OCA/ma
 * `i18n/`: `translations <#translations>`_
 * `migrations/`: directory (e.g. 15.0.1.0.0) with scripts to run before or after updating the module
 * `models/`: model definitions
-* `readme/`: files (e.g. DESCRIPTION.rst, USAGE.rst, CONTRIBUTORS.rst) used to build the module's `README.rst <https://github.com/OCA/maintainer-tools/tree/master/template/module/README.rst>`_ file.
+* `readme/`: contains rst files required to make README file of module, for example `CONFIGURE.rst`, `CONTRIBUTORS.rst`...
+  use `<https://github.com/OCA/maintainer-tools#readme-generator>`_ to generate README.rst file.
 * `reports/`: reporting models (BI/analysis), Webkit/RML print report templates
 * `security/`: security groups, giving them access to models, with rules to limit the access to some records
 * `static/`: contains the web assets, separated into `css/`, `js/`, `img/`,
@@ -197,10 +198,13 @@ The complete tree should look like this:
     |   |-- __init__.py
     |   |-- <main_model>.py
     |   `-- <inherited_model>.py
-    |-- readme/
+    |-- readme
+    |   |-- CREDITS.rst
+    |   |-- CONFIGURE.rst
     |   |-- CONTRIBUTORS.rst
     |   |-- DESCRIPTION.rst
-    |   `-- USAGE.rst
+    |   |-- USAGE.rst
+    |   |-- ROADMAP.rst
     |-- reports/
     |   |-- __init__.py
     |   |-- reports.xml
