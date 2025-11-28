@@ -900,6 +900,20 @@ Models
 * Method conventions
 
   * Compute Field: the compute method pattern is `_compute_<field_name>`
+
+    * Computed writeable fields (computed fields with *store=True* and
+      *readonly=False*, since v13), in the sake of inheritance compatibility,
+      should define this code if the compute method is added in a module that
+      is not the one that originally defines the field (which means that
+      originally the field was not computed):
+
+      .. code-block:: python
+
+        def _compute_field(self):
+            if hasattr(super(), "_compute_field"):
+                super()._compute_field()
+            # rest of the compute method
+
   * Inverse method: the inverse method pattern is `_inverse_<field_name>`
   * Search method: the search method pattern is `_search_<field_name>`
   * Default method: the default method pattern is `_default_<field_name>`
