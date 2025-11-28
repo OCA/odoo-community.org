@@ -206,6 +206,9 @@ Article 15
 
 The Board is composed of 5 to 9 Delegates elected by the Delegate Assembly.
 
+An existing Board Member must have attended 80 % of the board meetings during its term
+to be a candidate for a re-election.
+
 The Board will appoint at least:
 
 * A president
@@ -215,6 +218,9 @@ The Board will appoint at least:
 
 Each member’s term of office shall last for 1 year and is renewable.
 The Board meets as often as required.
+
+The Board can exclude a Board Member during its mandate if the Board Member misses 3 consecutive board meetings.
+The Board shall proceed with an election to fulfill the vacant seat.
 
 Article 16
 ----------
@@ -248,7 +254,7 @@ Article 19
 ----------
 
 The Board can set up one or several Project Steering Committees.
-A Project Steering Committee is composed of at least one Delegate member of the Association,
+A Project Steering Committee is composed of at least one member of the Association,
 appointed as the president of this committee, and can include one or several entities,
 members or not of the Association, selected by the Board based on merit and contribution to the project.
 
