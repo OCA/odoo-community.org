@@ -3,7 +3,7 @@
 ##################################
 
 .. |TITLE| replace:: OCA Bylaws
-.. |DATE| replace:: 2018/08/24
+.. |DATE| replace:: 2025/06/11
 
 .. contents:: Table of contents
     :depth: 4
@@ -69,8 +69,7 @@ Article 5
 ---------
 
 Any physical person may request to join: if, through their commitment or actions, 
-they have proved their attachment to the aims of the Association,
-and they are not salaried by the Association.
+they have proved their attachment to the aims of the Association.
 
 The Association comprises: 
 
@@ -87,8 +86,8 @@ Membership ceases:
 * by exclusion ordered by the Board, without reasons duty, 
   with a right of appeal to the Delegate Assembly.
   Appeals must be lodged within 30 days of the Board’s decision being notified;
-* for non-payment of dues for more than one year
-* for three (3) consecutive absences at a Delegate Assembly (Delegate members only)
+* for non-payment of dues for more than one year;
+* for three (3) consecutive absences at a Delegate Assembly (Delegate members only).
 
 In all cases, the membership fee for the current year remains due.
 Members who have resigned or who are excluded have no rights to any part of the Association’s assets.
@@ -119,6 +118,7 @@ The Association’s organs are:
 * The Board
 * One or more Projects Steering Committee,
 * The auditor.
+
 
 a) Delegate Assembly
 ===================
@@ -154,9 +154,10 @@ The Delegate Assembly:
 * approves the annual budget;
 * supervises the activity of other organs, which it may dismiss, stating the grounds therefore;
 * appoints an auditor for the Organization’s accounts;
-* fixes the annual membership fees.
+* sets the annual membership fees.
 * decides on any modification of statutes;
-* decides on the dissolution of the Association;
+* decides on the dissolution of the Association.
+
 
 Article 10
 ----------
@@ -171,7 +172,8 @@ Decisions of the Delegate Assembly shall be taken by a majority vote of the Dele
 In case of deadlock, the President shall have the casting vote.
 
 Decisions concerning the amendment of the Statutes and the dissolution of the Association
-must be approved by a two-third majority of the Delegate members present.
+must be approved by a two-third majority of the Delegate members present,
+and at least half of the Delegates must be present and vote.
 
 Article 12
 ----------
@@ -192,6 +194,7 @@ The agenda of the ordinary annual session of the Delegate Assembly must include:
 * election of Board members and auditor
 * other business
 
+
 b) Board
 ========
 
@@ -205,9 +208,6 @@ Article 15
 ----------
 
 The Board is composed of 5 to 9 Delegates elected by the Delegate Assembly.
-
-An existing Board Member must have attended 80 % of the board meetings during its term
-to be a candidate for a re-election.
 
 The Board will appoint at least:
 
@@ -236,6 +236,7 @@ Article 17
 
 The functions of the Board are:
 
+* set the strategy and goals for the Association;
 * to take all measures to attain the goals of the Association;
 * to convene Delegate Assemblies;
 * to take decisions with regard to admission of new members, to resignations of members, and to their possible expulsion;
@@ -246,6 +247,7 @@ Article 18
 
 The Association shall be validly bound by the joint signature of the President or Vice-President
 and at least one member of the Board.
+
 
 c) Project Steering Committee
 =============================
@@ -267,7 +269,7 @@ A Project Steering Committee can not exercise the powers and the authority confe
 Article 20
 ----------
 
-Each Project Steering Committee is responsible of the diligent management of one or more projects identified by the Board.
+Each Project Steering Committee is responsible for the diligent management of one or more projects identified by the Board.
 These projects can include, but are not limited to, the creation or the maintenance of Open Source projects.
 
 Subject to the directives issued by the Board,
@@ -294,7 +296,7 @@ OCA wishes that all contributors of ideas, code, or documentation to the Associa
 complete, sign, and submit (via postal mail, fax or email) an Individual Contributor License Agreement (CLA).
 The purpose of this agreement is to clearly define the terms under which intellectual property has been contributed to the Association
 and thereby allow the Association to defend the project should there be a legal dispute regarding the software at some future time.
-A signed CLA is required for every Delegate member and before an individual is given commit rights to an OCA project.
+A signed CLA is required for every Delegate member and before an individual contribution can be accepted to an OCA project.
 
 For a corporation that has assigned employees to work on an OCA project,
 a Entity CLA (ECLA) is available for contributing intellectual property via the corporation,
@@ -302,8 +304,6 @@ that may have been assigned as part of an employment agreement.
 
 Note that an Entity CLA does not remove the need for every contributor to sign their own CLA as an individual,
 to cover any of their contributions which are not owned by the corporation signing the ECLA.
-
-CLAs may be submitted by traditional postal mail, fax, or by emailing a scan of the signed copy.
 
 VII. Various Provisions
 ========================
@@ -319,7 +319,7 @@ The auditor appointed by the Delegate Assembly shall audit the Association’s a
 Article 24
 ----------
 
-The rules of procedures, established by Board,
+The rules of procedures, established by the Board,
 and approved by the majority of the two-thirds of its Delegate members, complete these articles.
 
 Article 25
@@ -328,11 +328,6 @@ Article 25
 In the case of the Association being dissolved, the assets should be allotted to a non-profit organisation
 pursuing goals of public interest similar to those of the organisation.
 The goods cannot be returned to the founders or members, nor be used to their own profit.
-
-Article 26
-----------
-
-Should divergences exist between the translations of these articles, the French version shall prevail.
 
 
 The present Statutes have been approved by the Constituent Delegate Assembly of June,
