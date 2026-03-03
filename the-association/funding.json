@@ -1,0 +1,154 @@
+{
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+
+    "version": "v1.1.0",
+
+    "entity": {
+        "type": "organisation", 
+        "role": "steward",
+        "name": "Odoo Community Association (OCA)",
+        "email": "info@odoo-community.org",
+        "description": "The Odoo Community Association (OCA) is a non-profit organization, independent from the company Odoo SA, based in Switzerland that promotes open-source, collaborative development in the Odoo ERP software ecosystem. Our mission is to facilitate collaboration between Odoo developers and consultants throughout the ecosystem and ensure that Odoo remains a viable open source ERP. We do this, among others, by harbouring a large collection of open source code that is protected by a CLA, and hosting a yearly event.",
+        "webpageUrl": {
+            "url": "https://odoo-community.org"
+        }
+    },
+
+    "projects": [{
+        "guid": "openupgrade",
+        "name": "OpenUpgrade project",
+        "description": "OCA OpenUpgrade is a project for performing migrations between major versions of Odoo. It's a set of tools and scripts for performing major version migrations of Odoo Community instances, as an open-source alternative to Odoo's closed source migration path on https://upgrade.odoo.com/",
+        "webpageUrl": {
+            "url": "https://odoo-community.org/about/openupgrade"
+        },
+        "repositoryUrl": {
+            "url": "https://github.com/OCA/OpenUpgrade",
+            "wellKnown": "https://github.com/OCA/OpenUpgrade/blob/documentation/.well-known/funding-manifest-urls"
+        },
+        "licenses": ["spdx:AGPL-3.0-or-later"],
+        "tags": ["developer-tools","database","erp","python","migration","odoo","data-migration"]
+    }],
+
+    "funding": {
+        "channels": [
+        {
+            "guid": "member-buy",
+            "type": "payment-provider",
+            "address": "https://odoo-community.org/shop/26-msm-2026-oca-member-716926",
+            "description": "Buy yearly membership"
+        },
+        {
+            "guid": "wise",
+            "type": "bank",
+            "address": "https://wise.com/pay/business/odoocommunityassociationoca",
+            "description": "Donate via Bank (Wise)"
+        },
+        {
+            "guid": "stripe",
+            "type": "payment-provider",
+            "address": "https://buy.stripe.com/9B69AS1WT9MZ0TfcVJbZe09",
+            "description": "Donate via Stripe"
+        },
+        {
+            "guid": "crowdfunding-pledge",
+            "type": "payment-provider",
+            "address": "https://odoo-community.org/crowdfunding",
+            "description": "Crowdfunding individual projects"
+        },
+        {
+            "guid": "general-donation",
+            "type": "payment-provider",
+            "address": "https://odoo-community.org/shop/oca-donations-716027#attribute_values=8929",
+            "description": "Donate to the OCA"
+        }
+        ],
+        "plans": [
+          {
+            "guid": "member",
+            "status": "active",
+            "name": "Member - Individual",
+            "amount": 60,
+            "currency": "EUR",
+            "frequency": "yearly",
+            "channels": [
+              "wise",
+              "stripe",
+              "member-buy"
+            ]
+          },
+          {
+            "guid": "sponsor-bronze",
+            "status": "active",
+            "name": "Bronze Sponsor",
+            "amount": 1000,
+            "currency": "EUR",
+            "frequency": "yearly",
+            "channels": [
+              "wise",
+              "stripe"
+            ]
+          },
+          {
+            "guid": "sponsor-silver",
+            "status": "active",
+            "name": "Silver Sponsor",
+            "amount": 2000,
+            "currency": "EUR",
+            "frequency": "yearly",
+            "channels": [
+              "wise",
+              "stripe"
+            ]
+          },
+          {
+            "guid": "sponsor-gold",
+            "status": "active",
+            "name": "Gold Sponsor",
+            "amount": 5000,
+            "currency": "EUR",
+            "frequency": "yearly",
+            "channels": [
+              "wise",
+              "stripe"
+            ]
+          },
+          {
+            "guid": "sponsor-platinum",
+            "status": "active",
+            "name": "Platinum Sponsor",
+            "amount": 10000,
+            "currency": "EUR",
+            "frequency": "yearly",
+            "channels": [
+              "wise",
+              "stripe"
+            ]
+          },
+          {
+            "guid": "crowdfunding",
+            "status": "active",
+            "name": "Crowdfunding",
+            "amount": 0,
+            "currency": "EUR",
+            "frequency": "one-time",
+            "channels": [
+              "crowdfunding-pledge"
+            ]
+          },
+          {
+            "guid": "donation",
+            "status": "active",
+            "name": "Donation",
+            "amount": 0,
+            "currency": "EUR",
+            "frequency": "one-time",
+            "channels": [
+              "donation",
+              "wise",
+              "stripe"
+            ]
+          }
+        ]
+    }
+}
+
