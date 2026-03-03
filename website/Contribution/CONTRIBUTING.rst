@@ -331,7 +331,7 @@ requirements.txt
 
 As specified in `the Repositories Section <#repositories>`_, you should also define
 the python packages to install in a file `requirements.txt` in the
-root folder of the repository. This will be used for travis.
+root folder of the repository. This will be used in the CI.
 
 oca_dependencies.txt
 --------------------
@@ -345,10 +345,9 @@ To depend on the standard version of sale-workflow, use::
 
     sale-workflow
 
-To explicitely give the URL of a fork, and still use the version specified in
-``.travis.yml``, use::
+To explicitely give the URL of a fork::
 
-    sale-workflow https://github.com/OCA/sale-workflow
+    sale-workflow https://github.com/fork/sale-workflow
 
 To provide both the URL and a branch, use::
 
@@ -1248,47 +1247,6 @@ negatives in your tests.
 If you create the test data within your test suite, you will have more
 consistent and resilient results.
 
-Investigating Travis Test Failures
-==================================
-
-It can sometimes be difficult to reproduce a Travis test failure locally due to
-subtle environment differences. In these scenarios it can be helpful to connect to
-the Runbot container generated for that branch/PR via SSH, where the
-environment will be very similar to Travis. You can do this by running:
-
-```
-ssh -p [port] -L 18080:localhost:18069 odoo@runbot[1 or 2].odoo-community.org
-```
-
-The correct Runbot subdomain can be found by checking the info on
-https://runbot.odoo-community.org/runbot for your particular repo and branch.
-The port can also be found there by clicking on the gear icon next to the
-relevant Runbot instance and adding 1 to the port number in the dropdown.
-
-In order to be authenticated, your public SSH key will need to be associated with
-your GitHub account **before** the Runbot instance is generated. You must also be
-the author of the commit that triggered the Runbot build.
-
-Once you've connected to the container, you can run tests as follows:
-
-.. code-block:: bash
-
-    cp -r ~/data_dir/filestore/odoo_template ~/data_dir/filestore/[github_username]
-    createdb -T odoo_template [github_username]
-    [~/odoo-9.0/odoo.py or ~/odoo-10.0/odoo-bin] -d [github_username] --db-filter=[github_username] --xmlrpc-port=18069 -i [module_name] --test-enable
-
-The test instance can be accessed through your browser at
-http://localhost:18080/ thanks to SSH port forwarding. To rebuild the DB as
-needed, run:
-
-.. code-block:: bash
-
-    dropdb [github_username]
-    createdb -T odoo_template [github_username]
-
-**WARNING**: Do not stop the default Odoo service running in the container as
-this will bring down the entire Runbot instance.
-
 ***
 Git
 ***
@@ -1460,9 +1418,9 @@ Naming
 Branch configuration
 --------------------
 
-Python packages to install must be preferably defined in requirements.txt than travis.yml file.
+Python packages to install must be preferably defined in `requirements.txt` than in CI config files.
 
-Requirements.txt avoid to repeat packages in all travis.yml files of repositories in case of using with oca_dependencies.txt file.
+`requirements.txt` avoids the repetition of packages in all CI files of repositories in case of using with `oca_dependencies.txt` file.
 
 Issues
 ======
@@ -1536,7 +1494,7 @@ must respect a few rules:
 * You need to keep the license of the module coded by Odoo SA
 * You need to add the OCA as author (and Odoo SA of course)
 * You need to make the module "OCA compatible": PEP8, OCA convention and so
-  on so it won't break our CI like runbot, Travis and so.
+  on so it won't break our CI like runboat, Github Actions and so.
 * You need to add a disclaimer in the `README.rst` file with the following text:
 
   .. pull-quote::
